@@ -1,5 +1,11 @@
 import "./App.css";
+import React, { Component } from "react";
+import Home from "./Home";
 
-export default function App() {
-  return <h1 className="text-3xl font-bold">Hello world!</h1>;
+class App extends Component {
+  render() {
+    return <Home />;
+  }
 }
+
+export default App;
