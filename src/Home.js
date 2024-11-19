@@ -10,10 +10,18 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    document.onclick = (e) => {
-      const target = e.target;
-      if (!target.closest(".menu-btn")) setState(false);
+    const handleClickOutside = (e) => {
+      if (
+        !e.target.closest(".menu-btn") &&
+        !e.target.closest(".nav-container")
+      ) {
+        setState(false);
+      }
     };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
   const Brand = () => (
@@ -80,26 +88,22 @@ export default function Home() {
               <div
                 className={`flex-1 items-center mt-8 md:mt-0 md:flex ${
                   state ? "block" : "hidden"
-                } `}
+                }`}
               >
                 <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-                  {navigation.map((item, idx) => {
-                    return (
-                      <li
-                        key={idx}
-                        className="text-gray-700 hover:text-gray-900"
-                      >
-                        <a href={item.path} className="block">
-                          {item.title}
-                        </a>
-                      </li>
-                    );
-                  })}
+                  {navigation.map((item, idx) => (
+                    <li key={idx} className="text-gray-700 hover:text-gray-900">
+                      <a href={item.path} className="block">
+                        {item.title}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
           </nav>
         </header>
+
         <section>
           <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
             <div className="flex-none space-y-5 max-w-xl">
