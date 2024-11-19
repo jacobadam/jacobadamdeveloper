@@ -10,18 +10,10 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (
-        !e.target.closest(".menu-btn") &&
-        !e.target.closest(".nav-container")
-      ) {
-        setState(false);
-      }
+    document.onclick = (e) => {
+      const target = e.target;
+      if (!target.closest(".menu-btn")) setState(false);
     };
-
-    document.addEventListener("click", handleClickOutside);
-
-    return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
   const Brand = () => (
@@ -33,6 +25,9 @@ export default function Home() {
         <button
           className="menu-btn text-gray-500 hover:text-gray-800"
           onClick={() => setState(!state)}
+          aria-label={state ? "Close menu" : "Open menu"}
+          aria-expanded={state ? "true" : "false"}
+          aria-controls="mobile-nav"
         >
           {state ? (
             <svg
@@ -82,28 +77,34 @@ export default function Home() {
                 ? "absolute top-0 inset-x-0 bg-white shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-0 md:mt-0 md:relative md:bg-transparent"
                 : ""
             }`}
+            role="navigation"
+            id="mobile-nav"
           >
             <div className="items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
               <Brand />
               <div
                 className={`flex-1 items-center mt-8 md:mt-0 md:flex ${
                   state ? "block" : "hidden"
-                }`}
+                } `}
               >
                 <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-                  {navigation.map((item, idx) => (
-                    <li key={idx} className="text-gray-700 hover:text-gray-900">
-                      <a href={item.path} className="block">
-                        {item.title}
-                      </a>
-                    </li>
-                  ))}
+                  {navigation.map((item, idx) => {
+                    return (
+                      <li
+                        key={idx}
+                        className="text-gray-700 hover:text-gray-900"
+                      >
+                        <a href={item.path} className="block">
+                          {item.title}
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
           </nav>
         </header>
-
         <section>
           <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
             <div className="flex-none space-y-5 max-w-xl">
@@ -118,6 +119,7 @@ export default function Home() {
                 <a
                   href="/services"
                   className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex"
+                  aria-label="Visit services page"
                 >
                   Services
                   <svg
@@ -136,6 +138,7 @@ export default function Home() {
                 <a
                   href="/contact"
                   className="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex"
+                  aria-label="Get in touch"
                 >
                   Get in touch
                   <svg
@@ -154,7 +157,11 @@ export default function Home() {
               </div>
             </div>
             <div className="flex-1 hidden md:block">
-              <img src="hero-image.svg" className="max-w-xl" alt="hero" />
+              <img
+                src="hero-image.svg"
+                className="max-w-xl"
+                alt="A person working on a computer with code visible"
+              />
             </div>
           </div>
         </section>
