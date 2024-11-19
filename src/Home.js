@@ -62,12 +62,7 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <div
-        className="absolute inset-0 blur-xl h-[580px]"
-        style={{
-          background: "white",
-        }}
-      ></div>
+      <div className="absolute inset-0 blur-xl h-[580px] bg-slate-200"></div>
       <div className="relative">
         <header>
           <div className={`md:hidden ${state ? "mx-2 pb-5" : "hidden"}`}>
@@ -155,11 +150,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex-1 hidden md:block">
-              <img
-                src="https://raw.githubusercontent.com/sidiDev/remote-assets/c86a7ae02ac188442548f510b5393c04140515d7/undraw_progressive_app_m-9-ms_oftfv5.svg"
-                className="max-w-xl"
-                alt="hero"
-              />
+              <img src="hero-image.svg" className="max-w-xl" alt="hero" />
             </div>
           </div>
         </section>
