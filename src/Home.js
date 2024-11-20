@@ -13,6 +13,7 @@ export default function Home() {
         <HomePortfolio />
         <HomeDivider />
         <HomeServices />
+        <HomeDivider />
       </div>
     </div>
   );
