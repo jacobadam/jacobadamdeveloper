@@ -1,6 +1,7 @@
 import HomeDivider from "./HomeDivider";
 import HomeHero from "./HomeHero";
 import HomePortfolio from "./HomePortfolio";
+import HomeServices from "./HomeServices";
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
         <HomeHero />
         <HomeDivider />
         <HomePortfolio />
+        <HomeDivider />
+        <HomeServices />
       </div>
     </div>
   );
