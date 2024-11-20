@@ -1,3 +1,4 @@
+import HomeContact from "./HomeContact";
 import HomeDivider from "./HomeDivider";
 import HomeHero from "./HomeHero";
 import HomePortfolio from "./HomePortfolio";
@@ -14,6 +15,7 @@ export default function Home() {
         <HomeDivider />
         <HomeServices />
         <HomeDivider />
+        <HomeContact />
       </div>
     </div>
   );
