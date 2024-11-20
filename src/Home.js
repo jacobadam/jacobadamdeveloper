@@ -6,7 +6,7 @@ import HomeServices from "./HomeServices";
 export default function Home() {
   return (
     <div className="relative">
-      <div className="absolute inset-0 blur-xl h-[580px] bg-slate-200"></div>
+      <div className="absolute inset-0 blur-xl bg-slate-200"></div>
       <div className="relative">
         <HomeHero />
         <HomeDivider />
