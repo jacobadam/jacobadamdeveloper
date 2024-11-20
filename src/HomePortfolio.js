@@ -34,14 +34,12 @@ export default function HomePortfolio() {
   ];
 
   return (
-    <>
-      <div className="mb-14 text-center">
-        <h2 className="text-4xl font-bold text-gray-900 py-5">Portfolio</h2>
-        <p className="text-lg font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto">
-          Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-        </p>
-      </div>
+    <div className="text-center bg-stone-300 py-8">
+      <h2 className="text-4xl font-bold text-gray-900 pt-5">Portfolio</h2>
+      <p className="text-lg font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto py-8">
+        Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+      </p>
 
       <Swiper
         slidesPerView={3}
@@ -62,6 +60,6 @@ export default function HomePortfolio() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }
