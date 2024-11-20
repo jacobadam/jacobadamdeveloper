@@ -1,10 +1,16 @@
 import "./App.css";
 import React, { Component } from "react";
 import Home from "./Home";
+import Nav from "./Nav";
 
 class App extends Component {
   render() {
-    return <Home />;
+    return (
+      <div>
+        <Nav />
+        <Home />
+      </div>
+    );
   }
 }
 
