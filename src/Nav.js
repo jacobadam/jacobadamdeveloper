@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [state, setState] = useState(false);
@@ -6,6 +7,7 @@ export default function NavBar() {
     { title: "Home", path: "/" },
     { title: "About", path: "/about" },
     { title: "Services", path: "/services" },
+    { title: "Portfolio", path: "/portfolio" },
     { title: "Contact", path: "/contact" },
   ];
 
@@ -18,9 +20,9 @@ export default function NavBar() {
 
   const Brand = () => (
     <div className="flex items-center justify-between py-5 md:block">
-      <a href="/">
+      <Link to="/">
         <img src="/j-icon.svg" width={60} height={25} alt="J logo" />
-      </a>
+      </Link>
       <div className="md:hidden">
         <button
           className="menu-btn text-gray-500 hover:text-gray-800"
@@ -87,9 +89,9 @@ export default function NavBar() {
             <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
               {navigation.map((item, idx) => (
                 <li key={idx} className="text-gray-700 hover:text-blue-900">
-                  <a href={item.path} className="block">
+                  <Link to={item.path} className="block">
                     {item.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
