@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function HomepageHero() {
   return (
     <section>
       <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
