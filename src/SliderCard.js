@@ -20,7 +20,7 @@ export default function SliderCard({ image, title, description, readMoreUrl }) {
           href={readMoreUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-indigo-600 hover:text-indigo-800 mt-2 inline-block text-center"
+          className="text-md text-indigo-600 hover:text-indigo-800 mt-2 inline-block text-center font-bold"
         >
           Read more
         </a>

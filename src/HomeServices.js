@@ -40,11 +40,11 @@ export default function HomeServices() {
           },
         ].map((feature, index) => (
           <div key={index} className="relative w-full text-center p-6">
-            <div className="rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500">
+            <div className="rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto transition-all duration-500">
               <img
+                className="w-12 h-12 object-contain"
                 src={feature.svgPath}
                 alt={feature.title}
-                className="w-12 h-12 object-contain"
               />
             </div>
             <h4 className="text-lg font-medium text-gray-900 mb-3 capitalize">
@@ -55,6 +55,14 @@ export default function HomeServices() {
             </p>
           </div>
         ))}
+      </div>
+      <div class="flex justify-center gap-2">
+        <button
+          type="button"
+          class="py-2.5 px-6 text-sm bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700"
+        >
+          Learn more
+        </button>
       </div>
     </div>
   );
