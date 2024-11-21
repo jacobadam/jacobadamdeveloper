@@ -24,11 +24,11 @@ export default function HomeContact() {
       {/* Form */}
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-lg bg-white p-6 rounded-lg shadow-md"
+        className="w-full max-w-lg bg-slate-200 p-6 rounded-lg shadow-md"
       >
         <div className="relative mb-6">
           <label className="flex items-center mb-2 text-gray-600 text-sm font-medium">
-            Name{" "}
+            Name
             <svg
               width="7"
               height="7"
@@ -56,7 +56,7 @@ export default function HomeContact() {
 
         <div className="relative mb-6">
           <label className="flex items-center mb-2 text-gray-600 text-sm font-medium">
-            Email{" "}
+            Email
             <svg
               width="7"
               height="7"
@@ -84,7 +84,7 @@ export default function HomeContact() {
 
         <div className="relative mb-6">
           <label className="flex items-center mb-2 text-gray-600 text-sm font-medium">
-            Message{" "}
+            Message
             <svg
               width="7"
               height="7"
