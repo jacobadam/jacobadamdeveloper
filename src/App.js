@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Nav from "./Nav";
+import Footer from "./Footer";
 import About from "./About";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
