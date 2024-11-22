@@ -48,8 +48,7 @@ export default function HomeContact() {
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
-            placeholder="Name"
+            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-full placeholder-gray-400 focus:outline-none"
             required
           />
         </div>
@@ -76,8 +75,7 @@ export default function HomeContact() {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
-            placeholder="name@pagedone.com"
+            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-full placeholder-gray-400 focus:outline-none"
             required
           />
         </div>
@@ -100,8 +98,7 @@ export default function HomeContact() {
             </svg>
           </label>
           <textarea
-            className="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-2xl placeholder-gray-400 focus:outline-none resize-none"
-            placeholder="Write a message..."
+            className="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-2xl placeholder-gray-400 focus:outline-none resize-none"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
