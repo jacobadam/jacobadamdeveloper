@@ -32,7 +32,7 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-                <div className="group flex gap-4 my-8">
+                <div className="group flex gap-4 mt-8">
                   <div className="rounded-lg transition-all duration-700 ease-in-out p-3">
                     <img
                       src="/phone2.svg"
