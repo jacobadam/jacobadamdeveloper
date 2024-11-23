@@ -29,7 +29,7 @@ export default function HomeServices() {
   ];
 
   return (
-    <section>
+    <section className="flex items-center justify-center">
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
@@ -41,7 +41,7 @@ export default function HomeServices() {
             </p>
             <a
               href="/services"
-              className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none"
             >
               Learn More
             </a>
@@ -50,9 +50,9 @@ export default function HomeServices() {
           <div className="grid grid-cols-2 gap-4">
             {services.map((service, index) => (
               <div key={index} className="block rounded-xl border p-4">
-                <div className="inline-block rounded-lg bg-gray-50 p-3">
+                <div className="inline-block rounded-lg bg-gray-50 p-2">
                   <img
-                    className="w-8 h-8 object-contain"
+                    className="w-11 h-11 object-contain"
                     src={service.svgPath}
                     alt={service.title}
                   />
