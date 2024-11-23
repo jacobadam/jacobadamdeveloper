@@ -5,7 +5,7 @@ export default function Footer() {
     <footer class="w-full bg-white">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto">
-          <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-10 mb-10 border-b border-black">
+          {/* <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-10 mb-10 border-b border-black">
             <li>
               <a href="/" class="text-gray-800 hover:text-gray-900">
                 Home
@@ -31,8 +31,8 @@ export default function Footer() {
                 Contact
               </a>
             </li>
-          </ul>
-          <div class="flex space-x-10 justify-center items-center mb-10">
+          </ul> */}
+          <div class="flex space-x-10 justify-center items-center mb-10 mt-4">
             <img
               href="https://www.linkedin.com/in/jacobnevitt/"
               class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 w-8 h-8"
