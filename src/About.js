@@ -29,11 +29,13 @@ export default function About() {
                 Contact me
               </a>
             </div>
-            <img
-              className="lg:mx-0 mx-auto h-full rounded-3xl object-cover"
-              src="/jacobadam.webp"
-              alt="Jacob Adam"
-            />
+            <div className="flex justify-center items-center">
+              <img
+                className="rounded-full w-120 h-120 object-cover"
+                src="/jacobadam.png"
+                alt="Jacob Adam"
+              />
+            </div>
           </div>
         </div>
       </section>
