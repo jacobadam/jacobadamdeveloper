@@ -73,7 +73,7 @@ export default function NavBar() {
       <nav
         className={`pb-5 md:text-sm ${
           state
-            ? "absolute top-0 inset-x-0 bg-white shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-0 md:mt-0 md:relative"
+            ? "absolute top-0 inset-x-0 shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-0 md:mt-0 md:relative"
             : ""
         }`}
         role="navigation"
