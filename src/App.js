@@ -7,13 +7,12 @@ import Footer from "./Footer";
 import About from "./About";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
-
 import Contact from "./Contact";
 
 export default function App() {
   return (
     <Router>
-      <div>
+      <div className="flex flex-col min-h-screen">
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
