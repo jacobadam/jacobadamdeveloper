@@ -7,21 +7,20 @@ import "swiper/css/navigation";
 import SliderCard from "./SliderCard";
 
 export default function HomePortfolio() {
-  // Array of slide data
   const slidesData = [
     {
       image: "https://www.katieshevlin.com/hero-image.webp",
       title: "Content Services Website",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore.",
-      readMoreUrl: "https://www.katieshevlin.com/",
+      url: "https://www.katieshevlin.com/",
     },
     {
       image: "https://www.neilnevitt.com/homepage-image.webp",
       title: "Healthcare Website",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore.",
-      readMoreUrl: "https://www.neilnevitt.com/",
+      url: "https://www.neilnevitt.com/",
     },
     {
       image:
@@ -29,17 +28,15 @@ export default function HomePortfolio() {
       title: "Tips for maximizing your living space",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore.",
-      readMoreUrl: "#",
+      url: "#",
     },
   ];
 
   return (
     <div className="text-center bg-stone-300 py-8">
-      <h2 className="text-4xl font-bold text-gray-900 pt-5">Portfolio</h2>
-      <p className="text-lg font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto py-8">
-        Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-        doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-      </p>
+      <h2 className="text-2xl lg:text-3xl font-semibold lg:font-bold text-gray-900 pt-5 py-8">
+        Portfolio
+      </h2>
 
       <Swiper
         slidesPerView={3}
@@ -55,7 +52,7 @@ export default function HomePortfolio() {
               image={slide.image}
               title={slide.title}
               description={slide.description}
-              readMoreUrl={slide.readMoreUrl}
+              url={slide.url}
             />
           </SwiperSlide>
         ))}
