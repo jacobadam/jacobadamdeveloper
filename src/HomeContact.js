@@ -11,7 +11,7 @@ export default function HomeContact() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 bg-stone-300">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 bg-slate-200">
       {/* Header Section */}
       <div className="text-center">
         <h2 className="text-4xl font-bold text-gray-900 pt-5">Contact</h2>
@@ -22,10 +22,7 @@ export default function HomeContact() {
       </div>
 
       {/* Form */}
-      <form
-        onSubmit={handleSubmit}
-        className="w-full max-w-lg bg-slate-200 p-6 rounded-lg shadow-md"
-      >
+      <form onSubmit={handleSubmit} className="w-full max-w-lg p-6">
         <div className="relative mb-6">
           <label className="flex items-center mb-2 text-gray-600 text-sm font-medium">
             Name
