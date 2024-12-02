@@ -4,6 +4,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import SliderCard from "./SliderCard";
 
 const slidesData = [
   {
@@ -31,6 +32,10 @@ export default function HomePortfolio() {
             <h2 className="text-2xl lg:text-4xl font-bold text-white mb-5">
               Latest Projects
             </h2>
+            <p className="text-gray-400 text-sm sm:text-base text-center leading-relaxed">
+              Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
+              doloremque laudantium, totam rem aperiam.
+            </p>
             {/* <a
               href="/portfolio"
               className="cursor-pointer border border-black bg-black shadow-sm rounded-full py-2 px-4 w-32 lg:mx-0 mx-auto flex justify-center text-white font-semibold text-sm transition-all duration-300 hover:bg-white hover:text-black"
@@ -38,7 +43,7 @@ export default function HomePortfolio() {
               View More
             </a> */}
             <div className="flex items-center gap-8 mt-8">
-              <button className="portfolio-button-prev group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all">
+              <button className="sm:hidden portfolio-button-prev group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all">
                 <svg
                   className="h-6 w-6 text-black group-hover:text-white"
                   viewBox="0 0 24 24"
@@ -53,7 +58,7 @@ export default function HomePortfolio() {
                   />
                 </svg>
               </button>
-              <button className="portfolio-button-next group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all">
+              <button className="sm:hidden portfolio-button-next group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all">
                 <svg
                   className="h-6 w-6 text-black group-hover:text-white"
                   viewBox="0 0 24 24"
@@ -95,27 +100,11 @@ export default function HomePortfolio() {
             >
               {slidesData.map((slide, index) => (
                 <SwiperSlide key={index} className="group">
-                  <div className="relative overflow-hidden rounded-2xl">
-                    <img
-                      src={slide.image}
-                      alt={slide.title}
-                      className="w-full h-48 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:blur-sm"
-                    />
-
-                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out">
-                      <h3 className="text-lg text-white font-bold mb-3">
-                        {slide.title}
-                      </h3>
-                      <a
-                        href={slide.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-white font-semibold bg-black/80 px-4 py-2 rounded-full transition-colors duration-300"
-                      >
-                        View project
-                      </a>
-                    </div>
-                  </div>
+                  <SliderCard
+                    image={slide.image}
+                    title={slide.title}
+                    url={slide.url}
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
