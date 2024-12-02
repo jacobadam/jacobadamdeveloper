@@ -20,40 +20,27 @@ const slidesData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore.",
     url: "https://www.neilnevitt.com/",
   },
-  {
-    image:
-      "https://images.unsplash.com/photo-1544973302-9a1139be67f5?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjY5OXwwfDF8c2VhY2h8NDB8fGluc3RhZ3JhbXxlbnwwfHx8fDE2NzM5NzUzNzY&ixlib=rb-1.2.1&q=80&w=1080",
-    title: "Tips for maximizing your living space",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore.",
-    url: "#",
-  },
 ];
 
 export default function HomePortfolio() {
   return (
-    <section className="py-24 bg-slate-100">
+    <section className="py-16 bg-indigo-600">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center flex-wrap lg:flex-nowrap gap-8">
-          <div className="w-full lg:w-2/5 flex flex-col items-center lg:items-start">
-            <h2 className="text-4xl font-bold text-gray-900 leading-[3.25rem] mb-5">
-              Our latest <span className="text-indigo-600">Portfolio</span>
+          <div className="w-full lg:w-2/5 flex flex-col items-center">
+            <h2 className="text-2xl lg:text-4xl font-bold text-white mb-5">
+              Latest Projects
             </h2>
-            <p className="text-gray-500 mb-10 max-lg:max-w-xl max-lg:mx-auto">
-              Welcome to our blog section, where knowledge meets inspiration.
-              Explore insightful articles, expert tips, and the latest trends in
-              our field.
-            </p>
             <a
               href="/portfolio"
-              className="cursor-pointer border border-gray-300 shadow-sm rounded-full py-3.5 px-7 w-52 lg:mx-0 mx-auto flex justify-center text-gray-900 font-semibold transition-all duration-300 hover:bg-gray-100"
+              className="cursor-pointer border border-black bg-black shadow-sm rounded-full py-2 px-4 w-32 lg:mx-0 mx-auto flex justify-center text-white font-semibold text-sm transition-all duration-300 hover:bg-white hover:text-black"
             >
               View More
             </a>
             <div className="flex items-center gap-8 mt-8">
-              <button className="portfolio-button-prev group flex justify-center items-center border border-indigo-600 w-11 h-11 rounded-full hover:bg-indigo-600 transition-all">
+              <button className="portfolio-button-prev group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all">
                 <svg
-                  className="h-6 w-6 text-indigo-600 group-hover:text-white"
+                  className="h-6 w-6 text-black group-hover:text-white"
                   viewBox="0 0 24 24"
                   fill="none"
                 >
@@ -66,9 +53,9 @@ export default function HomePortfolio() {
                   />
                 </svg>
               </button>
-              <button className="portfolio-button-next group flex justify-center items-center border border-indigo-600 w-11 h-11 rounded-full hover:bg-indigo-600 transition-all">
+              <button className="portfolio-button-next group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all">
                 <svg
-                  className="h-6 w-6 text-indigo-600 group-hover:text-white"
+                  className="h-6 w-6 text-black group-hover:text-white"
                   viewBox="0 0 24 24"
                   fill="none"
                 >
@@ -108,33 +95,27 @@ export default function HomePortfolio() {
             >
               {slidesData.map((slide, index) => (
                 <SwiperSlide key={index} className="group">
-                  <div className="mb-9">
+                  <div className="relative overflow-hidden rounded-2xl">
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-48 object-cover rounded-2xl"
+                      className="w-full h-48 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:blur-sm"
                     />
+
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out">
+                      <h3 className="text-lg text-white font-bold mb-3">
+                        {slide.title}
+                      </h3>
+                      <a
+                        href={slide.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-white font-semibold bg-black/80 px-4 py-2 rounded-full transition-colors duration-300"
+                      >
+                        View project
+                      </a>
+                    </div>
                   </div>
-                  <h3 className="text-xl text-gray-900 font-medium leading-8 mb-4 group-hover:text-indigo-600">
-                    {slide.title}
-                  </h3>
-                  <a
-                    href={slide.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-lg text-indigo-700 font-semibold"
-                  >
-                    Read more
-                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none">
-                      <path
-                        d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5"
-                        stroke="#4338CA"
-                        strokeWidth="1.8"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
                 </SwiperSlide>
               ))}
             </Swiper>
