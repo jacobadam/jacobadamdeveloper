@@ -27,16 +27,16 @@ export default function HomePortfolio() {
     <section className="py-16 bg-indigo-600">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center flex-wrap lg:flex-nowrap gap-8">
-          <div className="w-full lg:w-2/5 flex flex-col items-center">
+          <div className="w-full lg:w-2/5 flex flex-col items-center justify-center">
             <h2 className="text-2xl lg:text-4xl font-bold text-white mb-5">
               Latest Projects
             </h2>
-            <a
+            {/* <a
               href="/portfolio"
               className="cursor-pointer border border-black bg-black shadow-sm rounded-full py-2 px-4 w-32 lg:mx-0 mx-auto flex justify-center text-white font-semibold text-sm transition-all duration-300 hover:bg-white hover:text-black"
             >
               View More
-            </a>
+            </a> */}
             <div className="flex items-center gap-8 mt-8">
               <button className="portfolio-button-prev group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all">
                 <svg
