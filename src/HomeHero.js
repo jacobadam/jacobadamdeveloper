@@ -1,9 +1,9 @@
 export default function HomepageHero() {
   return (
     <section className="bg-slate-200">
-      <div className="max-w-screen-xl mx-auto px-4 pt-8 pb-20 md:py-16 lg:pt-4 lg:pb-44 xl:pt-8 xl:pb-56 2xl:pb-72 2xl:pt-32 text-gray-600 overflow-hidden md:px-8 flex flex-col lg:flex-row">
+      <div className="max-w-screen-xl mx-auto px-4 pt-8 pb-20 md:py-16 lg:pt-4 lg:pb-44 xl:pt-28 xl:pb-56 2xl:pb-72 2xl:pt-32 text-gray-600 overflow-hidden md:px-8 flex flex-col lg:flex-row">
         {/* Text Section */}
-        <div className="flex flex-col items-center justify-center px-4 text-center md:max-w-xl mx-auto lg:pt-40">
+        <div className="flex flex-col items-center justify-center px-4 text-center md:max-w-xl mx-auto">
           <h1 className="text-2xl xxs:text-4xl text-gray-800 font-extrabold sm:text-5xl">
             Designing and Building Websites for Your Needs
           </h1>
@@ -54,15 +54,6 @@ export default function HomepageHero() {
           />
         </div>
       </div>
-
-      {/* Divider */}
-      {/* <div className="flex justify-center transition-opacity duration-700 ease-in-out opacity-100">
-        <img
-          src="wave7.png"
-          alt="Decorative divider"
-          className="w-full h-[300px]"
-        />
-      </div> */}
     </section>
   );
 }
