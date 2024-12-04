@@ -1,40 +1,40 @@
 import React from "react";
 
-export default function HomeServices() {
-  const services = [
-    {
-      title: "Custom Front-End Website",
-      description:
-        "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
-      svgPath: "/custom-website4.svg",
-    },
-    {
-      title: "Responsive Design",
-      description:
-        "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
-      svgPath: "/responsive-design2.svg",
-    },
-    {
-      title: "Performance Optimization",
-      description:
-        "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
-      svgPath: "/performance-optimization2.svg",
-    },
-    {
-      title: "Search Engine Optimization",
-      description:
-        "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
-      svgPath: "/seo2.svg",
-    },
-  ];
+const services = [
+  {
+    title: "Custom Front-End Website",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+    svgPath: "/custom-website4.svg",
+  },
+  {
+    title: "Responsive Design",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+    svgPath: "/responsive-design2.svg",
+  },
+  {
+    title: "Performance Optimization",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+    svgPath: "/performance-optimization2.svg",
+  },
+  {
+    title: "Search Engine Optimization",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+    svgPath: "/seo2.svg",
+  },
+];
 
+export default function HomeServices() {
   return (
     <section className="flex items-center justify-center">
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
-          <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-            <h2 className="text-3xl font-bold sm:text-4xl">Our Services</h2>
-            <p className="mt-4 text-gray-600">
+          <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
+            <h2 className="text-xl font-bold">Our Services</h2>
+            <p className="text-gray-400 text-sm text-center leading-relaxed">
               Discover a range of tailored solutions designed to meet your
               needs, from custom front-end websites to performance and SEO
               optimization.
