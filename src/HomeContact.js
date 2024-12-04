@@ -11,15 +11,13 @@ export default function HomeContact() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 bg-slate-200">
+    <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-slate-200">
       {/* Header Section */}
-      <div className="text-center">
-        <h2 className="text-4xl font-bold text-gray-900 pt-5">Contact</h2>
-        <p className="text-lg font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto py-8">
-          Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-        </p>
-      </div>
+      <h2 className="text-xl font-bold text-cente pt-8">Contact</h2>
+      {/* <p className="text-gray-400 text-sm text-center leading-relaxed">
+          Discover a range of tailored solutions designed to meet your needs,
+          from custom front-end websites to performance and SEO optimization.
+        </p> */}
 
       {/* Form */}
       <form onSubmit={handleSubmit} className="w-full max-w-lg p-6">
