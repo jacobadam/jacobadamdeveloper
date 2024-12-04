@@ -33,7 +33,7 @@ export default function HomeServices() {
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-            <h2 className="text-xl font-bold">Our Services</h2>
+            <h2 className="text-2xl font-bold mb-2">Our Services</h2>
             <p className="text-gray-400 text-sm text-center leading-relaxed">
               Discover a range of tailored solutions designed to meet your
               needs, from custom front-end websites to performance and SEO
@@ -41,9 +41,18 @@ export default function HomeServices() {
             </p>
             <a
               href="/services"
-              className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none"
+              className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-white font-medium bg-indigo-600 duration-150 rounded-full mt-4"
+              aria-label="Visit services page"
             >
-              Learn More
+              Services
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-5 h-5"
+              >
+                <path d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" />
+              </svg>
             </a>
           </div>
 

@@ -11,7 +11,7 @@ export default function HomepageHero() {
             Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ipsa quae.
           </p>
-          <div className="flex items-center xxxs:gap-x-4 mt-6">
+          <div className="flex items-center xxxs:gap-x-4 mt-4">
             <a
               href="/services"
               className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-white font-medium bg-indigo-600 duration-150 rounded-full"

@@ -29,7 +29,7 @@ export default function HomeProjects() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center flex-wrap gap-8">
           <div className="w-full lg:w-2/5 flex flex-col items-center justify-center">
-            <h2 className="text-xl font-bold text-center text-white pb-4 md:pb-0">
+            <h2 className="text-2xl font-bold text-center text-white pb-4 md:pb-0">
               Latest Projects
             </h2>
             {/* <p className="text-gray-400 text-sm text-center leading-relaxed">
