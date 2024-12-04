@@ -1,13 +1,13 @@
 import HomeContact from "./HomeContact";
 import HomeHero from "./HomeHero";
-import HomePortfolio from "./HomePortfolio";
+import HomeProjects from "./HomeProjects";
 import HomeServices from "./HomeServices";
 
 export default function Home() {
   return (
     <div>
       <HomeHero />
-      <HomePortfolio />
+      <HomeProjects />
       <HomeServices />
       <HomeContact />
     </div>
