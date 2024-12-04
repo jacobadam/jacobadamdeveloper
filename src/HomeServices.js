@@ -50,17 +50,19 @@ export default function HomeServices() {
           <div className="grid grid-cols-2 gap-4">
             {services.map((service, index) => (
               <div key={index} className="block rounded-xl border p-4">
-                <div className="inline-block rounded-lg bg-gray-50 p-2">
-                  <img
-                    className="w-11 h-11 object-contain"
-                    src={service.svgPath}
-                    alt={service.title}
-                  />
+                <div className="flex flex-col items-center text-center sm:text-left sm:items-start">
+                  <div className="inline-block rounded-lg p-2">
+                    <img
+                      className="w-11 h-11 object-contain"
+                      src={service.svgPath}
+                      alt={service.title}
+                    />
+                  </div>
+                  <h3 className="mt-2 font-bold">{service.title}</h3>
+                  <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="mt-2 font-bold">{service.title}</h3>
-                <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                  {service.description}
-                </p>
               </div>
             ))}
           </div>
