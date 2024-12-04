@@ -34,7 +34,7 @@ export default function HomeServices() {
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
             <h2 className="text-2xl font-bold mb-2">Our Services</h2>
-            <p className="text-gray-400 text-sm text-center leading-relaxed">
+            <p className="text-gray-400 text-center leading-relaxed">
               Discover a range of tailored solutions designed to meet your
               needs, from custom front-end websites to performance and SEO
               optimization.
