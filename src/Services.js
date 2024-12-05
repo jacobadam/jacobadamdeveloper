@@ -10,34 +10,39 @@ export default function Services() {
   return (
     <section className="pt-4 relative bg-slate-200 flex-grow">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl text-center font-bold text-gray-900 py-5 max-w-xl leading-[3.25rem] mx-auto">
+        <div className="mb-8 text-center">
+          <h2 className="text-gray-900 text-4xl font-semibold font-manrope leading-snug pb-5">
             Services
           </h2>
         </div>
         <div className="mb-4">
           <div className="tabs">
             <div className="flex w-full items-center justify-center">
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8 overflow-x-auto mb-9 lg:mb-16">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8 overflow-x-auto mb-9 lg:mb-16">
                 {[
                   {
                     id: "tabs-with-pill-1",
-                    label: "Custom Built Website",
-                  },
-                  { id: "tabs-with-pill-2", label: "Responsive Design" },
-                  {
-                    id: "tabs-with-pill-3",
                     label: "Performance Optimization",
                   },
                   {
-                    id: "tabs-with-pill-4",
-                    label: "SEO",
+                    id: "tabs-with-pill-2",
+                    label: "Custom Built Website",
+                  },
+                  {
+                    id: "tabs-with-pill-3",
+                    label: (
+                      <>
+                        Custom Built Website and
+                        <br />
+                        Full Content Package
+                      </>
+                    ),
                   },
                 ].map((tab) => (
                   <li key={tab.id} className="w-full">
                     <button
                       onClick={() => handleTabClick(tab.id)}
-                      className={`group flex items-center justify-center gap-4 py-5 lg:py-9 px-6 bg-slate-200 rounded-2xl text-base font-medium text-gray-900 transition-all duration-500 w-full lg:w-56 hover:text-white hover:bg-gradient-to-tr from-indigo-600 to-violet-600 whitespace-nowrap mr-5 lg:mr-0 ${
+                      className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-9 px-6 bg-slate-200 rounded-2xl text-base font-medium text-gray-900 transition-all duration-500 w-full min-h-[120px] hover:text-white hover:bg-gradient-to-tr from-indigo-600 to-violet-600 ${
                         activeTab === tab.id
                           ? "bg-gradient-to-tr text-white"
                           : ""
@@ -62,7 +67,7 @@ export default function Services() {
                     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 flex justify-center">
                       <div className="max-w-screen-lg text-black sm:text-lg">
                         <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900">
-                          Custom Front-End Website
+                          Performance Optimization
                         </h2>
                         <p className="mb-4 font-light">
                           Track work across the enterprise through an open,
@@ -94,7 +99,7 @@ export default function Services() {
                     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 flex justify-center">
                       <div className="max-w-screen-lg text-black sm:text-lg">
                         <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900">
-                          Responsive Design
+                          Custom Built Website
                         </h2>
                         <p className="mb-4 font-light">
                           Track work across the enterprise through an open,
@@ -126,7 +131,7 @@ export default function Services() {
                     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 flex justify-center">
                       <div className="max-w-screen-lg text-black sm:text-lg">
                         <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900">
-                          Performance Optimization
+                          Custom Built Website and Full Content Package
                         </h2>
                         <p className="mb-4 font-light">
                           Track work across the enterprise through an open,
