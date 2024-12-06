@@ -2,14 +2,14 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="py-12 relative bg-slate-200 flex-grow">
+    <section className="pt-4 pb-20 relative bg-slate-200 flex-grow">
       <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         <div className="w-full flex-col justify-start items-start lg:gap-12 gap-10 inline-flex">
           {/* Header Section */}
           <div className="w-full flex-col justify-start items-center gap-3 flex">
-            <h2 className="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+            <h2 className="text-gray-900 text-4xl font-semibold font-manrope leading-normal lg:text-start text-center">
               Hello,{" "}
-              <span className="text-indigo-600 font-black">I’m Jacob.</span>
+              <span className="text-indigo-600 font-bold">I’m Jacob.</span>
             </h2>
             <p className="max-w-xl text-center text-gray-500 text-base font-normal leading-relaxed">
               As a Web Development Services We are Committed to Building Custom
