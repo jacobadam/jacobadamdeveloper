@@ -19,7 +19,7 @@ export default function NavBar() {
   }, []);
 
   const Brand = () => (
-    <div className="flex items-center justify-between py-5 md:block">
+    <div className="flex items-center justify-between pt-8 md:block">
       <Link to="/">
         <img src="/j-icon.svg" width={60} height={25} alt="J logo" />
       </Link>
