@@ -2,100 +2,89 @@ import React from "react";
 
 export default function Portfolio() {
   return (
-    <div>
-      {/* 
-      <section className="py-4 relative">
-        <div className="w-full max-w-7xl px-6 lg:px-8 mx-auto">
-          <div className="flex items-center justify-center flex-col gap-5 mb-14">
-            <span className="bg-indigo-50 text-indigo-500 text-xs font-medium px-3.5 py-1 rounded-full">
+    <section className="py-4 relative bg-slate-200 flex-grow">
+      <div className="w-full max-w-7xl px-6 lg:px-8 mx-auto">
+        <div className="flex items-center justify-between gap-5 flex-col mb-14">
+          <div className="block">
+            <h2 className="font-semibold text-2xl text-gray-900 mb-5 leading-snug text-center">
               Portfolio
-            </span>
-            <p className="text-lg font-normal text-gray-500 max-w-3xl mx-auto text-center">
-              In the world of architecture or organization, structure provides
-              the backbone for a purposeful and harmonious existence.
+            </h2>
+            <p className="font-normal text-base text-gray-500 max-w-3xl text-center">
+              Quam maecenas lacus cursus enim sit rhoncus eu pellentesque arcu.
+              Vehicula diam ornare habitant pellentesque. Molestie convallis
+              aliquet amet in tristique ornare commodo.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-14">
+        </div>
+        <div className="flex flex-col md:flex-row gap-8">
+          {[
+            {
+              imgSrc: "https://www.katieshevlin.com/hero-image.webp",
+              altText: "Content Services",
+              title: "Content Services",
+              description:
+                "Quam maecenas lacus cursus enim sit rhoncus eu pellentesque arcu Vehicula diam ornare habitant pellentesque. Molestie convallis, aliquet amet in tristique ornare commodo.",
+              url: "https://www.katieshevlin.com/",
+            },
+            {
+              imgSrc: "https://www.neilnevitt.com/homepage-image.webp",
+              altText: "Healthcare",
+              title: "Healthcare",
+              description:
+                "Quam maecenas lacus cursus enim sit rhoncus eu pellentesque arcu Vehicula diam ornare habitant pellentesque. Molestie convallis, aliquet amet in tristique ornare commodo.",
+              url: "https://www.neilnevitt.com/",
+            },
+          ].map(({ imgSrc, altText, title, description, url }, idx) => (
             <div
-              className="sm:col-span-2 bg-cover bg-center max-md:h-80 rounded-lg flex justify-end flex-col px-7 py-6"
-              style={{
-                backgroundImage:
-                  "url(https://pagedone.io/asset/uploads/1707712993.png)",
-              }}
+              key={idx}
+              className="relative md:w-[calc(50%-1rem)] lg:w-[calc(50%-2rem)] overflow-hidden group transition-all duration-700"
             >
-              <h6 className="font-medium text-xl leading-8 text-white mb-4">
-                Architecture Designer
-              </h6>
-              <p className="text-base font-normal text-white/70">
-                Where knowledge meets innovation, and success is sculpted
-                through a blend of skill and vision.
-              </p>
-            </div>
-            <div className="block">
               <img
-                src="https://pagedone.io/asset/uploads/1707713007.png"
-                alt="Building structure image"
-                className="w-full rounded-lg object-cover"
+                src={imgSrc}
+                alt={altText}
+                className="h-80 w-full object-cover relative z-0 filter brightness-70"
               />
+
+              {/* Hover overlay */}
+              <div className="absolute bottom-0 left-0 z-10 py-7 px-6 flex justify-between flex-col transition-all duration-500 transform translate-y-full group-hover:translate-y-0 group-hover:w-full group-hover:h-full group-hover:bg-black/50">
+                <div className="block">
+                  {/* Overlay title */}
+                  <h6 className="text-xl font-bold leading-8 text-white mb-5">
+                    {title}
+                  </h6>
+                  <p className="text-base font-normal text-gray-100 max-w-xl">
+                    {description}
+                  </p>
+                </div>
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer group flex items-center gap-2 text-base font-semibold text-white transition-all duration-500"
+                >
+                  View Portfolio
+                  <svg
+                    className="transition-all duration-500 group-hover:translate-x-1"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.25 9L14.25 9M10.5 13.5L14.4697 9.53033C14.7197 9.28033 14.8447 9.15533 14.8447 9C14.8447 8.84467 14.7197 8.71967 14.4697 8.46967L10.5 4.5"
+                      stroke="#FFF"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div className="block">
-              <img
-                src="https://pagedone.io/asset/uploads/1707713018.png"
-                alt="Building structure image"
-                className="w-full rounded-lg object-cover"
-              />
-            </div>
-            <div className="block">
-              <img
-                src="https://pagedone.io/asset/uploads/1707713032.png"
-                alt="Building structure image"
-                className="w-full rounded-lg object-cover"
-              />
-            </div>
-            <div
-              className="bg-cover rounded-lg max-sm:h-80 flex justify-start flex-col px-7 py-6"
-              style={{
-                backgroundImage:
-                  "url(https://pagedone.io/asset/uploads/1707713043.png)",
-              }}
-            >
-              <h6 className="font-medium text-xl leading-8 text-white mb-4">
-                Interior Designer
-              </h6>
-              <p className="text-base font-normal text-white/70">
-                Crafting exceptional interiors, where aesthetics meet
-                functionality for spaces that inspire and elevate.
-              </p>
-            </div>
-            <div className="block">
-              <img
-                src="https://pagedone.io/asset/uploads/1707713055.png"
-                alt="Building structure image"
-                className="w-full rounded-lg object-cover"
-              />
-            </div>
-            <div
-              className="bg-cover rounded-lg max-sm:h-80 flex justify-end flex-col px-7 py-6"
-              style={{
-                backgroundImage:
-                  "url(https://pagedone.io/asset/uploads/1707713066.png)",
-              }}
-            >
-              <h6 className="font-medium text-xl leading-8 text-white mb-4">
-                Business Building
-              </h6>
-              <p className="text-base font-normal text-white/70">
-                Architecting business success through innovation, resilience,
-                and strategic leadership.
-              </p>
-            </div>
-          </div>
-          {/* <button className="w-full rounded-lg py-4 px-6 text-center bg-indigo-100 text-lg font-medium text-indigo-600 transition-all duration-300 hover:text-white hover:bg-indigo-600">
-            Load More
-          </button>    
-           </div>
-      </section>
-      */}
-    </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
