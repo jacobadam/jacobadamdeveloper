@@ -11,7 +11,7 @@ export default function Services() {
     <section className="pt-4 pb-20 relative bg-slate-200 flex-grow">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 text-center">
-          <h2 className="text-gray-900 text-4xl font-semibold font-manrope leading-snug pb-5">
+          <h2 className="text-gray-900 text-2xl font-semibold leading-snug pb-5">
             Services
           </h2>
         </div>
