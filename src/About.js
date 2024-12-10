@@ -7,7 +7,7 @@ export default function About() {
         <div className="w-full flex-col justify-start items-start lg:gap-12 gap-10 inline-flex">
           {/* Header Section */}
           <div className="w-full flex-col justify-start items-center gap-3 flex">
-            <h2 className="text-gray-900 text-4xl font-semibold font-manrope leading-normal lg:text-start text-center">
+            <h2 className="text-gray-900 text-4xl font-semibold leading-normal lg:text-start text-center">
               Hello,{" "}
               <span className="text-indigo-600 font-bold">I’m Jacob.</span>
             </h2>
