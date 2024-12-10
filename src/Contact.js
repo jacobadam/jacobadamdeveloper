@@ -6,10 +6,10 @@ export default function Contact() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:items-start items-center lg:justify-start justify-center">
           <div className="flex flex-col items-center text-center px-4 sm:px-6">
-            <h2 className="text-gray-900 text-4xl font-semibold font-manrope leading-snug pb-5">
+            <h2 className="text-gray-900 text-2xl font-semibold leading-snug pb-5">
               Contact Us
             </h2>
-            <p className="text-gray-600 text-lg font-normal pb-6">
+            <p className="text-gray-600 text-md font-normal pb-6">
               This is your gateway to connect with us directly. Whether you have
               inquiries, feedback, or simply want to say hello.
             </p>
