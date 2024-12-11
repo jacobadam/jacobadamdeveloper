@@ -49,7 +49,7 @@ export default function Services() {
                   <li key={tab.id} className="w-full">
                     <button
                       onClick={() => handleTabClick(tab.id)}
-                      className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-9 px-6 bg-slate-200 rounded-2xl text-base font-medium text-gray-900 transition-all duration-500 w-full sm:min-h-[120px] hover:text-white hover:bg-gradient-to-tr from-indigo-600 to-violet-600 ${
+                      className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-0 px-6 bg-slate-200 rounded-2xl text-base font-medium text-gray-900 transition-all duration-500 w-full sm:min-h-[110px] hover:text-white hover:bg-gradient-to-tr from-indigo-600 to-violet-600 ${
                         activeTab === tab.id
                           ? "bg-gradient-to-tr text-white"
                           : ""
