@@ -43,7 +43,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold transition-all duration-500"
                 >
                   Home
                 </Link>
@@ -51,7 +51,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/about"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   About
                 </Link>
@@ -59,7 +59,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Services
                 </Link>
@@ -67,7 +67,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/portfolio"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Portfolio
                 </Link>
@@ -75,7 +75,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Contact
                 </Link>
@@ -112,7 +112,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Home
                 </Link>
@@ -120,7 +120,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/about"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   About
                 </Link>
@@ -128,7 +128,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Services
                 </Link>
@@ -136,7 +136,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/portfolio"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Portfolio
                 </Link>
@@ -144,7 +144,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Contact
                 </Link>
