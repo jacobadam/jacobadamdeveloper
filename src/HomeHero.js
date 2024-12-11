@@ -1,7 +1,7 @@
 export default function HomepageHero() {
   return (
-    <section className="bg-slate-200">
-      <div className="max-w-screen-xl mx-auto px-4 pt-8 pb-20 md:py-16 lg:pt-4 lg:pb-44 xl:pt-28 xl:pb-56 2xl:pb-72 2xl:pt-32 text-gray-600 overflow-hidden md:px-8 flex flex-col lg:flex-row">
+    <section className="h-screen sm:pb-20 bg-slate-200">
+      <div className="h-full flex flex-col lg:flex-row items-center justify-center relative max-w-screen-xl mx-auto text-gray-600 overflow-hidden px-4 md:px-8">
         {/* Text Section */}
         <div className="flex flex-col items-center justify-center px-4 text-center md:max-w-xl mx-auto">
           <h1 className="text-2xl xxs:text-4xl text-gray-800 font-extrabold sm:text-5xl">
