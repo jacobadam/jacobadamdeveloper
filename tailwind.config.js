@@ -14,6 +14,7 @@ const tailwindConfig = {
       xxxs: "378px",
       xxs: "424px",
       xs: "540px",
+      ms: "720px",
       ...defaultTheme.screens,
     },
     extend: {

@@ -21,7 +21,7 @@ export default function About() {
           <div className="justify-start items-center lg:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
             {/* Image Section */}
             <img
-              className="lg:w-full mx-auto lg:h-full rounded-3xl object-cover"
+              className="mx-auto w-60 h-60 ms:w-96 ms:h-96 md:w-full md:h-full rounded-full object-cover aspect-square"
               src="/jacobadam.webp"
               alt="Jacob Adam"
             />
@@ -29,14 +29,14 @@ export default function About() {
             {/* Text Content Section */}
             <div className="flex-col justify-center lg:items-start items-center gap-10 inline-flex">
               <div className="flex-col justify-center items-start gap-3 flex">
-                <p className="text-gray-500 text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center">
+                <p className="text-gray-500 text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-8 md:px-0">
                   At our web development agency, we specialize in crafting
                   bespoke online solutions tailored to elevate businesses toward
                   their digital objectives. Committed to continuous evolution,
                   we remain abreast of cutting-edge web technologies and trends,
                   ensuring a constant delivery of unparalleled excellence.
                 </p>
-                <p className="text-gray-500 text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center">
+                <p className="text-gray-500 text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-8 md:px-0">
                   Our ethos is rooted in equipping clients with the essential
                   tools for triumph in the digital realm. Committed to
                   continuous evolution, we remain abreast of cutting-edge web
