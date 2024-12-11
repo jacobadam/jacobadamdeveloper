@@ -2,16 +2,16 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="pt-4 pb-20 relative bg-slate-200 flex-grow">
+    <section className="pt-4 xs:pt-8 lg:pt-12 pb-20 relative bg-slate-200 flex-grow">
       <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         <div className="w-full flex-col justify-start items-start lg:gap-12 gap-10 inline-flex">
           {/* Header Section */}
           <div className="w-full flex-col justify-start items-center gap-3 flex">
-            <h2 className="text-gray-900 text-4xl font-semibold leading-normal lg:text-start text-center">
+            <h2 className="text-gray-900 text-2xl lg:text-4xl font-semibold leading-normal lg:text-start text-center">
               Hello,{" "}
               <span className="text-indigo-600 font-bold">I’m Jacob.</span>
             </h2>
-            <p className="max-w-xl text-center text-gray-500 text-base font-normal leading-relaxed">
+            <p className="max-w-xl text-center text-gray-500 text-sm lg:text-base font-normal leading-relaxed">
               As a Web Development Services We are Committed to Building Custom
               Web Solutions that Drive Business Success.
             </p>
@@ -22,21 +22,21 @@ export default function About() {
             {/* Image Section */}
             <img
               className="lg:w-full mx-auto lg:h-full rounded-3xl object-cover"
-              src="/jacobadam.png"
+              src="/jacobadam.webp"
               alt="Jacob Adam"
             />
 
             {/* Text Content Section */}
             <div className="flex-col justify-center lg:items-start items-center gap-10 inline-flex">
               <div className="flex-col justify-center items-start gap-3 flex">
-                <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                <p className="text-gray-500 text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center">
                   At our web development agency, we specialize in crafting
                   bespoke online solutions tailored to elevate businesses toward
                   their digital objectives. Committed to continuous evolution,
                   we remain abreast of cutting-edge web technologies and trends,
                   ensuring a constant delivery of unparalleled excellence.
                 </p>
-                <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                <p className="text-gray-500 text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center">
                   Our ethos is rooted in equipping clients with the essential
                   tools for triumph in the digital realm. Committed to
                   continuous evolution, we remain abreast of cutting-edge web
