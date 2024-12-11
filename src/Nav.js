@@ -2,109 +2,157 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
-  const [state, setState] = useState(false);
-  const navigation = [
-    { title: "Home", path: "/" },
-    { title: "About", path: "/about" },
-    { title: "Services", path: "/services" },
-    { title: "Portfolio", path: "/portfolio" },
-    { title: "Contact", path: "/contact" },
-  ];
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    document.onclick = (e) => {
-      const target = e.target;
-      if (!target.closest(".menu-btn")) setState(false);
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
     };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const Brand = () => (
-    <div className="flex items-center justify-between pt-8 md:block">
-      <Link to="/">
-        <img src="/j-icon.svg" width={60} height={25} alt="J logo" />
-      </Link>
-      <div className="md:hidden">
-        <button
-          className="menu-btn text-gray-500 hover:text-gray-800"
-          onClick={() => setState(!state)}
-          aria-label={state ? "Close menu" : "Open menu"}
-          aria-expanded={state ? "true" : "false"}
-          aria-controls="mobile-nav"
-        >
-          {state ? (
+  const toggleMenu = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
+  return (
+    <nav
+      className={`sticky top-0 z-10 py-3 border-b border-solid border-prime-gray-200 w-full transition-colors duration-300 ${
+        isScrolled
+          ? "bg-white shadow-lg"
+          : "bg-gradient-to-b from-white to-[#e2e8f0]"
+      }`}
+    >
+      <div className="container mx-auto">
+        <div className="w-full flex items-center justify-between">
+          <div className="flex-shrink-0">
+            <Link to="/">
+              <img src="/j-icon.svg" width={60} height={25} alt="J logo" />
+            </Link>
+          </div>
+
+          <div className="hidden lg:flex w-full justify-center">
+            <ul className="flex items-center space-x-6">
+              <li>
+                <Link
+                  to="/"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/portfolio"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-label="Toggle navigation"
+            onClick={toggleMenu}
+          >
+            <span className="sr-only">Open main menu</span>
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              viewBox="0 0 20 20"
+              className="w-6 h-6"
+              aria-hidden="true"
               fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 fillRule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                 clipRule="evenodd"
-              />
+              ></path>
             </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          )}
-        </button>
-      </div>
-    </div>
-  );
+          </button>
+        </div>
 
-  return (
-    <header>
-      <div className={`md:hidden ${state ? "mx-2 pb-5" : "hidden"}`}>
-        <Brand />
-      </div>
-      <nav
-        className={`pb-5 md:text-sm ${
-          state
-            ? "absolute top-0 inset-x-0 shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-0 md:mt-0 md:relative"
-            : ""
-        }`}
-        role="navigation"
-        id="mobile-nav"
-        style={{
-          background: "linear-gradient(to bottom, white, #e2e8f0)",
-          zIndex: 1000,
-        }}
-      >
-        <div className="items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
-          <Brand />
-          <div
-            className={`flex-1 items-center mt-8 md:mt-0 md:flex ${
-              state ? "block" : "hidden"
-            } `}
-          >
-            <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-              {navigation.map((item, idx) => (
-                <li
-                  key={idx}
-                  className="text-gray-700 hover:text-gray-900 font-semibold hover:font-bold"
+        {isMenuOpen && (
+          <div className="lg:hidden">
+            <ul className="flex flex-col items-left pl-8 space-y-4 py-4">
+              <li>
+                <Link
+                  to="/"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
                 >
-                  <Link to={item.path} className="block">
-                    {item.title}
-                  </Link>
-                </li>
-              ))}
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/portfolio"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
-        </div>
-      </nav>
-    </header>
+        )}
+      </div>
+    </nav>
   );
 }
