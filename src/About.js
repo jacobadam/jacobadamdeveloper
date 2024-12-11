@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="pt-4 xs:pt-8 lg:pt-12 pb-20 relative bg-slate-200 flex-grow">
+    <section className="pt-4 xs:pt-8 pb-20 relative bg-slate-200 flex-grow">
       <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         <div className="w-full flex-col justify-start items-start lg:gap-12 gap-10 inline-flex">
           {/* Header Section */}
