@@ -16,9 +16,9 @@ export default function Services() {
               Services
             </h2>
             <p className="font-normal text-base text-gray-500 max-w-3xl text-center">
-              Quam maecenas lacus cursus enim sit rhoncus eu pellentesque arcu.
-              Vehicula diam ornare habitant pellentesque. Molestie convallis
-              aliquet amet in tristique ornare commodo.
+              Ready to launch your small business online but feeling
+              overwhelmed? I simplify the process, helping you focus on what
+              matters to get your website up and running.
             </p>
           </div>
         </div>
@@ -77,19 +77,20 @@ export default function Services() {
                           Performance Optimization
                         </h2>
                         <p className="mb-4 font-light">
-                          Track work across the enterprise through an open,
-                          collaborative platform. Link issues across Jira and
-                          ingest data from other software development tools, so
-                          your IT support and operations teams have richer
-                          contextual information to rapidly respond to requests,
-                          incidents, and changes.
+                          I start with a full assessment of your current website
+                          to identify areas for improvement. During a detailed
+                          feedback session, I’ll gather your specific
+                          requirements and implement the requested changes to
+                          enhance your site’s performance. This service includes
+                          one review to ensure everything meets your
+                          expectations.
                         </p>
-                        <p className="mb-4 font-medium">
+                        {/* <p className="mb-4 font-medium">
                           Deliver great service experiences fast - without the
                           complexity of traditional ITSM solutions. Accelerate
                           critical development work, eliminate toil, and deploy
                           changes with ease.
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </section>
@@ -109,19 +110,19 @@ export default function Services() {
                           Custom Built Website
                         </h2>
                         <p className="mb-4 font-light">
-                          Track work across the enterprise through an open,
-                          collaborative platform. Link issues across Jira and
-                          ingest data from other software development tools, so
-                          your IT support and operations teams have richer
-                          contextual information to rapidly respond to requests,
-                          incidents, and changes.
+                          I’ll work closely with you to understand your vision
+                          and requirements during a comprehensive feedback
+                          session. From there, I’ll create a fully customized
+                          website with up to five pages, tailored to your needs.
+                          This package includes two reviews for refinements and
+                          a focus on driving SEO to help your site stand out.
                         </p>
-                        <p className="mb-4 font-medium">
+                        {/* <p className="mb-4 font-medium">
                           Deliver great service experiences fast - without the
                           complexity of traditional ITSM solutions. Accelerate
                           critical development work, eliminate toil, and deploy
                           changes with ease.
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </section>
@@ -141,19 +142,21 @@ export default function Services() {
                           Custom Built Website and Full Content Package
                         </h2>
                         <p className="mb-4 font-light">
-                          Track work across the enterprise through an open,
-                          collaborative platform. Link issues across Jira and
-                          ingest data from other software development tools, so
-                          your IT support and operations teams have richer
-                          contextual information to rapidly respond to requests,
-                          incidents, and changes.
+                          This comprehensive package includes everything in the
+                          Custom Built Website service, plus professionally
+                          crafted copy for every page. After gathering your
+                          requirements and conducting a feedback session, I’ll
+                          design a website with up to five pages, optimize it
+                          for SEO, and provide content that captures your
+                          message effectively. Two reviews are included to
+                          ensure the final product is perfect.
                         </p>
-                        <p className="mb-4 font-medium">
+                        {/* <p className="mb-4 font-medium">
                           Deliver great service experiences fast - without the
                           complexity of traditional ITSM solutions. Accelerate
                           critical development work, eliminate toil, and deploy
                           changes with ease.
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </section>
