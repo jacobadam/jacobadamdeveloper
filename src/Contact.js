@@ -51,7 +51,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/jacobnevitt/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-gray-900 transition-all duration-500 hover:text-indigo-600"
+                className="block text-gray-900 transition-all duration-50"
               >
                 <img
                   src="/linkedin.svg"
@@ -62,7 +62,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div>
+          <div className="p-4 rounded-lg border shadow-2xl">
             <form action="" method="POST" className="space-y-4">
               <div>
                 <label htmlFor="name" className="text-gray-900">
