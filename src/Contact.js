@@ -13,7 +13,7 @@ export default function Contact() {
               This is your gateway to connect with us directly. Whether you have
               inquiries, feedback, or simply want to say hello.
             </p>
-            <div className="py-6 border-y border-stone-300 text-center">
+            <div className="py-6 border-t border-stone-300 text-center">
               <div className="flex items-center gap-4">
                 <div className="rounded-lg p-3">
                   <img
@@ -45,7 +45,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-
+            {/* 
             <div className="flex justify-center items-center mb-10 mt-6">
               <a
                 href="https://www.linkedin.com/in/jacobnevitt/"
@@ -59,14 +59,30 @@ export default function Contact() {
                   className="w-8 h-8"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="p-4 rounded-lg border shadow-2xl">
             <form action="" method="POST" className="space-y-4">
               <div>
-                <label htmlFor="name" className="text-gray-900">
-                  Name
+                <label
+                  htmlFor="email"
+                  className="flex items-center mb-2 text-gray-900"
+                >
+                  Name{" "}
+                  <svg
+                    width="7"
+                    height="7"
+                    className="ml-1"
+                    viewBox="0 0 7 7"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                      fill="#EF4444"
+                    />
+                  </svg>
                 </label>
                 <input
                   type="text"
@@ -76,8 +92,24 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="text-gray-900">
-                  Email
+                <label
+                  htmlFor="email"
+                  className="flex items-center mb-2 text-gray-900"
+                >
+                  Email{" "}
+                  <svg
+                    width="7"
+                    height="7"
+                    className="ml-1"
+                    viewBox="0 0 7 7"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                      fill="#EF4444"
+                    />
+                  </svg>
                 </label>
                 <input
                   type="email"
@@ -87,8 +119,24 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="text-gray-900">
-                  Message
+                <label
+                  htmlFor="email"
+                  className="flex items-center mb-2 text-gray-900"
+                >
+                  Message{" "}
+                  <svg
+                    width="7"
+                    height="7"
+                    className="ml-1"
+                    viewBox="0 0 7 7"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                      fill="#EF4444"
+                    />
+                  </svg>
                 </label>
                 <textarea
                   id="message"
