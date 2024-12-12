@@ -18,10 +18,10 @@ export default function About() {
           </div>
 
           {/* Content Section */}
-          <div className="justify-start items-center lg:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
+          <div className="justify-start items-center lg:gap-8 grid lg:grid-cols-2 grid-cols-1">
             {/* Image Section */}
             <img
-              className="mx-auto w-60 h-60 ms:w-96 ms:h-96 md:w-full md:h-full rounded-full object-cover aspect-square"
+              className="mx-auto w-60 h-60 ms:w-96 ms:h-96 md:w-120 md:h-120 rounded-full object-cover aspect-square"
               src="/jacobadam.webp"
               alt="Jacob Adam"
             />
