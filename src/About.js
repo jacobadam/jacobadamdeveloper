@@ -29,22 +29,19 @@ export default function About() {
             {/* Text Content Section */}
             <div className="flex-col justify-center lg:items-start items-center gap-10 inline-flex">
               <div className="flex-col justify-center items-start gap-3 flex">
-                <p className="text-gray-500 text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-8 md:px-0">
-                  At our web development agency, we specialize in crafting
-                  bespoke online solutions tailored to elevate businesses toward
-                  their digital objectives. Committed to continuous evolution,
-                  we remain abreast of cutting-edge web technologies and trends,
-                  ensuring a constant delivery of unparalleled excellence.
+                <p className="text-gray-900 text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-8 md:px-0">
+                  I am a front-end software engineer & a freelance web
+                  developer, currently living in Nelson, BC. I have previously
+                  worked at SpareRoom, the UK's largest property rental website.
+                  I then spent 3 years working as a software developer at
+                  Article, one of Canada's fastest-growing eCommerce companies.
                 </p>
-                <p className="text-gray-500 text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-8 md:px-0">
-                  Our ethos is rooted in equipping clients with the essential
-                  tools for triumph in the digital realm. Committed to
-                  continuous evolution, we remain abreast of cutting-edge web
-                  technologies and trends, ensuring a constant delivery of
-                  unparalleled excellence. We firmly believe in furnishing every
-                  business with a digital presence that authentically embodies
-                  their brand essence and effectively resonates with their
-                  target demographic.
+                <p className="text-gray-900 text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-8 md:px-0">
+                  Having grown up in Liverpool, U.K, I have lived in many places
+                  including London, New York, Vancouver and Sayulita. In my
+                  freetime I like to run, watch as many of the Criterian
+                  collection as possible, play any and all videogames from the
+                  90's and most recently learnt to ski.
                 </p>
               </div>
 
