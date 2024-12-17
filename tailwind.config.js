@@ -22,6 +22,7 @@ const tailwindConfig = {
     },
   },
   plugins: [],
+  darkMode: ["class", '[data-theme="dark"]'],
 };
 
 export default tailwindConfig;
