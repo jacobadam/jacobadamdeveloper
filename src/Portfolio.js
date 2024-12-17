@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Portfolio() {
   return (
-    <section className="pt-4 xs:pt-8 pb-20 relative bg-slate-200 flex-grow">
+    <section className="pt-4 xs:pt-8 pb-20 relative bg-slate-200 dark:bg-slate-900 flex-grow">
       <div className="w-full max-w-7xl px-6 lg:px-8 mx-auto">
         <div className="mb-8 text-center">
           <div className="flex items-center justify-between gap-5 flex-col mb-14">
-            <h2 className="text-gray-900 text-2xl lg:text-3xl font-semibold leading-snug">
+            <h2 className="text-gray-900 dark:text-white text-2xl lg:text-3xl font-semibold leading-snug">
               Portfolio
             </h2>
-            <p className="font-normal text-base text-gray-500 max-w-3xl text-center">
+            <p className="font-normal text-base text-gray-600 dark:text-white max-w-3xl text-center">
               Quam maecenas lacus cursus enim sit rhoncus eu pellentesque arcu.
               Vehicula diam ornare habitant pellentesque. Molestie convallis
               aliquet amet in tristique ornare commodo.
