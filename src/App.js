@@ -8,11 +8,13 @@ import About from "./About";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import RedirectHandler from "./RedirectHandler.js";
 
 export default function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
+        <RedirectHandler />
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
