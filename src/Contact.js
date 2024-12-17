@@ -27,14 +27,14 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-16 bg-slate-200 flex-grow">
+    <section className="py-16 bg-slate-200 dark:bg-slate-900 flex-grow">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:items-start items-center lg:justify-start justify-center">
           <div className="flex flex-col items-center text-center px-4 sm:px-6">
-            <h2 className="text-gray-900 text-2xl font-semibold leading-snug pb-5">
+            <h2 className="text-gray-900 dark:text-white text-2xl font-semibold leading-snug pb-5">
               Contact Us
             </h2>
-            <p className="text-gray-600 text-md font-normal pb-6">
+            <p className="text-gray-900 dark:text-white text-md font-normal pb-6">
               This is your gateway to connect with us directly. Whether you have
               inquiries, feedback, or simply want to say hello.
             </p>
@@ -44,12 +44,14 @@ export default function Contact() {
                   <img
                     src="/email.svg"
                     alt="Email Icon"
-                    className="w-6 h-6 object-contain"
+                    className="w-6 h-6 object-contain dark:invert"
                   />
                 </div>
                 <div className="flex flex-col items-center w-full">
-                  <h6 className="text-gray-900 text-sm font-medium">Email</h6>
-                  <p className="text-gray-700 text-xs font-normal text-center">
+                  <h6 className="text-gray-900 dark:text-white text-sm font-medium">
+                    Email
+                  </h6>
+                  <p className="text-gray-700 dark:text-white text-xs font-normal text-center">
                     jacobadamdeveloper@gmail.com
                   </p>
                 </div>
@@ -59,12 +61,14 @@ export default function Contact() {
                   <img
                     src="/phone.svg"
                     alt="Phone Icon"
-                    className="w-6 h-6 object-contain"
+                    className="w-6 h-6 object-contain dark:invert"
                   />
                 </div>
                 <div className="flex flex-col items-center w-full">
-                  <h6 className="text-gray-900 text-sm font-medium">Contact</h6>
-                  <p className="text-gray-700 text-xs font-normal text-center">
+                  <h6 className="text-gray-900 dark:text-white text-sm font-medium">
+                    Contact
+                  </h6>
+                  <p className="text-gray-700 dark:text-white text-xs font-normal text-center">
                     (+1) 236-885-4130
                   </p>
                 </div>
@@ -87,7 +91,7 @@ export default function Contact() {
             </div> */}
           </div>
 
-          <div className="p-4 rounded-lg border shadow-2xl">
+          <div className="p-4 rounded-lg">
             {messageSent && (
               <p
                 className="text-center text-indigo-600 text-xl font-bold"
@@ -105,7 +109,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="name"
-                  className="flex items-center mb-2 text-gray-900"
+                  className="flex items-center mb-2 text-gray-900 dark:text-white"
                 >
                   Name{" "}
                   <svg
@@ -134,7 +138,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email"
-                  className="flex items-center mb-2 text-gray-900"
+                  className="flex items-center mb-2 text-gray-900 dark:text-white"
                 >
                   Email{" "}
                   <svg
@@ -162,7 +166,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="flex items-center mb-2 text-gray-900"
+                  className="flex items-center mb-2 text-gray-900 dark:text-white"
                 >
                   Message{" "}
                   <svg
