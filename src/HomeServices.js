@@ -5,25 +5,25 @@ const services = [
     title: "Custom Front-End Website",
     description:
       "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
-    svgPath: "/custom-website4.svg",
+    svgPath: "/custom-website2.svg",
   },
   {
     title: "Responsive Design",
     description:
       "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
-    svgPath: "/responsive-design2.svg",
+    svgPath: "/responsive-design.svg",
   },
   {
     title: "Performance Optimization",
     description:
       "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
-    svgPath: "/performance-optimization2.svg",
+    svgPath: "/performance-optimization.svg",
   },
   {
     title: "Search Engine Optimization",
     description:
       "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
-    svgPath: "/seo2.svg",
+    svgPath: "/seo.svg",
   },
 ];
 

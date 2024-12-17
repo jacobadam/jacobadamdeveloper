@@ -42,7 +42,7 @@ export default function Contact() {
               <div className="flex items-center gap-4">
                 <div className="rounded-lg p-3">
                   <img
-                    src="/email2.svg"
+                    src="/email.svg"
                     alt="Email Icon"
                     className="w-6 h-6 object-contain"
                   />
@@ -57,7 +57,7 @@ export default function Contact() {
               <div className="flex items-center gap-4 mt-8">
                 <div className="rounded-lg p-3">
                   <img
-                    src="/phone2.svg"
+                    src="/phone.svg"
                     alt="Phone Icon"
                     className="w-6 h-6 object-contain"
                   />
