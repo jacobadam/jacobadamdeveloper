@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import DarkModeToggle from "./DarkModeToggle";
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,13 +27,13 @@ export default function NavBar() {
     <nav
       className={`sticky top-0 z-10 py-3 w-full transition-colors duration-300 ${
         isScrolled
-          ? "bg-white shadow-lg"
-          : "bg-gradient-to-b from-white to-[#e2e8f0]"
+          ? "bg-white dark:bg-black shadow-lg"
+          : "bg-gradient-to-b from-white dark:from-current to-[#e2e8f0] dark:to-[black]"
       }`}
     >
       <div className="container mx-auto">
         <div className="w-full flex items-center justify-between">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 dark:invert">
             <Link to="/">
               <img src="/j-icon.svg" width={60} height={25} alt="J logo" />
             </Link>
@@ -43,7 +44,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold transition-all duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold transition-all duration-500"
                 >
                   Home
                 </Link>
@@ -51,7 +52,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/about"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   About
                 </Link>
@@ -59,7 +60,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Services
                 </Link>
@@ -67,7 +68,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/portfolio"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Portfolio
                 </Link>
@@ -75,7 +76,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Contact
                 </Link>
@@ -85,7 +86,7 @@ export default function NavBar() {
 
           <button
             type="button"
-            className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className="inline-flex items-center p-2 ml-3 text-sm text-black dark:text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-label="Toggle navigation"
             onClick={toggleMenu}
           >
@@ -104,6 +105,7 @@ export default function NavBar() {
               ></path>
             </svg>
           </button>
+          <DarkModeToggle />
         </div>
 
         {isMenuOpen && (
@@ -112,7 +114,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Home
                 </Link>
@@ -120,7 +122,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/about"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   About
                 </Link>
@@ -128,7 +130,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Services
                 </Link>
@@ -136,7 +138,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/portfolio"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Portfolio
                 </Link>
@@ -144,7 +146,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                 >
                   Contact
                 </Link>
