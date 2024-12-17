@@ -29,12 +29,14 @@ const services = [
 
 export default function HomeServices() {
   return (
-    <section className="flex items-center justify-center">
+    <section className="flex items-center justify-center dark:bg-black">
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-            <h2 className="text-2xl font-bold mb-2">Our Services</h2>
-            <p className="text-gray-400 text-center leading-relaxed">
+            <h2 className="text-2xl font-bold mb-2 dark:text-white">
+              Our Services
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 text-center leading-relaxed">
               Discover a range of tailored solutions designed to meet your
               needs, from custom front-end websites to performance and SEO
               optimization.
@@ -62,13 +64,15 @@ export default function HomeServices() {
                 <div className="flex flex-col items-center text-center sm:text-left sm:items-start">
                   <div className="inline-block rounded-lg p-2">
                     <img
-                      className="w-11 h-11 object-contain"
+                      className="w-11 h-11 object-contain bg-white p-1 rounded"
                       src={service.svgPath}
                       alt={service.title}
                     />
                   </div>
-                  <h3 className="mt-2 font-bold">{service.title}</h3>
-                  <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                  <h3 className="mt-2 font-bold dark:text-white">
+                    {service.title}
+                  </h3>
+                  <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600 dark:sm:text-gray-400">
                     {service.description}
                   </p>
                 </div>
