@@ -25,7 +25,7 @@ const DarkModeToggle = () => {
       <img
         src="/dark-mode-toggle.svg"
         alt="Dark mode toggle"
-        className="w-12 h-12 invert-0 dark:invert"
+        className="w-8 h-8 lg:w-9 lg:h-9 invert-0 dark:invert"
       />
     </button>
   );
