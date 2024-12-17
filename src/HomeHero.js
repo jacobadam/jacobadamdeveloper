@@ -1,13 +1,13 @@
 export default function HomepageHero() {
   return (
-    <section className="h-screen sm:pb-20 bg-slate-200">
+    <section className="h-screen sm:pb-20 bg-slate-200 dark:bg-black">
       <div className="h-full flex flex-col lg:flex-row items-center justify-center relative max-w-screen-xl mx-auto text-gray-600 overflow-hidden px-4 md:px-8">
         {/* Text Section */}
         <div className="flex flex-col items-center justify-center px-4 text-center md:max-w-xl mx-auto">
-          <h1 className="text-2xl xxs:text-4xl text-gray-800 font-extrabold sm:text-5xl">
+          <h1 className="text-2xl xxs:text-4xl text-gray-800 dark:text-white font-extrabold sm:text-5xl">
             Designing and Building Websites for Your Needs
           </h1>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-gray-600 dark:text-white">
             Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ipsa quae.
           </p>
@@ -29,7 +29,7 @@ export default function HomepageHero() {
             </a>
             <a
               href="/contact"
-              className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-gray-700 xxxs:border-black xxxs:border xxxs:rounded-full duration-150 font-semibold text-nowrap"
+              className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-gray-700 xxxs:border-black xxxs:border xxxs:rounded-full duration-150 font-semibold text-nowrap dark:text-white dark:border-indigo-600"
               aria-label="Get in touch"
             >
               Get in touch
