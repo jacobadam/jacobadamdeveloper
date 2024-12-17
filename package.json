@@ -9,6 +9,7 @@
     "@babel/plugin-transform-numeric-separator": "^7.25.9",
     "@babel/plugin-transform-private-methods": "^7.25.9",
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",
+    "@emailjs/browser": "^4.4.1",
     "@eslint/config-array": "^0.19.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@testing-library/jest-dom": "^5.17.0",

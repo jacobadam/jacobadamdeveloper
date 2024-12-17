@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("contact_service", "contact_form", form.current, {
+        publicKey: "ojNtN4lneN6w9tjlE",
+      })
+      .then(
+        () => {
+          console.log("Success!");
+          setMessageSent(true);
+          setTimeout(() => setMessageSent(false), 5000);
+        },
+        (error) => {
+          console.log("Failed...", error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <section className="py-16 bg-slate-200 flex-grow">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -63,10 +88,23 @@ export default function Contact() {
           </div>
 
           <div className="p-4 rounded-lg border shadow-2xl">
-            <form action="" method="POST" className="space-y-4">
+            {messageSent && (
+              <p
+                className="text-center text-indigo-600 text-xl font-bold"
+                aria-live="polite"
+              >
+                Message sent!
+              </p>
+            )}
+            <form
+              className="space-y-4"
+              ref={form}
+              onSubmit={sendEmail}
+              aria-labelledby="contact-form"
+            >
               <div>
                 <label
-                  htmlFor="email"
+                  htmlFor="name"
                   className="flex items-center mb-2 text-gray-900"
                 >
                   Name{" "}
@@ -85,9 +123,11 @@ export default function Contact() {
                   </svg>
                 </label>
                 <input
-                  type="text"
                   id="name"
+                  type="text"
                   name="name"
+                  required
+                  aria-required="true"
                   className="w-full border rounded-md px-4 py-2"
                 />
               </div>
@@ -115,12 +155,13 @@ export default function Contact() {
                   type="email"
                   id="email"
                   name="email"
+                  required
                   className="w-full border rounded-md px-4 py-2"
                 />
               </div>
               <div>
                 <label
-                  htmlFor="email"
+                  htmlFor="message"
                   className="flex items-center mb-2 text-gray-900"
                 >
                   Message{" "}
@@ -141,12 +182,15 @@ export default function Contact() {
                 <textarea
                   id="message"
                   name="message"
+                  type="text"
+                  required
                   rows="4"
                   className="w-full border rounded-md px-4 py-2"
                 ></textarea>
               </div>
               <button
                 type="submit"
+                value="Send"
                 className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-md"
               >
                 Submit

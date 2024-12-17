@@ -1,13 +1,29 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function HomeContact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log("Form Submitted", { name, email, message });
+
+    emailjs
+      .sendForm("contact_service", "contact_form", form.current, {
+        publicKey: "ojNtN4lneN6w9tjlE",
+      })
+      .then(
+        () => {
+          console.log("Success!");
+          setMessageSent(true);
+          setTimeout(() => setMessageSent(false), 5000);
+        },
+        (error) => {
+          console.log("Failed...", error.text);
+        }
+      );
+
+    e.target.reset();
   };
 
   return (
@@ -20,9 +36,26 @@ export default function HomeContact() {
           </p> */}
 
       {/* Form */}
-      <form onSubmit={handleSubmit} className="w-full max-w-lg p-6">
+
+      {messageSent && (
+        <p
+          className="text-center text-indigo-600 text-xl font-bold"
+          aria-live="polite"
+        >
+          Message sent!
+        </p>
+      )}
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        aria-labelledby="contact-form"
+        className="w-full max-w-lg p-6"
+      >
         <div className="relative mb-6">
-          <label className="flex items-center mb-2 text-gray-600 text-sm font-medium">
+          <label
+            htmlFor="name"
+            className="flex items-center mb-2 text-gray-600 text-sm font-medium"
+          >
             Name
             <svg
               width="7"
@@ -41,15 +74,18 @@ export default function HomeContact() {
           <input
             type="text"
             id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-full placeholder-gray-400 focus:outline-none"
+            name="name"
             required
+            aria-required="true"
+            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-full placeholder-gray-400 focus:outline-none"
           />
         </div>
 
         <div className="relative mb-6">
-          <label className="flex items-center mb-2 text-gray-600 text-sm font-medium">
+          <label
+            htmlFor="email"
+            className="flex items-center mb-2 text-gray-600 text-sm font-medium"
+          >
             Email
             <svg
               width="7"
@@ -68,15 +104,17 @@ export default function HomeContact() {
           <input
             type="email"
             id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-full placeholder-gray-400 focus:outline-none"
+            name="email"
             required
+            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-full placeholder-gray-400 focus:outline-none"
           />
         </div>
 
         <div className="relative mb-6">
-          <label className="flex items-center mb-2 text-gray-600 text-sm font-medium">
+          <label
+            htmlFor="message"
+            className="flex items-center mb-2 text-gray-600 text-sm font-medium"
+          >
             Message
             <svg
               width="7"
@@ -94,13 +132,14 @@ export default function HomeContact() {
           </label>
           <textarea
             className="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-2xl placeholder-gray-400 focus:outline-none resize-none"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            type="text"
+            required
           />
         </div>
 
         <button
           type="submit"
+          value="Send"
           className="w-full sm:w-32 py-2 flex items-center justify-center gap-x-1 text-white font-medium bg-indigo-600 duration-150 rounded-full mt-4 text-nowrap"
         >
           Submit
