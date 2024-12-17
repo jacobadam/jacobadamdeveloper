@@ -27,9 +27,11 @@ export default function HomeContact() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-slate-200">
+    <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-slate-200 dark:bg-slate-900">
       {/* Header Section */}
-      <h2 className="text-2xl font-bold text-cente pt-8">Contact</h2>
+      <h2 className="text-2xl font-bold text-center pt-8 dark:text-white">
+        Contact
+      </h2>
       {/* <p className="text-gray-400 text-sm text-center leading-relaxed">
             Discover a range of tailored solutions designed to meet your needs,
             from custom front-end websites to performance and SEO optimization.
@@ -54,7 +56,7 @@ export default function HomeContact() {
         <div className="relative mb-6">
           <label
             htmlFor="name"
-            className="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            className="flex items-center mb-2 text-gray-600 dark:text-white text-sm font-medium"
           >
             Name
             <svg
@@ -77,14 +79,14 @@ export default function HomeContact() {
             name="name"
             required
             aria-required="true"
-            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-full placeholder-gray-400 focus:outline-none"
+            className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white dark:bg-gray-00 rounded-full placeholder-gray-400 focus:outline-none"
           />
         </div>
 
         <div className="relative mb-6">
           <label
             htmlFor="email"
-            className="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            className="flex items-center mb-2 text-gray-600 dark:text-white text-sm font-medium"
           >
             Email
             <svg
@@ -113,7 +115,7 @@ export default function HomeContact() {
         <div className="relative mb-6">
           <label
             htmlFor="message"
-            className="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            className="flex items-center mb-2 text-gray-600 dark:text-white text-sm font-medium"
           >
             Message
             <svg
