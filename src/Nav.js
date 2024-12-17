@@ -28,14 +28,14 @@ export default function NavBar() {
       className={`sticky top-0 z-10 py-3 w-full transition-colors duration-300 ${
         isScrolled
           ? "bg-white dark:bg-black shadow-lg"
-          : "bg-gradient-to-b from-white dark:from-current to-[#e2e8f0] dark:to-[black]"
+          : "bg-gradient-to-b from-white to-[#e2e8f0] dark:from-black dark:to-black dark:bg-black"
       }`}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <div className="w-full flex items-center justify-between">
           <div className="flex-shrink-0 dark:invert">
             <Link to="/">
-              <img src="/j-icon.svg" width={60} height={25} alt="J logo" />
+              <img src="/j-icon.svg" className="w-9 h-9" alt="J logo" />
             </Link>
           </div>
 
@@ -84,28 +84,30 @@ export default function NavBar() {
             </ul>
           </div>
 
-          <button
-            type="button"
-            className="inline-flex items-center p-2 ml-3 text-sm text-black dark:text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-            aria-label="Toggle navigation"
-            onClick={toggleMenu}
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-6 h-6"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+          <div>
+            <DarkModeToggle />
+            <button
+              type="button"
+              className="inline-flex items-center p-2 text-sm text-black dark:text-white rounded-lg lg:hidden"
+              aria-label="Toggle navigation"
+              onClick={toggleMenu}
             >
-              <path
-                fillRule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <DarkModeToggle />
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className="w-8 h-8"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
 
         {isMenuOpen && (
