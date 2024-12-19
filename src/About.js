@@ -29,7 +29,7 @@ export default function About() {
             {/* Text Content Section */}
             <div className="flex-col justify-center lg:items-start items-center gap-10 inline-flex pt-8 lg:pt-0">
               <div className="flex-col justify-center items-start gap-3 flex">
-                <p className="text-gray-900 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-12 lg:px-0">
+                <p className="text-gray-900 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-4 lg:px-0">
                   I am a front-end software engineer & a freelance web
                   developer, currently living in Nelson, BC. I have previously
                   worked at SpareRoom, the UK's largest property rental website.
