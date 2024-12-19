@@ -31,7 +31,7 @@ export default function HomeProjects() {
         alt="wave"
         className="bg-slate-200 dark:bg-black"
       ></img> */}
-      <section className="relative bg-indigo-600 py-20">
+      <section className="relative bg-indigo-600 py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-5">
           <div className="flex justify-center flex-wrap gap-8">
             <div className="w-full lg:w-2/5 flex flex-col items-center justify-center">
