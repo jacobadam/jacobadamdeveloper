@@ -23,7 +23,7 @@ export default function Portfolio() {
               altText: "Content Services",
               title: "Content Services",
               description:
-                "Quam maecenas lacus cursus enim sit rhoncus eu pellentesque arcu Vehicula diam ornare habitant pellentesque. Molestie convallis, aliquet amet in tristique ornare commodo.",
+                "Developed a polished website for a freelance content creator, showcasing their skills, services, and portfolio to attract and engage potential clients.",
               url: "https://www.katieshevlin.com/",
             },
             {
@@ -31,7 +31,7 @@ export default function Portfolio() {
               altText: "Healthcare",
               title: "Healthcare",
               description:
-                "Quam maecenas lacus cursus enim sit rhoncus eu pellentesque arcu Vehicula diam ornare habitant pellentesque. Molestie convallis, aliquet amet in tristique ornare commodo.",
+                "Designed and built a modern website for a healthcare provider, ensuring responsive design for all devices. Focused on user-friendly navigation and improving online visibility.",
               url: "https://www.neilnevitt.com/",
             },
           ].map(({ imgSrc, altText, title, description, url }, idx) => (
