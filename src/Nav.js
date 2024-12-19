@@ -117,6 +117,7 @@ export default function NavBar() {
                 <Link
                   to="/"
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Home
                 </Link>
@@ -125,6 +126,7 @@ export default function NavBar() {
                 <Link
                   to="/about"
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   About
                 </Link>
@@ -133,6 +135,7 @@ export default function NavBar() {
                 <Link
                   to="/services"
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Services
                 </Link>
@@ -141,6 +144,7 @@ export default function NavBar() {
                 <Link
                   to="/portfolio"
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Portfolio
                 </Link>
@@ -149,6 +153,7 @@ export default function NavBar() {
                 <Link
                   to="/contact"
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Contact
                 </Link>
