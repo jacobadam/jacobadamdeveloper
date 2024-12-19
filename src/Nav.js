@@ -31,7 +31,7 @@ export default function NavBar() {
           : "bg-gradient-to-b from-white to-[#e2e8f0] dark:from-black dark:to-black dark:bg-black"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-1">
         <div className="w-full flex items-center justify-between">
           <div className="flex-shrink-0 dark:invert">
             <Link to="/">
@@ -86,27 +86,40 @@ export default function NavBar() {
 
           <div>
             <DarkModeToggle />
-            <button
-              type="button"
-              className="inline-flex items-center p-2 text-sm text-black dark:text-white rounded-lg lg:hidden"
-              aria-label="Toggle navigation"
-              onClick={toggleMenu}
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-8 h-8"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+
+            {!isMenuOpen && (
+              <button
+                type="button"
+                className="inline-flex items-center p-1 text-sm dark:invert rounded-lg lg:hidden"
+                aria-label="Toggle navigation"
+                onClick={toggleMenu}
               >
-                <path
-                  fillRule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-            </button>
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="w-8 h-8"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            )}
+            {isMenuOpen && (
+              <button
+                type="button"
+                className="inline-flex items-center p-1 text-sm dark:invert rounded-lg lg:hidden"
+                aria-label="Close navigation"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <img src="/close.svg" className="w-8 h-8" alt="close"></img>
+              </button>
+            )}
           </div>
         </div>
 
