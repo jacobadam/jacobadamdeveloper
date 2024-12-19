@@ -19,6 +19,13 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
@@ -115,7 +122,10 @@ export default function NavBar() {
                 type="button"
                 className="inline-flex items-center p-1 text-sm dark:invert rounded-lg lg:hidden"
                 aria-label="Close navigation"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  scrollToTop();
+                  setIsMenuOpen(false);
+                }}
               >
                 <img src="/close.svg" className="w-8 h-8" alt="close"></img>
               </button>
@@ -130,7 +140,10 @@ export default function NavBar() {
                 <Link
                   to="/"
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    scrollToTop();
+                    setIsMenuOpen(false);
+                  }}
                 >
                   Home
                 </Link>
@@ -139,7 +152,10 @@ export default function NavBar() {
                 <Link
                   to="/about"
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    scrollToTop();
+                    setIsMenuOpen(false);
+                  }}
                 >
                   About
                 </Link>
@@ -148,7 +164,10 @@ export default function NavBar() {
                 <Link
                   to="/services"
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    scrollToTop();
+                    setIsMenuOpen(false);
+                  }}
                 >
                   Services
                 </Link>
@@ -157,7 +176,10 @@ export default function NavBar() {
                 <Link
                   to="/portfolio"
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    scrollToTop();
+                    setIsMenuOpen(false);
+                  }}
                 >
                   Portfolio
                 </Link>
@@ -166,7 +188,10 @@ export default function NavBar() {
                 <Link
                   to="/contact"
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    scrollToTop();
+                    setIsMenuOpen(false);
+                  }}
                 >
                   Contact
                 </Link>
