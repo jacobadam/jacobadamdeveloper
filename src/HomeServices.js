@@ -4,25 +4,25 @@ const services = [
   {
     title: "Custom Front-End Website",
     description:
-      "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+      "Crafting tailored front-end solutions that enhance user experience, ensuring intuitive navigation and an engaging interface for every visitor.",
     svgPath: "/custom-website2.svg",
   },
   {
     title: "Responsive Design",
     description:
-      "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+      "Designing websites that seamlessly adapt to any screen size, ensuring an optimal browsing experience across all devices and platforms.",
     svgPath: "/responsive-design.svg",
   },
   {
     title: "Performance Optimization",
     description:
-      "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+      "Improving website speed and performance, optimizing load times, and ensuring a smooth, fast user experience that drives engagement and retention.",
     svgPath: "/performance-optimization.svg",
   },
   {
     title: "Search Engine Optimization",
     description:
-      "Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+      "Enhancing your website’s visibility through proven SEO strategies, improving search rankings and driving more organic traffic to your site.",
     svgPath: "/seo.svg",
   },
 ];
