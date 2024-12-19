@@ -10,7 +10,7 @@ export default function Services() {
   return (
     <section className="pt-4 xs:pt-8 pb-20 relative bg-slate-200 dark:bg-slate-900 flex-grow">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-8 text-center">
+        <div className="mb-4 lg:mb-8 text-center">
           <div className="flex items-center justify-between gap-5 flex-col mb-14">
             <h2 className="text-gray-900 dark:text-white text-2xl lg:text-3xl font-semibold leading-snug">
               Services
@@ -26,7 +26,7 @@ export default function Services() {
         <div className="mb-4">
           <div className="tabs">
             <div className="flex w-full items-center justify-center">
-              <ul className="grid grid-cols-1 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 lg:gap-8 overflow-x-auto sm:mb-9 lg:mb-16">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 gap-4 overflow-x-auto sm:mb-9 lg:mb-16">
                 {[
                   {
                     id: "tabs-with-pill-1",
@@ -50,7 +50,7 @@ export default function Services() {
                   <li key={tab.id} className="w-full">
                     <button
                       onClick={() => handleTabClick(tab.id)}
-                      className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-0 px-6 rounded-2xl text-base font-medium transition-all duration-500 w-full sm:min-h-[110px] 
+                      className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-0 px-6 rounded-2xl text-base font-medium transition-all duration-500 w-full min-h-[80px]  sm:min-h-[110px] 
                         ${
                           activeTab === tab.id
                             ? "bg-gradient-to-tr from-indigo-600 to-violet-600 text-white"
