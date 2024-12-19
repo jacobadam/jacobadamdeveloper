@@ -88,10 +88,12 @@ export default function HomeProjects() {
                   0: {
                     slidesPerView: 1,
                     spaceBetween: 20,
+                    loop: true,
                   },
                   768: {
                     slidesPerView: 2,
                     spaceBetween: 28,
+                    loop: false,
                   },
                 }}
                 aria-live="polite"
