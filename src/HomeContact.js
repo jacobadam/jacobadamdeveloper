@@ -4,26 +4,30 @@ import emailjs from "@emailjs/browser";
 export default function HomeContact() {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("contact_service", "contact_form", form.current, {
-        publicKey: "ojNtN4lneN6w9tjlE",
-      })
+      .sendForm(
+        "contact_service",
+        "contact_form",
+        form.current,
+        "ojNtN4lneN6w9tjlE"
+      )
       .then(
         () => {
           console.log("Success!");
+          e.target.reset();
           setMessageSent(true);
           setTimeout(() => setMessageSent(false), 5000);
         },
         (error) => {
           console.log("Failed...", error.text);
+          setErrorMessage("Something went wrong. Please try again.");
         }
       );
-
-    e.target.reset();
   };
 
   return (
@@ -43,14 +47,25 @@ export default function HomeContact() {
         <p
           className="text-center text-indigo-600 text-xl font-bold"
           aria-live="polite"
+          role="alert"
         >
           Message sent!
+        </p>
+      )}
+      {errorMessage && (
+        <p
+          className="text-center text-red-600 text-xl font-bold"
+          aria-live="assertive"
+          role="alert"
+        >
+          {errorMessage}
         </p>
       )}
       <form
         ref={form}
         onSubmit={sendEmail}
         aria-labelledby="contact-form"
+        id="contact-form"
         className="w-full max-w-lg p-6"
       >
         <div className="relative mb-6">
@@ -65,6 +80,7 @@ export default function HomeContact() {
               className="ml-1"
               viewBox="0 0 7 7"
               fill="none"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -95,6 +111,7 @@ export default function HomeContact() {
               className="ml-1"
               viewBox="0 0 7 7"
               fill="none"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -124,6 +141,7 @@ export default function HomeContact() {
               className="ml-1"
               viewBox="0 0 7 7"
               fill="none"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -135,6 +153,7 @@ export default function HomeContact() {
           <textarea
             className="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-2xl placeholder-gray-400 focus:outline-none resize-none"
             type="text"
+            name="message"
             required
           />
         </div>
@@ -142,6 +161,7 @@ export default function HomeContact() {
         <button
           type="submit"
           value="Send"
+          title="Submit your message"
           className="w-full sm:w-32 py-2 flex items-center justify-center gap-x-1 text-white font-medium bg-indigo-600 duration-150 rounded-full mt-4 text-nowrap"
         >
           Submit
@@ -150,6 +170,7 @@ export default function HomeContact() {
             viewBox="0 0 20 20"
             fill="currentColor"
             className="w-5 h-5"
+            aria-hidden="true"
           >
             <path d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" />
           </svg>
