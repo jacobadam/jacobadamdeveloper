@@ -4,14 +4,15 @@ export default function HomepageHero() {
       <div className="h-full flex flex-col lg:flex-row items-center justify-center relative max-w-screen-xl mx-auto text-gray-600 overflow-hidden px-4 md:px-8">
         {/* Text Section */}
         <div className="flex flex-col items-center justify-center px-4 text-center md:max-w-xl mx-auto">
-          <h1 className="text-2xl xxs:text-4xl text-gray-800 dark:text-white font-extrabold sm:text-5xl">
-            Designing and Building Websites for Your Needs
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-800 dark:text-white font-extrabold">
+            Websites Built for Speed and Success
           </h1>
           <p className="mt-4 text-gray-600 dark:text-white">
-            Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-            doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+            Crafting custom websites that are responsive, fast, and optimized
+            for search engines. Let’s create a site that drives results and
+            grows your business.
           </p>
-          <div className="flex items-center xxxs:gap-x-4 mt-4">
+          <div className="flex items-center xxxs:gap-x-4 mt-8 lg:mt-4">
             <a
               href="/services"
               className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-white font-medium bg-indigo-600 duration-150 rounded-full"
@@ -46,10 +47,10 @@ export default function HomepageHero() {
         </div>
 
         {/* Image Section */}
-        <div className="mt-8 lg:mt-0 lg:ml-12 flex justify-center">
+        <div className="mt-12 lg:mt-0 lg:ml-12 flex justify-center">
           <img
             src="hero-image.svg"
-            className="max-w-full"
+            className="w-3/4 lg:w-full"
             alt="A person working on a computer with code visible"
           />
         </div>
