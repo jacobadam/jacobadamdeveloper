@@ -11,10 +11,10 @@ export default function About() {
               Hello,{" "}
               <span className="text-indigo-600 font-bold">I’m Jacob.</span>
             </h2>
-            <p className="max-w-xl text-center text-gray-600 dark:text-white text-sm lg:text-base font-normal leading-relaxed">
+            {/* <p className="max-w-xl text-center text-gray-900 dark:text-white text-sm lg:text-base font-medium leading-relaxed">
               As a Web Development Services We are Committed to Building Custom
               Web Solutions that Drive Business Success.
-            </p>
+            </p> */}
           </div>
 
           {/* Content Section */}
@@ -27,16 +27,16 @@ export default function About() {
             />
 
             {/* Text Content Section */}
-            <div className="flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+            <div className="flex-col justify-center lg:items-start items-center gap-10 inline-flex pt-8 lg:pt-0">
               <div className="flex-col justify-center items-start gap-3 flex">
-                <p className="text-gray-600 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-8 md:px-0">
+                <p className="text-gray-900 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-12 lg:px-0">
                   I am a front-end software engineer & a freelance web
                   developer, currently living in Nelson, BC. I have previously
                   worked at SpareRoom, the UK's largest property rental website.
                   I then spent 3 years working as a software developer at
                   Article, one of Canada's fastest-growing eCommerce companies.
                 </p>
-                <p className="text-gray-600 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-8 md:px-0">
+                <p className="text-gray-900 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-8 lg:px-0">
                   Having grown up in Liverpool, U.K, I have lived in many places
                   including London, New York, Vancouver and Sayulita. In my
                   freetime I like to run, watch as many of the Criterian
