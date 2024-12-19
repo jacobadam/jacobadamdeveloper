@@ -10,9 +10,9 @@ export default function Portfolio() {
               Portfolio
             </h2>
             <p className="font-normal text-base text-gray-600 dark:text-white max-w-3xl text-center">
-              Quam maecenas lacus cursus enim sit rhoncus eu pellentesque arcu.
-              Vehicula diam ornare habitant pellentesque. Molestie convallis
-              aliquet amet in tristique ornare commodo.
+              Showcasing my work, I create custom websites focused on clean
+              design, responsive layouts, and seamless performance. Let’s bring
+              your vision to life with a tailored approach.
             </p>
           </div>
         </div>
