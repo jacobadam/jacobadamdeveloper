@@ -5,12 +5,12 @@ export default function HomepageHero() {
         {/* Text Section */}
         <div className="flex flex-col items-center justify-center px-4 text-center md:max-w-xl mx-auto">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-800 dark:text-white font-extrabold">
-            Websites Built for Speed and Success
+            Custom websites that deliver results and drive success
           </h1>
           <p className="mt-4 text-gray-600 dark:text-white">
-            Crafting custom websites that are responsive, fast, and optimized
-            for search engines. Let’s create a site that drives results and
-            grows your business.
+            Building custom websites with a focus on clean, responsive design,
+            and optimized for search engines. Let’s create a site delivers
+            results and helps your business thrive.
           </p>
           <div className="flex items-center xxxs:gap-x-4 mt-8 lg:mt-4">
             <a
