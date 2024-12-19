@@ -15,10 +15,11 @@ export default function Services() {
             <h2 className="text-gray-900 dark:text-white text-2xl lg:text-3xl font-semibold leading-snug">
               Services
             </h2>
-            <p className="font-normal text-base text-gray-600 dark:text-white max-w-3xl text-center">
-              Ready to launch your small business online but feeling
-              overwhelmed? I simplify the process, helping you focus on what
-              matters to get your website up and running.
+            <p className="font-normal text-base text-gray-900 dark:text-white max-w-3xl text-center">
+              Whether you need a website refresh or a custom-built solution, I
+              provide a personalized approach to meet your business needs. I
+              simplify the process, allowing you to focus on what matters while
+              I bring your vision to life online.
             </p>
           </div>
         </div>
@@ -49,11 +50,12 @@ export default function Services() {
                   <li key={tab.id} className="w-full">
                     <button
                       onClick={() => handleTabClick(tab.id)}
-                      className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-0 px-6  dark:bg-gradient-to-tr dark:from-indigo-600 dark:to-violet-600 rounded-2xl text-base font-medium text-gray-900 transition-all duration-500 w-full sm:min-h-[110px] hover:text-white dark:text-white hover:bg-gradient-to-tr from-indigo-600 to-violet-600 ${
-                        activeTab === tab.id
-                          ? "bg-gradient-to-tr text-white"
-                          : ""
-                      }`}
+                      className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-0 px-6 rounded-2xl text-base font-medium transition-all duration-500 w-full sm:min-h-[110px] 
+                        ${
+                          activeTab === tab.id
+                            ? "bg-gradient-to-tr from-indigo-600 to-violet-600 text-white"
+                            : "text-gray-900 dark:text-white hover:bg-gradient-to-tr hover:from-indigo-600 hover:to-violet-600 dark:hover:bg-gradient-to-tr dark:hover:from-indigo-600 dark:hover:to-violet-600 hover:text-white"
+                        }`}
                       role="tab"
                     >
                       {tab.label}
@@ -72,8 +74,8 @@ export default function Services() {
                 >
                   <section className="">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 flex justify-center text-center lg:text-left">
-                      <div className="max-w-screen-lg text-black sm:text-lg">
-                        <h2 className="mb-4 text-3xl tracking-tight font-bold text-gray-900 dark:text-white">
+                      <div className="max-w-screen-lg">
+                        <h2 className="mb-4 text-2xl lg:text-3xl tracking-tight font-bold text-gray-900 dark:text-white">
                           Performance Optimization
                         </h2>
                         <p className="mb-4 font-light dark:text-white">
@@ -105,8 +107,8 @@ export default function Services() {
                 >
                   <section className="">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 flex justify-center text-center lg:text-left">
-                      <div className="max-w-screen-lg text-black sm:text-lg">
-                        <h2 className="mb-4 text-3xl tracking-tight font-bold text-gray-900 dark:text-white">
+                      <div className="max-w-screen-lg">
+                        <h2 className="mb-4 text-2xl lg:text-3xl tracking-tight font-bold text-gray-900 dark:text-white">
                           Custom Built Website
                         </h2>
                         <p className="mb-4 font-light dark:text-white">
@@ -137,8 +139,8 @@ export default function Services() {
                 >
                   <section className="">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 flex justify-center text-center lg:text-left">
-                      <div className="max-w-screen-lg text-black sm:text-lg">
-                        <h2 className="mb-4 text-3xl tracking-tight font-bold text-gray-900 dark:text-white">
+                      <div className="max-w-screen-lg">
+                        <h2 className="mb-4 text-2xl lg:text-3xl tracking-tight font-bold text-gray-900 dark:text-white">
                           Custom Built Website and Full Content Package
                         </h2>
                         <p className="mb-4 font-light dark:text-white">
