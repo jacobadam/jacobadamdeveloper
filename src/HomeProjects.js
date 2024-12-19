@@ -10,15 +10,11 @@ const slidesData = [
   {
     image: "https://www.katieshevlin.com/hero-image.webp",
     title: "Content Services Website",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore.",
     url: "https://www.katieshevlin.com/",
   },
   {
     image: "https://www.neilnevitt.com/homepage-image.webp",
     title: "Healthcare Website",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore.",
     url: "https://www.neilnevitt.com/",
   },
 ];
@@ -39,7 +35,10 @@ export default function HomeProjects() {
                 Latest Projects
               </h2>
               <div className="flex items-center gap-8">
-                <button className="md:hidden portfolio-button-prev group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all">
+                <button
+                  className="md:hidden portfolio-button-prev group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all"
+                  aria-label="Previous slide"
+                >
                   <svg
                     className="h-6 w-6 text-black group-hover:text-white"
                     viewBox="0 0 24 24"
@@ -54,7 +53,10 @@ export default function HomeProjects() {
                     />
                   </svg>
                 </button>
-                <button className="md:hidden portfolio-button-next group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all">
+                <button
+                  className="md:hidden portfolio-button-next group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all"
+                  aria-label="Next slide"
+                >
                   <svg
                     className="h-6 w-6 text-black group-hover:text-white"
                     viewBox="0 0 24 24"
@@ -92,14 +94,15 @@ export default function HomeProjects() {
                     spaceBetween: 28,
                   },
                 }}
-                className="portfolioSwiper"
+                aria-live="polite"
               >
                 {slidesData.map((slide, index) => (
-                  <SwiperSlide key={index} className="group">
+                  <SwiperSlide key={index} className="group" role="group">
                     <SliderCard
                       image={slide.image}
                       title={slide.title}
                       url={slide.url}
+                      aria-label={slide.title}
                     />
                   </SwiperSlide>
                 ))}
