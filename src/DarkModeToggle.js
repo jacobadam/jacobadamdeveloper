@@ -19,7 +19,7 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={() => setDarkMode((prev) => !prev)}
-      className="p-2 rounded focus:outline-none"
+      className="p-1 rounded focus:outline-none"
       aria-label="Toggle dark mode"
     >
       <img
