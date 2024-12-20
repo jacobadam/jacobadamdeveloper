@@ -147,6 +147,7 @@ export default function HomeContact() {
           <textarea
             className="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white rounded-2xl placeholder-gray-400 focus:outline-none resize-none"
             name="message"
+            id="message"
             required
             aria-required="true"
           />
