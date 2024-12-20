@@ -53,7 +53,7 @@ export default function HomepageHero() {
           <img
             src="hero-image.svg"
             className="w-3/4 md:w-2/4 lg:w-full"
-            alt="A graphic showing a laptop and a mobile device, both displaying code"
+            alt="A graphic of a laptop and a mobile device"
             loading="lazy"
           />
         </div>
