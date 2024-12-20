@@ -5,8 +5,8 @@ export default function SliderCard({ image, title, url, ariaLabel }) {
         src={image}
         alt={title}
         className="w-full h-48 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:blur-sm"
-        width="256"
-        height="192"
+        width="400"
+        height="300"
       />
 
       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out">
