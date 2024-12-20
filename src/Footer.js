@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-b from-slate-200 to-white dark:from-black dark:to-black">
+    <footer className="w-full bg-gradient-to-b from-slate-200 to-white dark:from-black dark:to-black min-h-[80px]">
       <div className="w-full">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
@@ -11,11 +11,13 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/jacobnevitt/"
                 className="block text-gray-900 dark:invert transition-all duration-500 hover:text-indigo-600"
               >
-                <img
-                  className="w-8 h-8"
-                  src="/linkedin.svg"
-                  alt="LinkedIn Logo"
-                />
+                <div className="w-8 h-8 flex justify-center items-center">
+                  <img
+                    src="/linkedin.svg"
+                    alt="LinkedIn Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </a>
             </div>
             <span className="text-lg text-gray-500 text-center block pb-4">
