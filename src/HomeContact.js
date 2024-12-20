@@ -57,7 +57,6 @@ export default function HomeContact() {
       <form
         ref={form}
         onSubmit={sendEmail}
-        aria-labelledby="contact-form"
         id="contact-form"
         className="w-full max-w-lg p-6"
       >
