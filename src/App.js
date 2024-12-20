@@ -3,7 +3,6 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import RedirectHandler from "./RedirectHandler.js";
 import NotFound from "./NotFound";
 
 const Home = React.lazy(() => import("./Home"));
@@ -16,7 +15,6 @@ export default function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        <RedirectHandler />
         <Nav />
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
