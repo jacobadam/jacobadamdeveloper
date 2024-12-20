@@ -6,7 +6,7 @@ function RedirectHandler() {
 
   useEffect(() => {
     const path = new URLSearchParams(window.location.search).get("p");
-    if (path) {
+    if (path && path !== window.location.pathname) {
       navigate(path, { replace: true });
     }
   }, [navigate]);
