@@ -95,6 +95,7 @@ export default function HomeContact() {
             name="name"
             required
             aria-required="true"
+            aria-label="Your name"
             className="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 bg-white dark:bg-gray-00 rounded-full placeholder-gray-400 focus:outline-none"
           />
         </div>
@@ -112,6 +113,7 @@ export default function HomeContact() {
               viewBox="0 0 7 7"
               fill="none"
               aria-hidden="true"
+              aria-label="Your email address"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -142,6 +144,7 @@ export default function HomeContact() {
               viewBox="0 0 7 7"
               fill="none"
               aria-hidden="true"
+              aria-label="Your message"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path

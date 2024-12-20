@@ -17,6 +17,7 @@ export default function HomepageHero() {
               href="/services"
               className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-white font-medium bg-indigo-600 duration-150 rounded-full"
               aria-label="Go to services page"
+              role="button"
             >
               <span>Services</span>
               <svg
@@ -33,6 +34,7 @@ export default function HomepageHero() {
               href="/contact"
               className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-gray-700 xxxs:border-black xxxs:border xxxs:rounded-full duration-150 font-semibold text-nowrap dark:text-white dark:border-indigo-600"
               aria-label="Go to contact page"
+              role="button"
             >
               <span>Get in touch</span>
               <svg
@@ -54,6 +56,7 @@ export default function HomepageHero() {
             src="hero-image.svg"
             className="w-3/4 lg:w-full"
             alt="A graphic showing a laptop and a mobile device, both displaying code"
+            loading="lazy"
           />
         </div>
       </div>

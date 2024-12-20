@@ -49,6 +49,7 @@ export default function HomeServices() {
               href="/services"
               className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-white font-medium bg-indigo-600 duration-150 rounded-full mt-4"
               aria-label="Visit services page"
+              role="button"
             >
               Services
               <svg
