@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function SliderCard({ image, title, url }) {
+export default function SliderCard({ image, title, url, ariaLabel }) {
   return (
     <div className="relative overflow-hidden rounded-2xl">
       <img
@@ -15,6 +13,7 @@ export default function SliderCard({ image, title, url }) {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={ariaLabel}
           className="text-sm text-white font-semibold bg-black/80 px-4 py-2 rounded-full transition-colors duration-300"
         >
           View project

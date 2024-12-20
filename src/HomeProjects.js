@@ -99,12 +99,16 @@ export default function HomeProjects() {
                 aria-live="polite"
               >
                 {slidesData.map((slide, index) => (
-                  <SwiperSlide key={index} className="group" role="group">
+                  <SwiperSlide
+                    key={index}
+                    className="group"
+                    aria-label={`Slide ${index + 1}`}
+                  >
                     <SliderCard
                       image={slide.image}
                       title={slide.title}
                       url={slide.url}
-                      aria-label={slide.title}
+                      ariaLabel={`View the ${slide.title} project`}
                     />
                   </SwiperSlide>
                 ))}
