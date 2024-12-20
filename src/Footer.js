@@ -11,7 +11,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/jacobnevitt/"
                 className="block text-gray-900 dark:invert transition-all duration-500 hover:text-indigo-600"
               >
-                <div className="w-8 h-8 flex justify-center items-center">
+                <div className="flex justify-center items-center">
                   <img
                     src="/linkedin.svg"
                     alt="LinkedIn Logo"
