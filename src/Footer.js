@@ -15,7 +15,9 @@ export default function Footer() {
                   <img
                     src="/linkedin.svg"
                     alt="LinkedIn Logo"
-                    className="w-full h-full object-contain"
+                    className="w-8 h-8 object-contain"
+                    width="32"
+                    height="32"
                   />
                 </div>
               </a>
