@@ -54,6 +54,8 @@ export default function HomepageHero() {
             src="hero-image.svg"
             className="w-3/4 md:w-2/4 lg:w-full"
             alt="A graphic of a laptop and a mobile device"
+            width="500"
+            height="287"
           />
         </div>
       </div>
