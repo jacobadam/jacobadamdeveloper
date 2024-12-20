@@ -33,9 +33,9 @@ export default function HomeContact() {
   return (
     <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-slate-200 dark:bg-slate-900">
       {/* Header Section */}
-      <h2 className="text-2xl font-bold text-center pt-8 dark:text-white">
+      <h1 className="text-2xl font-bold text-center pt-8 dark:text-white">
         Contact
-      </h2>
+      </h1>
       {/* <p className="text-gray-400 text-sm text-center leading-relaxed">
             Discover a range of tailored solutions designed to meet your needs,
             from custom front-end websites to performance and SEO optimization.

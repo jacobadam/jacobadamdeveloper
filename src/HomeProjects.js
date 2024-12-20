@@ -31,9 +31,9 @@ export default function HomeProjects() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-5">
           <div className="flex justify-center flex-wrap gap-8">
             <div className="w-full lg:w-2/5 flex flex-col items-center justify-center">
-              <h2 className="text-2xl font-bold text-center text-white pb-4 md:pb-8">
+              <h1 className="text-2xl font-bold text-center text-white pb-4 md:pb-8">
                 Latest Projects
-              </h2>
+              </h1>
               <div className="flex items-center gap-8">
                 <button
                   className="md:hidden portfolio-button-prev group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all"
