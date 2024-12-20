@@ -8,7 +8,7 @@ export default function SliderCard({ image, title, url, ariaLabel }) {
       />
 
       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out">
-        <h3 className="text-lg text-white font-bold mb-3">{title}</h3>
+        <h1 className="text-lg text-white font-bold mb-3">{title}</h1>
         <a
           href={url}
           target="_blank"

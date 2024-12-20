@@ -72,9 +72,9 @@ export default function HomeServices() {
                       aria-hidden="true"
                     />
                   </div>
-                  <h3 className="mt-2 font-bold dark:text-white">
+                  <h1 className="mt-2 font-bold dark:text-white">
                     {service.title}
-                  </h3>
+                  </h1>
                   <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600 dark:sm:text-gray-400">
                     {service.description}
                   </p>
