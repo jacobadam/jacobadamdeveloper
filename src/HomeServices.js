@@ -70,6 +70,8 @@ export default function HomeServices() {
                       src={service.svgPath}
                       alt=""
                       aria-hidden="true"
+                      width="32"
+                      height="32"
                     />
                   </div>
                   <h1 className="mt-2 font-bold dark:text-white">
