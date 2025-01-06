@@ -17,7 +17,7 @@ export default function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Nav />
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
