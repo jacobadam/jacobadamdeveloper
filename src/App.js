@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ClipLoader } from "react-spinners";
 
 import Nav from "./Nav";
 import Footer from "./Footer";
@@ -17,7 +18,13 @@ export default function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Nav />
-        <Suspense fallback={null}>
+        <Suspense
+          fallback={
+            <div className="flex justify-center items-center h-screen">
+              <ClipLoader color="#000000" size={50} />
+            </div>
+          }
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
