@@ -23,7 +23,7 @@ export default function Footer() {
               </a>
             </div>
             <span className="text-lg text-gray-500 text-center block pb-4">
-              © 2024 Jacob Adam. All Rights Reserved.
+              © 2025 Jacob Adam. All Rights Reserved.
             </span>
           </div>
         </div>
