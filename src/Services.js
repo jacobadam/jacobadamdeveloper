@@ -16,10 +16,10 @@ export default function Services() {
               Services
             </h2>
             <p className="font-normal text-base text-gray-900 dark:text-white max-w-3xl text-center">
-              Whether you need a website refresh or a custom-built solution, I
-              provide a personalized approach to meet your business needs. I
-              simplify the process, allowing you to focus on what matters while
-              I bring your vision to life online.
+              Whether you need a simple refresh or a custom-built website, I
+              provide a personalized approach that takes into account the needs
+              of your business. My streamlined process allows you to focus on
+              what matters while I bring your vision to life online.
             </p>
           </div>
         </div>
@@ -79,13 +79,13 @@ export default function Services() {
                           Performance Optimization
                         </h2>
                         <p className="mb-4 font-light dark:text-white">
-                          I start with a full assessment of your current website
-                          to identify areas for improvement. During a detailed
-                          feedback session, I’ll gather your specific
-                          requirements and implement the requested changes to
-                          enhance your site’s performance. This service includes
-                          one review to ensure everything meets your
-                          expectations.
+                          This includes a full assessment of your current
+                          website to identify key areas for improvement. During
+                          a detailed feedback session, I’ll gather your specific
+                          requirements and prioritize the changes that will have
+                          the most impact on your site’s performance. You’ll
+                          have the opportunity to review all changes to ensure
+                          everything meets your expectations.
                         </p>
                         {/* <p className="mb-4 font-medium">
                           Deliver great service experiences fast - without the
@@ -113,11 +113,10 @@ export default function Services() {
                         </h2>
                         <p className="mb-4 font-light dark:text-white">
                           I’ll work closely with you to understand your vision
-                          and requirements during a comprehensive feedback
-                          session. From there, I’ll create a fully customized
-                          website with up to five pages, tailored to your needs.
-                          This package includes two reviews for refinements and
-                          a focus on driving SEO to help your site stand out.
+                          and requirements during a comprehensive planning
+                          session. From there, I’ll create a fully optimized
+                          website with up to five pages. This package includes
+                          two reviews for refinements.
                         </p>
                         {/* <p className="mb-4 font-medium">
                           Deliver great service experiences fast - without the
@@ -145,13 +144,12 @@ export default function Services() {
                         </h2>
                         <p className="mb-4 font-light dark:text-white">
                           This comprehensive package includes everything in the
-                          Custom Built Website service, plus professionally
-                          crafted copy for every page. After gathering your
-                          requirements and conducting a feedback session, I’ll
-                          design a website with up to five pages, optimize it
-                          for SEO, and provide content that captures your
-                          message effectively. Two reviews are included to
-                          ensure the final product is perfect.
+                          custom build service plus professionally crafted
+                          content for every page. All content will align with
+                          your brand voice and is tailored to engage your
+                          audience. An in-depth SEO analysis will ensure that
+                          all content contributes to your site’s visibility and
+                          business growth.
                         </p>
                         {/* <p className="mb-4 font-medium">
                           Deliver great service experiences fast - without the

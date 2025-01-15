@@ -2,27 +2,27 @@ import React from "react";
 
 const services = [
   {
-    title: "Custom Front-End Website",
+    title: "Custom Build",
     description:
-      "Crafting tailored front-end solutions that enhance user experience, ensuring intuitive navigation and an engaging interface for every visitor.",
+      "Bespoke design with intuitive navigation and an engaging interface.",
     svgPath: "/custom-website2.svg",
   },
   {
     title: "Responsive Design",
     description:
-      "Designing websites that seamlessly adapt to any screen size, ensuring an optimal browsing experience across all devices and platforms.",
+      "Websites that seamlessly adapt to any screen size, ensuring an optimal experience across all devices.",
     svgPath: "/responsive-design.svg",
   },
   {
     title: "Performance Optimization",
     description:
-      "Improving website speed and performance, optimizing load times, and ensuring a smooth, fast user experience that drives engagement and retention.",
+      "A smooth, efficient user experience that drives engagement and conversion.",
     svgPath: "/performance-optimization.svg",
   },
   {
     title: "Search Engine Optimization",
     description:
-      "Enhancing your website’s visibility through proven SEO strategies, improving search rankings and driving more organic traffic to your site.",
+      "Proven SEO strategies that improve search rankings and drive more organic traffic. ",
     svgPath: "/seo.svg",
   },
 ];
@@ -33,13 +33,12 @@ export default function HomeServices() {
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-            <h1 className="text-2xl font-bold mb-2 dark:text-white">
-              Services
+            <h1 className="text-3xl font-bold mb-2 dark:text-white">
+              Quality design, real impact
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-center leading-relaxed">
-              Discover a range of tailored solutions designed to meet your
-              needs, from custom front-end websites to performance and SEO
-              optimization.
+              Discover a range of solutions tailored <br /> to meet your
+              business needs
             </p>
             <a
               href="/services"
@@ -77,7 +76,7 @@ export default function HomeServices() {
                   <h1 className="mt-2 font-bold dark:text-white">
                     {service.title}
                   </h1>
-                  <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600 dark:sm:text-gray-400">
+                  <p className="hidden sm:mt-1 sm:block sm:text-base sm:text-gray-600 dark:sm:text-gray-400">
                     {service.description}
                   </p>
                 </div>

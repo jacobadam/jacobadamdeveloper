@@ -27,21 +27,20 @@ export default function About() {
             />
 
             {/* Text Content Section */}
-            <div className="flex-col justify-center lg:items-start items-center gap-10 inline-flex pt-8 lg:pt-0">
+            <div className="flex-col justify-center lg:items-start items-center gap-6 inline-flex pt-8 lg:pt-0">
               <div className="flex-col justify-center items-start gap-3 flex">
                 <p className="text-gray-900 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-4 lg:px-0">
-                  I am a front-end software engineer & a freelance web
-                  developer, currently living in Nelson, BC. I have previously
-                  worked at SpareRoom, the UK's largest property rental website.
-                  I then spent 3 years working as a software developer at
-                  Article, one of Canada's fastest-growing eCommerce companies.
+                  I started my career at SpareRoom, the UK’s largest property
+                  rental website, before moving on to Article, one of Canada’s
+                  leading eCommerce companies. I’m now a freelance web developer
+                  helping small businesses create sites that embody their brand
+                  and increase their loyal customer base.
                 </p>
                 <p className="text-gray-900 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-8 lg:px-0">
-                  Having grown up in Liverpool, U.K, I have lived in many places
-                  including London, New York, Vancouver and Sayulita. In my
-                  freetime I like to run, watch as many of the Criterian
-                  collection as possible, play any and all videogames from the
-                  90's and most recently learnt to ski.
+                  I grew up in Liverpool, and have since lived in London, New
+                  York, Vancouver, and Sayulita. I currently live in Nelson, BC
+                  and in my free time like to run, ski, play 90’s video games,
+                  and watch as much of the Criterion collection as possible.
                 </p>
               </div>
 

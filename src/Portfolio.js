@@ -10,9 +10,8 @@ export default function Portfolio() {
               Portfolio
             </h2>
             <p className="font-normal text-base text-gray-600 dark:text-white max-w-3xl text-center">
-              Showcasing my work, I create custom websites focused on clean
-              design, responsive layouts, and seamless performance. Let’s bring
-              your vision to life with a tailored approach.
+              Whatever your end goal, make it happen with a modern, professional
+              website. Here’s some examples of my recent work:
             </p>
           </div>
         </div>
