@@ -39,7 +39,7 @@ export default function Contact() {
               inquiries, feedback, or just want to say hello.
             </p>
             <div className="py-6 border-t border-stone-300 text-center">
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col items-center">
                 <div className="rounded-lg p-3">
                   <img
                     src="/email.svg"
@@ -47,16 +47,12 @@ export default function Contact() {
                     className="w-6 h-6 object-contain dark:invert"
                   />
                 </div>
-                <div className="flex flex-col items-center w-full">
-                  <h6 className="text-gray-900 dark:text-white text-sm font-medium">
-                    Email
-                  </h6>
-                  <p className="text-gray-700 dark:text-white text-xs font-normal text-center">
-                    jacobadamdeveloper@gmail.com
-                  </p>
-                </div>
+
+                <p className="text-gray-700 dark:text-white text-xs font-normal">
+                  jacobadamdeveloper@gmail.com
+                </p>
               </div>
-              <div className="flex items-center gap-4 mt-8">
+              <div className="flex flex-col items-center mt-8">
                 <div className="rounded-lg p-3">
                   <img
                     src="/phone.svg"
@@ -64,16 +60,13 @@ export default function Contact() {
                     className="w-6 h-6 object-contain dark:invert"
                   />
                 </div>
-                <div className="flex flex-col items-center w-full">
-                  <h6 className="text-gray-900 dark:text-white text-sm font-medium">
-                    Contact
-                  </h6>
-                  <p className="text-gray-700 dark:text-white text-xs font-normal text-center">
-                    (+1) 236-885-4130
-                  </p>
-                </div>
+
+                <p className="text-gray-700 dark:text-white text-xs font-normal">
+                  (+1) 236-885-4130
+                </p>
               </div>
             </div>
+
             {/* 
             <div className="flex justify-center items-center mb-10 mt-6">
               <a
