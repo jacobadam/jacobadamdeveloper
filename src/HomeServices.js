@@ -6,24 +6,28 @@ const services = [
     description:
       "Clean, bespoke design with intuitive navigation and an engaging interface.",
     svgPath: "/custom-website2.svg",
+    alt: "Code icon",
   },
   {
     title: "Responsive Design",
     description:
       "Websites that adapt to any screen size, ensuring an optimal experience across all devices.",
     svgPath: "/responsive-design.svg",
+    alt: "Devices icon",
   },
   {
     title: "Performance Optimization",
     description:
       "A smooth, efficient user experience that drives engagement and conversion.",
     svgPath: "/performance-optimization.svg",
+    alt: "Chart icon",
   },
   {
     title: "Search Engine Optimization",
     description:
       "Proven SEO strategies that improve search rankings and drive more organic traffic. ",
     svgPath: "/seo.svg",
+    alt: "SEO icon",
   },
 ];
 
@@ -67,7 +71,7 @@ export default function HomeServices() {
                     <img
                       className="w-11 h-11 object-contain bg-white p-1 rounded"
                       src={service.svgPath}
-                      alt=""
+                      alt={service.alt}
                       aria-hidden="true"
                       width="32"
                       height="32"
