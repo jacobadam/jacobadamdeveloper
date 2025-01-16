@@ -32,7 +32,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:items-start items-center lg:justify-start justify-center">
           <div className="flex flex-col items-center text-center px-4 sm:px-6">
             <h2 className="text-gray-900 dark:text-white text-2xl font-semibold leading-snug pb-5">
-              Contact Us
+              Contact
             </h2>
             <p className="text-gray-900 dark:text-white text-md font-normal pb-6">
               This is your gateway to connect directly with me. Whether you have
