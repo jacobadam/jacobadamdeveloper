@@ -33,7 +33,7 @@ export default function HomeServices() {
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-            <h1 className="text-3xl font-bold mb-2 dark:text-white">
+            <h1 className="text-2xl lg:text-3xl font-bold mb-2 dark:text-white">
               Quality Design, Real Impact
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-center leading-relaxed">
