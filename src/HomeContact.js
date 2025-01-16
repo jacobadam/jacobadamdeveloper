@@ -33,7 +33,7 @@ export default function HomeContact() {
   return (
     <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-slate-200 dark:bg-slate-900">
       {/* Header Section */}
-      <h1 className="text-2xl font-bold text-center pt-8 dark:text-white">
+      <h1 className="text-2xl lg:text-3xl font-bold text-center pt-8 dark:text-white">
         Contact
       </h1>
       {messageSent && (
