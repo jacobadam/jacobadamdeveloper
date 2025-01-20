@@ -35,8 +35,7 @@ export default function Contact() {
               Contact
             </h2>
             <p className="text-gray-900 dark:text-white text-md font-normal pb-6">
-              This is your gateway to connect directly with me. Whether you have
-              inquiries, feedback, or just want to say hello.
+              Get in touch and let's discuss how I can serve your business.
             </p>
             <div className="py-6 border-t border-stone-300 text-center">
               <div className="flex flex-col items-center">
