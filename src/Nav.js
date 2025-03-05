@@ -32,7 +32,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`sticky top-0 z-10 py-3 w-full transition-colors duration-300 ${
+      className={`sticky top-0 z-10 py-3 px-4 md:px-0 w-full transition-colors duration-300 ${
         isScrolled
           ? "bg-white dark:bg-black shadow-lg"
           : "bg-gradient-to-b from-white to-[#e2e8f0] dark:from-black dark:to-black dark:bg-black"
