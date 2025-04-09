@@ -10,7 +10,6 @@ const DarkModeToggle = () => {
     const metaThemeColor = document.querySelector('meta[name="theme-color"]');
     const themeColor = darkMode ? "#000000" : "#ffffff";
 
-    console.log(metaThemeColor);
     if (darkMode) {
       root.setAttribute("data-theme", "dark");
       localStorage.setItem("theme", "dark");
