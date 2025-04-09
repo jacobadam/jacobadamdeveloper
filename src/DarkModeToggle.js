@@ -7,12 +7,18 @@ const DarkModeToggle = () => {
 
   useEffect(() => {
     const root = document.documentElement;
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    const themeColor = darkMode ? "#121212" : "#ffffff";
+
+    console.log(metaThemeColor);
     if (darkMode) {
       root.setAttribute("data-theme", "dark");
       localStorage.setItem("theme", "dark");
+      metaThemeColor.content = themeColor;
     } else {
       root.removeAttribute("data-theme");
       localStorage.setItem("theme", "light");
+      metaThemeColor.content = themeColor;
     }
   }, [darkMode]);
 
