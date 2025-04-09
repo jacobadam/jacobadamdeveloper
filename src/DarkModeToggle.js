@@ -8,7 +8,7 @@ const DarkModeToggle = () => {
   useEffect(() => {
     const root = document.documentElement;
     const metaThemeColor = document.querySelector('meta[name="theme-color"]');
-    const themeColor = darkMode ? "#121212" : "#ffffff";
+    const themeColor = darkMode ? "#000000" : "#ffffff";
 
     console.log(metaThemeColor);
     if (darkMode) {
