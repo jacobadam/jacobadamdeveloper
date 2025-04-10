@@ -33,20 +33,20 @@ const services = [
 
 export default function HomeServices() {
   return (
-    <section className="flex items-center justify-center dark:bg-black">
+    <section className="flex items-center justify-center bg-slate-100 dark:bg-black">
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-            <h1 className="text-2xl xl:text-3xl font-bold mb-2 dark:text-white">
+            <h1 className="text-2xl xl:text-3xl font-bold mb-2 dark:text-slate-100">
               Quality Design, Real Impact
             </h1>
-            <p className="text-gray-600 dark:text-gray-400 text-center leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
               Discover a range of solutions tailored <br /> to meet your
               business needs
             </p>
             <a
               href="/services"
-              className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-white font-medium bg-indigo-600 duration-150 rounded-full mt-4"
+              className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-black font-semibold bg-[#8FBC8F] duration-150 rounded-full mt-4"
             >
               Services
               <svg
@@ -64,12 +64,12 @@ export default function HomeServices() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="block rounded-xl border p-4 shadow-lg"
+                className="block rounded-xl border border-slate-100 p-4 shadow-lg"
               >
                 <div className="flex flex-col items-center text-center sm:text-left sm:items-start">
                   <div className="inline-block rounded-lg p-2">
                     <img
-                      className="w-11 h-11 object-contain bg-white p-1 rounded"
+                      className="w-11 h-11 object-contain bg-slate-100 p-1 rounded"
                       src={service.svgPath}
                       alt={service.alt}
                       aria-hidden="true"
@@ -77,10 +77,10 @@ export default function HomeServices() {
                       height="32"
                     />
                   </div>
-                  <h1 className="mt-2 font-bold dark:text-white">
+                  <h1 className="mt-2 font-bold dark:text-slate-100">
                     {service.title}
                   </h1>
-                  <p className="hidden sm:mt-1 sm:block sm:text-base sm:text-gray-600 dark:sm:text-gray-400">
+                  <p className="hidden sm:mt-1 sm:block sm:text-base sm:text-gray-600 dark:sm:text-gray-300">
                     {service.description}
                   </p>
                 </div>
