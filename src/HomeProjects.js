@@ -22,7 +22,7 @@ const slidesData = [
 export default function HomeProjects() {
   return (
     <>
-      <section className="relative bg-[#8FBC8F] py-12 lg:py-20">
+      <section className="relative bg-[#8FBC8F] dark:bg-slate-900 py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-5">
           <div className="flex justify-center flex-wrap gap-8">
             <div className="w-full lg:w-2/5 flex flex-col items-center justify-center">
