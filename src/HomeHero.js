@@ -38,7 +38,7 @@ export default function HomepageHero() {
           <div className="flex items-center xxxs:gap-x-4 mt-8 lg:mt-4">
             <a
               href="/services"
-              className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-black dark:text-grey-200 font-medium bg-[#8FBC8F] duration-150 rounded-full"
+              className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-black dark:text-grey-200 font-semibold bg-[#8FBC8F] duration-150 rounded-full"
               aria-label="Go to services page"
             >
               <span>Services</span>
