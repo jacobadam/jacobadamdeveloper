@@ -8,7 +8,7 @@ const DarkModeToggle = () => {
   useEffect(() => {
     const root = document.documentElement;
     const metaThemeColor = document.querySelector('meta[name="theme-color"]');
-    const themeColor = darkMode ? "#000000" : "#ffffff";
+    const themeColor = darkMode ? "#000000" : "#f1f5f9";
 
     if (darkMode) {
       root.setAttribute("data-theme", "dark");
@@ -30,7 +30,7 @@ const DarkModeToggle = () => {
       <img
         src="/dark-mode-toggle.svg"
         alt="Dark mode toggle"
-        className="w-8 h-8 lg:w-9 lg:h-9 invert-0 dark:invert"
+        className="w-8 h-8 lg:w-9 lg:h-9 dark:invert-0 invert"
       />
     </button>
   );
