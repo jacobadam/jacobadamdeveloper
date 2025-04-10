@@ -40,7 +40,7 @@ export default function NavBar() {
     >
       <div className="container mx-auto px-1">
         <div className="w-full flex items-center justify-between">
-          <div className="flex-shrink-0 dark:invert">
+          <div className="flex-shrink-0">
             <Link to="/">
               <img src="/j-icon.svg" className="w-9 h-9" alt="J logo" />
             </Link>
