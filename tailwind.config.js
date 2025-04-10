@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-import defaultTheme from "tailwindcss/defaultTheme";
-
 const tailwindConfig = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,7 +13,6 @@ const tailwindConfig = {
       xxs: "424px",
       xs: "540px",
       ms: "720px",
-      ...defaultTheme.screens,
     },
     extend: {
       colors: {},
