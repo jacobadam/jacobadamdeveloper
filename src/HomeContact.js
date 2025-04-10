@@ -33,12 +33,12 @@ export default function HomeContact() {
   return (
     <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-slate-200 dark:bg-slate-900">
       {/* Header Section */}
-      <h1 className="text-2xl lg:text-3xl font-bold text-center pt-8 dark:text-white">
+      <h1 className="text-2xl lg:text-3xl font-bold text-center pt-8 dark:text-slate-100">
         Contact
       </h1>
       {messageSent && (
         <p
-          className="text-center text-indigo-600 text-xl font-bold"
+          className="text-center text-[#8FBC8F] text-xl font-bold"
           aria-live="polite"
           role="alert"
         >
@@ -63,7 +63,7 @@ export default function HomeContact() {
         <div className="relative mb-6">
           <label
             htmlFor="name"
-            className="flex items-center mb-2 text-gray-600 dark:text-white text-sm font-medium"
+            className="flex items-center mb-2 text-gray-600 dark:text-slate-100 text-sm font-medium"
           >
             Name
             <svg
@@ -94,7 +94,7 @@ export default function HomeContact() {
         <div className="relative mb-6">
           <label
             htmlFor="email"
-            className="flex items-center mb-2 text-gray-600 dark:text-white text-sm font-medium"
+            className="flex items-center mb-2 text-gray-600 dark:text-slate-100 text-sm font-medium"
           >
             Email
             <svg
@@ -125,7 +125,7 @@ export default function HomeContact() {
         <div className="relative mb-6">
           <label
             htmlFor="message"
-            className="flex items-center mb-2 text-gray-600 dark:text-white text-sm font-medium"
+            className="flex items-center mb-2 text-gray-600 dark:text-slate-100 text-sm font-medium"
           >
             Message
             <svg
@@ -156,7 +156,7 @@ export default function HomeContact() {
           type="submit"
           value="Send"
           title="Submit your message"
-          className="w-full sm:w-32 py-2 flex items-center justify-center gap-x-1 text-white font-medium bg-indigo-600 duration-150 rounded-full mt-4 text-nowrap"
+          className="w-full sm:w-32 py-2 flex items-center justify-center gap-x-1 text-black font-semibold bg-[#8FBC8F] duration-150 rounded-full mt-4 text-nowrap"
         >
           Submit
           <svg
