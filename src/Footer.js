@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="flex space-x-10 justify-center items-center mb-10 mt-4">
               <a
                 href="https://www.linkedin.com/in/jacobnevitt/"
-                className="block text-gray-900 dark:invert transition-all duration-500 hover:text-indigo-600"
+                className="block text-gray-900 dark:invert-0 invert"
               >
                 <div className="flex justify-center items-center">
                   <img
