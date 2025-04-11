@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import DarkModeToggle from "./DarkModeToggle";
+import DarkModeToggle from "./DarkModeToggle.js";
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);

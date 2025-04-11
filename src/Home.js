@@ -1,7 +1,7 @@
-import HomeContact from "./HomeContact";
-import HomeHero from "./HomeHero";
-import HomeProjects from "./HomeProjects";
-import HomeServices from "./HomeServices";
+import HomeContact from "./HomeContact.js";
+import HomeHero from "./HomeHero.js";
+import HomeProjects from "./HomeProjects.js";
+import HomeServices from "./HomeServices.js";
 
 export default function Home() {
   return (
