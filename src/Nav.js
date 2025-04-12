@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle.js";
+import HamburgerMenu from "./HamburgerMenu.js";
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +25,6 @@ export default function NavBar() {
       top: 0,
       behavior: "smooth",
     });
-  };
-
-  const toggleMenu = () => {
-    setIsMenuOpen((prevState) => !prevState);
   };
 
   return (
@@ -91,49 +88,18 @@ export default function NavBar() {
             </ul>
           </div>
 
-          <div>
+          <div className="flex flex-row gap-1 justify-center items-center">
             <DarkModeToggle />
-
-            {!isMenuOpen && (
-              <button
-                type="button"
-                className="inline-flex items-center p-1 text-sm dark:invert rounded-lg lg:hidden"
-                aria-label="Toggle navigation"
-                onClick={toggleMenu}
-              >
-                <span className="sr-only">Open main menu</span>
-                <svg
-                  className="w-8 h-8"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            )}
-            {isMenuOpen && (
-              <button
-                type="button"
-                className="inline-flex items-center p-1 text-sm dark:invert rounded-lg lg:hidden"
-                aria-label="Close navigation"
-                onClick={() => {
-                  scrollToTop();
-                  setIsMenuOpen(false);
-                }}
-              >
-                <img src="/close.svg" className="w-8 h-8" alt="close"></img>
-              </button>
-            )}
+            <div className="lg:hidden">
+              <HamburgerMenu
+                isMenuOpen={isMobileMenuOpen}
+                onToggle={() => setIsMobileMenuOpen((prev) => !prev)}
+              />
+            </div>
           </div>
         </div>
 
-        {isMenuOpen && (
+        {isMobileMenuOpen && (
           <div className="lg:hidden">
             <ul className="flex flex-col items-left pl-8 space-y-4 py-4">
               <li>
@@ -142,7 +108,7 @@ export default function NavBar() {
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                   onClick={() => {
                     scrollToTop();
-                    setIsMenuOpen(false);
+                    setIsMobileMenuOpen(false);
                   }}
                 >
                   Home
@@ -154,7 +120,7 @@ export default function NavBar() {
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                   onClick={() => {
                     scrollToTop();
-                    setIsMenuOpen(false);
+                    setIsMobileMenuOpen(false);
                   }}
                 >
                   About
@@ -166,7 +132,7 @@ export default function NavBar() {
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                   onClick={() => {
                     scrollToTop();
-                    setIsMenuOpen(false);
+                    setIsMobileMenuOpen(false);
                   }}
                 >
                   Services
@@ -178,7 +144,7 @@ export default function NavBar() {
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                   onClick={() => {
                     scrollToTop();
-                    setIsMenuOpen(false);
+                    setIsMobileMenuOpen(false);
                   }}
                 >
                   Portfolio
@@ -190,7 +156,7 @@ export default function NavBar() {
                   className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
                   onClick={() => {
                     scrollToTop();
-                    setIsMenuOpen(false);
+                    setIsMobileMenuOpen(false);
                   }}
                 >
                   Contact
