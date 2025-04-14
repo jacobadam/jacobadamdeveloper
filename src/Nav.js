@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import DarkModeToggle from "./DarkModeToggle.js";
+import DarkModeToggle from "./DarkModeToggle.jsx";
 import HamburgerMenu from "./HamburgerMenu.js";
 
 export default function NavBar() {
