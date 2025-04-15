@@ -46,17 +46,10 @@ export default function HomeServices() {
             </p>
             <a
               href="/services"
-              className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-black font-semibold bg-[#8FBC8F] duration-150 rounded-full mt-4"
+              aria-label="Go to services"
+              class="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#8FBC8F] bg-slate-100 dark:bg-black px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-500 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
             >
-              Services
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="w-5 h-5"
-              >
-                <path d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" />
-              </svg>
+              <span class="relative z-10">Services</span>
             </a>
           </div>
 
