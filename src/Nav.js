@@ -88,7 +88,7 @@ export default function NavBar() {
             </ul>
           </div>
 
-          <div className="flex flex-row gap-1 justify-center items-center">
+          <div className="flex flex-row justify-center items-center">
             <DarkModeToggle />
             <div className="lg:hidden">
               <HamburgerMenu
