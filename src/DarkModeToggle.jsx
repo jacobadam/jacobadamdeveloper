@@ -27,18 +27,18 @@ const DarkModeToggle = () => {
   const handleClick = () => {
     if (lottieRef.current) {
       if (isDarkMode) {
+        setIsDarkMode((prev) => !prev);
         lottieRef.current?.playSegments([120, 150], true);
-        setIsDarkMode((prev) => !prev);
       } else {
-        lottieRef.current?.playSegments([30, 50], true);
         setIsDarkMode((prev) => !prev);
+        lottieRef.current?.playSegments([30, 50], true);
       }
     }
   };
 
   useEffect(() => {
     lottieRef.current?.goToAndStop(
-      localStorage.getItem("theme") === "dark" ? 0 : 177,
+      localStorage.getItem("theme") === "dark" ? 30 : 0,
       true
     );
   }, []);
