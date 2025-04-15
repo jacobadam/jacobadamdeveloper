@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle.jsx";
-import HamburgerMenu from "./HamburgerMenu.js";
+import HamburgerMenu from "./HamburgerMenu.jsx";
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +29,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`sticky top-0 z-10 py-3 px-4 md:px-0 w-full transition-colors duration-300 ${
+      className={`sticky top-0 z-10 px-4 md:px-0 w-full transition-colors duration-300 ${
         isScrolled
           ? "bg-white dark:bg-black shadow-lg"
           : "bg-gradient-to-b from-white to-slate-100 dark:from-black dark:to-black dark:bg-black"

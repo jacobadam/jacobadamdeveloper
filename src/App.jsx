@@ -2,14 +2,14 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Nav from "./Nav.js";
-import Footer from "./Footer.js";
-import NotFound from "./NotFound.js";
-import Home from "./Home.js";
-import About from "./About.js";
-import Services from "./Services.js";
-import Portfolio from "./Portfolio.js";
-import Contact from "./Contact.js";
+import Nav from "./Nav.jsx";
+import Footer from "./Footer.jsx";
+import NotFound from "./NotFound.jsx";
+import Home from "./Home.jsx";
+import About from "./About.jsx";
+import Services from "./Services.jsx";
+import Portfolio from "./Portfolio.jsx";
+import Contact from "./Contact.jsx";
 
 export default function App() {
   return (
