@@ -31,7 +31,7 @@ export default function HomeContact() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-black">
+    <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-transparent">
       <h1 className="text-2xl lg:text-3xl font-bold text-center pt-8 dark:text-gray-50">
         Contact
       </h1>
@@ -155,7 +155,7 @@ export default function HomeContact() {
           type="submit"
           value="Send"
           title="Submit your message"
-          className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#8FBC8F] bg-gray-50 dark:bg-transparent px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-500 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
+          className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#8FBC8F] bg-transparent dark:bg-transparent px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-500 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
         >
           <span className="relative z-3">Submit</span>
         </button>
