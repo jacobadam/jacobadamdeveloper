@@ -39,7 +39,11 @@ export default function NavBar() {
         <div className="w-full flex items-center justify-between">
           <div className="flex-shrink-0">
             <Link to="/">
-              <img src="/j-icon.svg" className="w-9 h-9" alt="J logo" />
+              <img
+                src="/greenhouse-webdesigns-logo.svg"
+                className="w-12 h-12"
+                alt="J logo"
+              />
             </Link>
           </div>
 
@@ -48,7 +52,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold transition-all duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold transition-all duration-500"
                 >
                   Home
                 </Link>
@@ -56,7 +60,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/about"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
                 >
                   About
                 </Link>
@@ -64,7 +68,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/services"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
                 >
                   Services
                 </Link>
@@ -72,7 +76,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/portfolio"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
                 >
                   Portfolio
                 </Link>
@@ -80,7 +84,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/contact"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
                 >
                   Contact
                 </Link>
@@ -105,7 +109,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
                   onClick={() => {
                     scrollToTop();
                     setIsMobileMenuOpen(false);
@@ -117,7 +121,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/about"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
                   onClick={() => {
                     scrollToTop();
                     setIsMobileMenuOpen(false);
@@ -129,7 +133,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/services"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
                   onClick={() => {
                     scrollToTop();
                     setIsMobileMenuOpen(false);
@@ -141,7 +145,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/portfolio"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
                   onClick={() => {
                     scrollToTop();
                     setIsMobileMenuOpen(false);
@@ -153,7 +157,7 @@ export default function NavBar() {
               <li>
                 <Link
                   to="/contact"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-600 hover:font-bold duration-500"
+                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
                   onClick={() => {
                     scrollToTop();
                     setIsMobileMenuOpen(false);
