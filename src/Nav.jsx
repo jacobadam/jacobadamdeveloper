@@ -1,7 +1,16 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle.jsx";
 import HamburgerMenu from "./HamburgerMenu.jsx";
+
+const navLinks = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/services", label: "Services" },
+  { to: "/portfolio", label: "Portfolio" },
+  { to: "/webdesign", label: "Web Design" },
+  { to: "/contact", label: "Contact" },
+];
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,57 +47,34 @@ export default function NavBar() {
       <div className="container mx-auto px-1">
         <div className="w-full flex items-center justify-between">
           <div className="flex-shrink-0">
-            <Link to="/">
+            <NavLink to="/">
               <img
                 src="/greenhouse-webdesigns-logo.svg"
-                className="w-12 h-12"
+                className="w-16 h-16"
                 alt="J logo"
               />
-            </Link>
+            </NavLink>
           </div>
 
           <div className="hidden lg:flex w-full justify-center">
             <ul className="flex items-center space-x-6">
-              <li>
-                <Link
-                  to="/"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold transition-all duration-500"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/portfolio"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
-                >
-                  Contact
-                </Link>
-              </li>
+              <li className="flex-grow md:flex-grow-0" />
+              {navLinks.map((link, index) => (
+                <li key={link.to}>
+                  <NavLink
+                    to={link.to}
+                    className={({ isActive }) =>
+                      `text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold transition-all duration-500 ${
+                        isActive
+                          ? "text-[#8FBC8F] dark:text-[#8FBC8F] font-extrabold"
+                          : "text-black dark:text-white"
+                      }`
+                    }
+                  >
+                    {link.label}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -106,66 +92,24 @@ export default function NavBar() {
         {isMobileMenuOpen && (
           <div className="lg:hidden">
             <ul className="flex flex-col items-left pl-8 space-y-4 py-4">
-              <li>
-                <Link
-                  to="/"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
-                  onClick={() => {
-                    scrollToTop();
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
-                  onClick={() => {
-                    scrollToTop();
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
-                  onClick={() => {
-                    scrollToTop();
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/portfolio"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
-                  onClick={() => {
-                    scrollToTop();
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold duration-500"
-                  onClick={() => {
-                    scrollToTop();
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  Contact
-                </Link>
-              </li>
+              {navLinks.map((link) => (
+                <li key={link.to}>
+                  <NavLink
+                    to={link.to}
+                    className={({ isActive }) =>
+                      `text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold transition-all duration-500 ${
+                        isActive ? "text-[#8FBC8F] dark:text-[#8FBC8F]" : ""
+                      }`
+                    }
+                    onClick={() => {
+                      scrollToTop();
+                      setIsMobileMenuOpen(false);
+                    }}
+                  >
+                    {link.label}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
         )}
