@@ -4,28 +4,7 @@ export default function HomepageHero() {
   const text = "Web Design That Grows With Your Business";
   const words = text.split(" ");
   return (
-    <section className="h-screen sm:pb-20 bg-gray-50 dark:bg-black relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-1 bg-gray-50 dark:bg-black">
-        <video
-          autoPlay
-          loop
-          muted
-          className="object-cover w-full h-full dark:hidden"
-        >
-          <source src="/whiteabstract.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video
-          autoPlay
-          loop
-          muted
-          className="object-cover w-full h-full hidden dark:block"
-        >
-          <source src="/stars.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
+    <section className="h-screen sm:pb-20 bg-transparent relative overflow-hidden">
       <div className="h-full flex flex-col lg:flex-row items-center justify-center relative max-w-screen-xl mx-auto px-4 pb-16 md:pb-0 md:px-8">
         <div className="flex flex-col items-center justify-center px-4 text-center md:max-w-xl mx-auto">
           <motion.h1
