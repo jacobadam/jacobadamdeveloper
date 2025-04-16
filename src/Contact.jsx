@@ -27,7 +27,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-16 bg-gray-50 dark:bg-slate-900 flex-grow">
+    <section className="py-16 bg-transparent flex-grow">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:items-start items-center lg:justify-start justify-center">
           <div className="flex flex-col items-center text-center px-4 sm:px-6">

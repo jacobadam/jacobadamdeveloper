@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="pt-4 xs:pt-8 pb-20 relative bg-gray-50 dark:bg-slate-900 flex-grow">
+    <section className="pt-4 xs:pt-8 pb-20 relative bg-transparent flex-grow">
       <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         <div className="w-full flex-col justify-start items-start lg:gap-12 gap-10 inline-flex">
           {/* Header Section */}
@@ -11,10 +11,6 @@ export default function About() {
               Hello,{" "}
               <span className="text-indigo-600 font-bold">I’m Jacob.</span>
             </h2>
-            {/* <p className="max-w-xl text-center text-gray-900 dark:text-white text-sm lg:text-base font-medium leading-relaxed">
-              As a Web Development Services We are Committed to Building Custom
-              Web Solutions that Drive Business Success.
-            </p> */}
           </div>
 
           {/* Content Section */}
