@@ -1,12 +1,18 @@
-// import { useEffect } from "react";
 import { motion } from "motion/react";
 
 export default function HomepageHero() {
   const text = "Web Design That Grows With Your Business";
   const words = text.split(" ");
   return (
-    <section className="h-screen sm:pb-20 bg-slate-100 dark:bg-black">
-      <div className="h-full flex flex-col lg:flex-row items-center justify-center relative max-w-screen-xl mx-auto overflow-hidden px-4 pb-16 md:pb-0 md:px-8">
+    <section className="h-screen sm:pb-20 bg-slate-100 dark:bg-black relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-1 dark:block hidden">
+        <video autoPlay loop muted className="object-cover w-full h-full">
+          <source src="/stars.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div className="h-full flex flex-col lg:flex-row items-center justify-center relative max-w-screen-xl mx-auto px-4 pb-16 md:pb-0 md:px-8">
         <div className="flex flex-col items-center justify-center px-4 text-center md:max-w-xl mx-auto">
           <motion.h1
             className="flex flex-row flex-wrap justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-800 dark:text-slate-100 font-extrabold"
@@ -39,22 +45,22 @@ export default function HomepageHero() {
             <a
               href="/services"
               aria-label="Go to services"
-              class="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#8FBC8F] bg-slate-100 dark:bg-black px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-500 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
+              class="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#8FBC8F] bg-slate-100 dark:bg-transparent px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-500 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
             >
-              <span class="relative z-10">Services</span>
+              <span class="relative z-3">Services</span>
             </a>
             <a
               href="/contact"
               aria-label="Go to contact page"
-              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden hover:border hover:border-[#8FBC8F] bg-slate-100 dark:bg-black px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-300 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full hover:rounded-full font-semibold mt-4"
+              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden hover:border hover:border-[#8FBC8F] bg-slate-100 dark:bg-transparent px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-300 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
             >
-              <span class="relative z-10">Get in touch</span>
+              <span class="relative z-3">Get in touch</span>
             </a>
           </div>
         </div>
 
         {/* Image Section */}
-        <div className="mt-12 lg:mt-0 lg:ml-12 flex justify-center">
+        <div className="mt-12 lg:mt-0 lg:ml-12 flex justify-center relative z-2">
           <img
             src="hero-image.svg"
             className="w-3/4 md:w-2/4 lg:w-full"
