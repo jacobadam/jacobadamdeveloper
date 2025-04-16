@@ -26,7 +26,7 @@ export default function HomeProjects() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-5">
           <div className="flex justify-center flex-wrap gap-8">
             <div className="w-full lg:w-2/5 flex flex-col items-center justify-center">
-              <h1 className="text-2xl lg:text-3xl font-bold text-center text-slate-100 pb-4 md:pb-8">
+              <h1 className="text-2xl lg:text-3xl font-bold text-center text-gray-50 pb-4 md:pb-8">
                 Latest Projects
               </h1>
               <div className="flex items-center gap-8">
@@ -35,7 +35,7 @@ export default function HomeProjects() {
                   aria-label="Previous slide"
                 >
                   <svg
-                    className="h-6 w-6 text-black group-hover:text-slate-100"
+                    className="h-6 w-6 text-black group-hover:text-gray-50"
                     viewBox="0 0 24 24"
                     fill="none"
                   >
@@ -53,7 +53,7 @@ export default function HomeProjects() {
                   aria-label="Next slide"
                 >
                   <svg
-                    className="h-6 w-6 text-black group-hover:text-slate-100"
+                    className="h-6 w-6 text-black group-hover:text-gray-50"
                     viewBox="0 0 24 24"
                     fill="none"
                   >

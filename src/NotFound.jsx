@@ -1,6 +1,6 @@
 export default function NotFound() {
   return (
-    <main className="grid min-h-full place-items-center bg-slate-200 dark:bg-black px-6 py-24 sm:py-32 lg:px-8 flex-grow">
+    <main className="grid min-h-full place-items-center bg-gray-50 dark:bg-black px-6 py-24 sm:py-32 lg:px-8 flex-grow">
       <div className="text-center">
         <p className="text-xl font-semibold text-indigo-600">404</p>
         <h1 className="mt-4 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl dark:text-white">
