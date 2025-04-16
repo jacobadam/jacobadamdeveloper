@@ -50,7 +50,7 @@ export default function NavBar() {
             <NavLink to="/">
               <img
                 src="/greenhouse-webdesigns-logo.svg"
-                className="w-16 h-16"
+                className="w-12 h-12 2xl:w-16 2xl:h-16"
                 alt="J logo"
               />
             </NavLink>
