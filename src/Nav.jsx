@@ -57,7 +57,7 @@ export default function NavBar() {
           </div>
 
           <div className="hidden lg:flex w-full justify-center">
-            <ul className="flex items-center space-x-6">
+            <ul className="flex items-center space-x-10">
               <li className="flex-grow md:flex-grow-0" />
               {navLinks.map((link, index) => (
                 <li key={link.to}>
