@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-b from-gray-50 to-white dark:from-black dark:to-black min-h-[80px]">
+    <footer className="w-full bg-transparent min-h-[80px]">
       <div className="w-full">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
