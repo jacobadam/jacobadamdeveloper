@@ -31,7 +31,7 @@ export default function HomeContact() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-slate-200 dark:bg-black">
+    <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-slate-100 dark:bg-black">
       <h1 className="text-2xl lg:text-3xl font-bold text-center pt-8 dark:text-slate-100">
         Contact
       </h1>
