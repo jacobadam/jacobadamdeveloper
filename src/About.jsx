@@ -38,9 +38,10 @@ export default function About() {
                 </p>
                 <p className="text-gray-900 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-4 lg:px-0">
                   I grew up in Liverpool, and have since lived in London, New
-                  York, Vancouver, and Sayulita. I currently live in Nelson, BC
-                  and in my free time like to run, ski, play 90’s video games,
-                  and watch as much of the Criterion collection as possible.
+                  York, Vancouver, and Sayulita. I currently live in Kimberley,
+                  BC and in my free time like to trail run, ski, play 90’s video
+                  games, and watch as much of the Criterion collection as
+                  possible.
                 </p>
               </div>
 
