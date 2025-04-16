@@ -31,8 +31,7 @@ export default function HomeContact() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-slate-200 dark:bg-slate-900">
-      {/* Header Section */}
+    <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-slate-200 dark:bg-black">
       <h1 className="text-2xl lg:text-3xl font-bold text-center pt-8 dark:text-slate-100">
         Contact
       </h1>
@@ -156,18 +155,9 @@ export default function HomeContact() {
           type="submit"
           value="Send"
           title="Submit your message"
-          className="w-full sm:w-32 py-2 flex items-center justify-center gap-x-1 text-black font-semibold bg-[#8FBC8F] duration-150 rounded-full mt-4 text-nowrap"
+          className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#8FBC8F] bg-slate-100 dark:bg-transparent px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-500 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
         >
-          Submit
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="w-5 h-5"
-            aria-hidden="true"
-          >
-            <path d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" />
-          </svg>
+          <span className="relative z-3">Submit</span>
         </button>
       </form>
     </div>
