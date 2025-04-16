@@ -33,7 +33,7 @@ const services = [
 
 export default function HomeServices() {
   return (
-    <section className="flex items-center justify-center bg-slate-100 dark:bg-black">
+    <section className="flex items-center justify-center bg-slate-100 dark:bg-slate-900">
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
@@ -47,9 +47,9 @@ export default function HomeServices() {
             <a
               href="/services"
               aria-label="Go to services"
-              class="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#8FBC8F] bg-slate-100 dark:bg-black px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-500 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
+              class="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#8FBC8F] bg-slate-100 dark:bg-transparent px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-500 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
             >
-              <span class="relative z-10">Services</span>
+              <span class="relative z-3">Services</span>
             </a>
           </div>
 
