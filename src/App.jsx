@@ -9,6 +9,7 @@ import Home from "./Home.jsx";
 import About from "./About.jsx";
 import Services from "./Services.jsx";
 import Portfolio from "./Portfolio.jsx";
+import WebDesign from "./WebDesign.jsx";
 import Contact from "./Contact.jsx";
 
 export default function App() {
@@ -44,6 +45,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/webdesign" element={<WebDesign />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
