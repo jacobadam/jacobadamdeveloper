@@ -1,31 +1,32 @@
+import { motion } from "motion/react";
 import React from "react";
 
 const services = [
   {
-    title: "Custom Build",
+    title: "Mobile First Design",
     description:
-      "Clean, bespoke design with intuitive navigation and an engaging interface.",
+      "Optimized for every device, starting with mobile — ensuring fast load times, seamless navigation, and a user experience that drives engagement from the first tap",
     svgPath: "/custom-website2.svg",
     alt: "Code icon",
   },
   {
     title: "Responsive Design",
     description:
-      "Websites that adapt to any screen size, ensuring an optimal experience across all devices.",
+      "Flexible layouts that respond smoothly to all screen sizes — ensuring visual consistency, intuitive interaction, and a great experience on every type of device",
     svgPath: "/responsive-design.svg",
     alt: "Devices icon",
   },
   {
-    title: "Performance Optimization",
+    title: "Optimized Page Speed",
     description:
-      "A smooth, efficient user experience that drives engagement and conversion.",
+      "Websites designed to load fast and run smoothly — reducing bounce rates, keeping visitors engaged, and improving overall performance across all major devices",
     svgPath: "/performance-optimization.svg",
     alt: "Chart icon",
   },
   {
     title: "Search Engine Optimization",
     description:
-      "Proven SEO strategies that improve search rankings and drive more organic traffic. ",
+      "Strategic SEO implementation that improves visibility — boosting rankings in search results, increasing organic traffic, and helping your site reach more users",
     svgPath: "/seo.svg",
     alt: "SEO icon",
   },
@@ -33,7 +34,7 @@ const services = [
 
 export default function HomeServices() {
   return (
-    <section className="flex items-center justify-center bg-gray-50 dark:bg-slate-900">
+    <section className="flex items-center justify-center bg-slate-100 dark:bg-black">
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
@@ -47,22 +48,20 @@ export default function HomeServices() {
             <a
               href="/services"
               aria-label="Go to services"
-              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#8FBC8F] bg-gray-50 dark:bg-transparent px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-500 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
+              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#6fa96f] bg-gray-50 dark:bg-transparent px-3 text-black dark:text-[#6fa96f] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] before:transition-all before:duration-500 hover:text-white hover:shadow-[#6fa96f] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
             >
-              <span className="relative z-3">Services</span>
+              <span className="relative">Services</span>
             </a>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             {services.map((service, index) => (
-              <div
-                key={index}
-                className="block rounded-xl border border-gray-50 p-4 shadow-lg"
-              >
-                <div className="flex flex-col items-center text-center sm:text-left sm:items-start">
+              <div className="group relative mx-auto w-full max-w-sm overflow-hidden rounded-lg bg-slate-800 p-0.5 transition-all duration-500 hover:scale-[1.00] hover:bg-slate-800">
+                <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-[7px] bg-slate-800 dark:bg-slate-900 p-8 transition-colors duration-500 group-hover:bg-slate-800">
                   <div className="inline-block rounded-lg p-2">
                     <img
                       className="w-11 h-11 object-contain bg-gray-50 p-1 rounded"
+                      key={index}
                       src={service.svgPath}
                       alt={service.alt}
                       aria-hidden="true"
@@ -70,13 +69,25 @@ export default function HomeServices() {
                       height="32"
                     />
                   </div>
-                  <h1 className="mt-2 font-bold dark:text-gray-50">
+                  <h2 className="relative mb-4 w-full text-xl font-bold text-white dark:text-gray-50 text-center">
                     {service.title}
-                  </h1>
-                  <p className="hidden sm:mt-1 sm:block sm:text-base sm:text-gray-600 dark:sm:text-gray-300">
+                  </h2>
+                  <p className="relative text-gray-50 dark:text-gray-300 text-center">
                     {service.description}
                   </p>
                 </div>
+
+                <motion.div
+                  initial={{ rotate: "0deg" }}
+                  animate={{ rotate: "360deg" }}
+                  style={{ scale: 1.75 }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 3.5,
+                    ease: "linear",
+                  }}
+                  className="absolute inset-0 z-0 bg-gradient-to-br from-indigo-200 via-indigo-200/0 to-indigo-200 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                />
               </div>
             ))}
           </div>
