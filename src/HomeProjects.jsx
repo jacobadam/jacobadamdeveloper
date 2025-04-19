@@ -1,117 +1,87 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import SliderCard from "./SliderCard.jsx";
-
-const slidesData = [
-  {
-    image: "https://www.katieshevlin.com/hero-image.webp",
-    title: "Content Services Website",
-    url: "https://www.katieshevlin.com/",
-  },
-  {
-    image: "https://www.neilnevitt.com/homepage-image.webp",
-    title: "Healthcare Website",
-    url: "https://www.neilnevitt.com/",
-  },
-];
 
 export default function HomeProjects() {
   return (
-    <>
-      <section className="relative bg-[#8FBC8F] dark:bg-black py-12 lg:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-5">
-          <div className="flex justify-center flex-wrap gap-8">
-            <div className="w-full lg:w-2/5 flex flex-col items-center justify-center">
-              <h1 className="text-2xl lg:text-3xl font-bold text-center text-gray-50 pb-4 md:pb-8">
-                Latest Projects
-              </h1>
-              <div className="flex items-center gap-8">
-                <button
-                  className="md:hidden portfolio-button-prev group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all"
-                  aria-label="Previous slide"
-                >
-                  <svg
-                    className="h-6 w-6 text-black group-hover:text-gray-50"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
-                <button
-                  className="md:hidden portfolio-button-next group flex justify-center items-center border border-black w-11 h-11 rounded-full transition-all"
-                  aria-label="Next slide"
-                >
-                  <svg
-                    className="h-6 w-6 text-black group-hover:text-gray-50"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
+    <section className="py-20 relative bg-slate-100 dark:bg-black">
+      <div className="w-full max-w-2xl lg:max-w-7xl px-6 lg:px-8 mx-auto">
+        <h1 className="font-manrope font-medium text-4xl text-gray-900 dark:text-white mb-10 max-md:text-center">
+          Professional Project Achievements
+        </h1>
 
-            <div className="w-full lg:w-3/5">
-              <Swiper
-                modules={[Navigation, Pagination]}
-                slidesPerView={2}
-                spaceBetween={28}
-                navigation={{
-                  nextEl: ".portfolio-button-next",
-                  prevEl: ".portfolio-button-prev",
-                }}
-                loop={true}
-                breakpoints={{
-                  0: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                    loop: true,
-                  },
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 28,
-                    loop: false,
-                  },
-                }}
-                aria-live="polite"
-              >
-                {slidesData.map((slide, index) => (
-                  <SwiperSlide
-                    key={index}
-                    className="group"
-                    aria-label={`Slide ${index + 1}`}
-                  >
-                    <SliderCard
-                      image={slide.image}
-                      title={slide.title}
-                      url={slide.url}
-                      ariaLabel={`View the ${slide.title} project`}
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div className="group flex items-center flex-col gap-8 w-full">
+            <div className="w-full h-60">
+              <img
+                className="w-full h-full rounded-3xl object-cover"
+                src="https://www.katieshevlin.com/hero-image.webp"
+                alt="Content services website"
+              />
+            </div>
+            <div className="flex items-center justify-between max-w-[406px] lg:max-w-full w-full lg:px-0">
+              <div className="block">
+                <h4 className="text-2xl font-manrope font-semibold text-gray-900 dark:text-white mb-1">
+                  Content Services Website
+                </h4>
+                <p className="font-medium text-lg text-gray-400">
+                  Content Design, Marketing
+                </p>
+              </div>
+              <button className="border border-black bg-[#8FBC8F] hover:border-[#8FBC8F] py-2 px-3.5 rounded-full transition-all duration-300 group-hover:bg-black">
+                <svg
+                  className="stroke-black transition-all duration-300 group-hover:stroke-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={17}
+                  height={16}
+                  viewBox="0 0 17 16"
+                  fill="none"
+                >
+                  <path
+                    d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
+                    stroke=""
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div className="group flex items-center flex-col gap-8 w-full">
+            <div className="w-full h-60">
+              <img
+                className="w-full h-full rounded-3xl object-cover"
+                src="https://www.neilnevitt.com/homepage-image.webp"
+                alt="Healthcare Website"
+              />
+            </div>
+            <div className="flex items-center justify-between max-w-[406px] lg:max-w-full w-full lg:px-0">
+              <div className="block">
+                <h4 className="text-2xl font-manrope font-semibold text-gray-900 dark:text-white mb-1">
+                  Healthcare Website
+                </h4>
+                <p className="font-medium text-lg text-gray-400">Healthcare</p>
+              </div>
+              <button className="border border-black bg-[#8FBC8F] hover:border-[#8FBC8F] py-2 px-3.5 rounded-full transition-all duration-300 group-hover:bg-black">
+                <svg
+                  className="stroke-black transition-all duration-300 group-hover:stroke-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={17}
+                  height={16}
+                  viewBox="0 0 17 16"
+                  fill="none"
+                >
+                  <path
+                    d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
+                    stroke=""
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
