@@ -1,3 +1,4 @@
+import HomeBenefits from "./HomeBenefits.jsx";
 import HomeContact from "./HomeContact.jsx";
 import HomeHero from "./HomeHero.jsx";
 import HomeProjects from "./HomeProjects.jsx";
@@ -7,8 +8,9 @@ export default function Home() {
   return (
     <div>
       <HomeHero />
-      <HomeProjects />
       <HomeServices />
+      <HomeBenefits />
+      <HomeProjects />
       <HomeContact />
     </div>
   );
