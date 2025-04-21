@@ -1,19 +1,17 @@
-import React, { useEffect, useState, useRef } from "react";
-import Lottie from "lottie-react";
-import darkModeToggle from "./assets/dark-mode-lottie.json";
+import { useState, useEffect } from "react";
+import { motion } from "motion/react";
+import { BsFillCloudyFill, BsStarFill } from "react-icons/bs";
 
-const DarkModeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
-  const lottieRef = useRef(null);
+const ToggleWrapper = () => {
+  const initialTheme = localStorage.getItem("theme");
+  const [mode, setMode] = useState(initialTheme === "dark" ? "dark" : "light");
 
   useEffect(() => {
     const root = document.documentElement;
     const metaThemeColor = document.querySelector('meta[name="theme-color"]');
-    const themeColor = isDarkMode ? "#000000" : "#f1f5f9";
+    const themeColor = mode === "dark" ? "#000000" : "#f1f5f9";
 
-    if (isDarkMode) {
+    if (mode === "dark") {
       root.setAttribute("data-theme", "dark");
       localStorage.setItem("theme", "dark");
       metaThemeColor.content = themeColor;
@@ -22,41 +20,179 @@ const DarkModeToggle = () => {
       localStorage.setItem("theme", "light");
       metaThemeColor.content = themeColor;
     }
-  }, [isDarkMode]);
-
-  const handleClick = () => {
-    if (lottieRef.current) {
-      if (isDarkMode) {
-        setIsDarkMode((prev) => !prev);
-        lottieRef.current?.playSegments([120, 150], true);
-      } else {
-        setIsDarkMode((prev) => !prev);
-        lottieRef.current?.playSegments([30, 50], true);
-      }
-    }
-  };
-
-  useEffect(() => {
-    lottieRef.current?.goToAndStop(
-      localStorage.getItem("theme") === "dark" ? 30 : 0,
-      true
-    );
-  }, []);
+  }, [mode]);
 
   return (
-    <button
-      onClick={handleClick}
-      className="w-24 h-24 p-1 rounded focus:outline-none"
-      aria-label="Toggle dark mode"
+    <div
+      className={
+        "px-2 h-12 flex items-center justify-center transition-colors bg-transparent"
+      }
     >
-      <Lottie
-        lottieRef={lottieRef}
-        loop={false}
-        autoplay={false}
-        animationData={darkModeToggle}
-      />
-    </button>
+      <button
+        onClick={() => setMode(mode === "dark" ? "light" : "dark")}
+        className={`p-1 w-16 rounded-full flex shadow-md relative bg-gradient-to-b ${
+          mode === "light"
+            ? "justify-end from-blue-500 to-sky-300"
+            : "justify-start from-indigo-600 to-indigo-400"
+        }`}
+      >
+        <Thumb mode={mode} />
+        {mode === "light" && <Clouds />}
+        {mode === "dark" && <Stars />}
+      </button>
+    </div>
   );
 };
 
-export default DarkModeToggle;
+const Thumb = ({ mode }) => {
+  return (
+    <motion.div
+      layout
+      transition={{
+        duration: 0.75,
+        type: "spring",
+      }}
+      className="h-6 w-6 rounded-full overflow-hidden shadow-sm relative"
+    >
+      <div
+        className={`absolute inset-0 ${
+          mode === "dark"
+            ? "bg-slate-100"
+            : "animate-pulse bg-gradient-to-tr from-amber-300 to-yellow-500 rounded-full"
+        }`}
+      />
+      {mode === "light" && <SunCenter />}
+      {mode === "dark" && <MoonSpots />}
+    </motion.div>
+  );
+};
+
+const SunCenter = () => (
+  <div className="absolute inset-1 rounded-full bg-amber-300" />
+);
+
+const MoonSpots = () => (
+  <>
+    <motion.div
+      initial={{ x: -2, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ delay: 0.15, duration: 0.35 }}
+      className="w-1.5 h-1.5 rounded-full bg-slate-300 absolute right-1 bottom-0.5"
+    />
+    <motion.div
+      initial={{ x: -2, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ delay: 0.2, duration: 0.35 }}
+      className="w-1.5 h-1.5 rounded-full bg-slate-300 absolute left-0.5 bottom-2"
+    />
+    <motion.div
+      initial={{ x: -2, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ delay: 0.25, duration: 0.35 }}
+      className="w-1 h-1 rounded-full bg-slate-300 absolute right-1 top-1"
+    />
+  </>
+);
+
+const Stars = () => {
+  return (
+    <>
+      <motion.span
+        animate={{
+          scale: [0.6, 0.8, 0.6],
+          opacity: [0.6, 0.8, 0.6],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 5,
+          ease: "easeIn",
+        }}
+        className="text-slate-300 text-[0.6rem] absolute right-5 top-0.5"
+      >
+        <BsStarFill />
+      </motion.span>
+      <motion.span
+        animate={{
+          scale: [0.8, 0.6, 0.8],
+          opacity: [0.4, 0.2, 0.4],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 3.5,
+          ease: "easeIn",
+        }}
+        style={{ rotate: "-45deg" }}
+        className="text-slate-300 text-sm absolute right-2 top-1"
+      >
+        <BsStarFill />
+      </motion.span>
+      <motion.span
+        animate={{
+          scale: [0.8, 0.4, 0.8],
+          opacity: [0.8, 0.4, 0.8],
+        }}
+        style={{ rotate: "45deg" }}
+        transition={{
+          repeat: Infinity,
+          duration: 2.5,
+          ease: "easeIn",
+        }}
+        className="text-slate-300 absolute right-4 top-4"
+      >
+        <BsStarFill />
+      </motion.span>
+    </>
+  );
+};
+
+const Clouds = () => {
+  return (
+    <>
+      <motion.span
+        animate={{ x: [-10, -7.5, -5, -2.5, 0], opacity: [0, 1, 0.75, 1, 0] }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          delay: 0.25,
+        }}
+        className="text-white text-[0.6rem] absolute left-5 top-0.5"
+      >
+        <BsFillCloudyFill />
+      </motion.span>
+      <motion.span
+        animate={{ x: [-5, 0, 5, 10, 15], opacity: [0, 1, 0.75, 1, 0] }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          delay: 0.5,
+        }}
+        className="text-white text-sm absolute left-2 top-2"
+      >
+        <BsFillCloudyFill />
+      </motion.span>
+      {/* <motion.span
+        animate={{ x: [-3.5, 0, 3.5, 7, 10.5], opacity: [0, 1, 0.75, 1, 0] }}
+        transition={{
+          duration: 12.5,
+          repeat: Infinity,
+        }}
+        className="text-white absolute left-4.5 top-4"
+      >
+        <BsFillCloudyFill />
+      </motion.span> */}
+      <motion.span
+        animate={{ x: [-7.5, 0, 7.5, 15, 22.5], opacity: [0, 1, 0.75, 1, 0] }}
+        transition={{
+          duration: 25,
+          repeat: Infinity,
+          delay: 0.75,
+        }}
+        className="text-white absolute text-[0.6rem] left-7 top-2"
+      >
+        <BsFillCloudyFill />
+      </motion.span>
+    </>
+  );
+};
+
+export default ToggleWrapper;
