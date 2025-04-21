@@ -3,18 +3,9 @@ import { NavLink } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle.jsx";
 import HamburgerMenu from "./HamburgerMenu.jsx";
 
-const navLinks = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/services", label: "Services" },
-  { to: "/portfolio", label: "Portfolio" },
-  { to: "/webdesign", label: "Web Design" },
-  { to: "/contact", label: "Contact" },
-];
-
 export default function NavBar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,56 +20,58 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  const navLinks = [
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About" },
+    { to: "/services", label: "Services" },
+    { to: "/portfolio", label: "Portfolio" },
+    { to: "/webdesign", label: "Web Design" },
+    { to: "/contact", label: "Contact" },
+  ];
 
   return (
-    <nav
-      className={`sticky top-0 z-10 px-4 md:px-0 w-full transition-colors duration-300 ${
-        isScrolled ? "bg-gray-50 dark:bg-black shadow-lg" : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto px-1">
-        <div className="w-full flex items-center justify-between">
-          <div className="flex-shrink-0">
-            <NavLink to="/">
-              <img
-                src="/greenhouse-webdesigns-logo.svg"
-                className="w-12 h-12 2xl:w-16 2xl:h-16"
-                alt="J logo"
-              />
-            </NavLink>
+    <>
+      <nav
+        className={`bg-black fixed top-0 z-10 overflow-hidden border-[1px] border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur px-4 transition-all duration-300 ${
+          isScrolled
+            ? "left-0 right-0"
+            : "mx-auto md:left-6 md:right-6 md:top-6 md:rounded-2xl"
+        }`}
+      >
+        <div className="flex items-center justify-between">
+          <NavLink to="/" className="w-32 opacity-100" exact>
+            <img
+              src="/greenhouse-logo.svg"
+              alt="Greenhouse Web Designs Logo"
+              className="opacity-100"
+            />
+          </NavLink>
+
+          <div className="hidden items-center gap-2 md:flex opacity-100">
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                className={({ isActive }) =>
+                  `group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95 opacity-100 ${
+                    isActive
+                      ? "text-[#6fa96f] dark:text-[#6fa96f] font-extrabold"
+                      : "text-white"
+                  }`
+                }
+                exact
+              >
+                <span className="text-sm lg:text-base font-medium transition-all duration-500 opacity-100">
+                  {link.label}
+                </span>
+                <span className="absolute inset-0 z-0 opacity-100 transition-opacity group-hover:opacity-100" />
+              </NavLink>
+            ))}
           </div>
 
-          <div className="hidden lg:flex w-full justify-center">
-            <ul className="flex items-center space-x-10">
-              <li className="flex-grow md:flex-grow-0" />
-              {navLinks.map((link, index) => (
-                <li key={link.to}>
-                  <NavLink
-                    to={link.to}
-                    className={({ isActive }) =>
-                      `text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold transition-all duration-500 ${
-                        isActive
-                          ? "text-[#8FBC8F] dark:text-[#8FBC8F] font-extrabold"
-                          : "text-black dark:text-white"
-                      }`
-                    }
-                  >
-                    {link.label}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="flex flex-row justify-center items-center">
+          <div className="flex flex-row justify-center items-center opacity-100">
             <DarkModeToggle />
-            <div className="lg:hidden">
+            <div className="lg:hidden opacity-100">
               <HamburgerMenu
                 isMenuOpen={isMobileMenuOpen}
                 onToggle={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -88,21 +81,21 @@ export default function NavBar() {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden">
-            <ul className="flex flex-col items-left pl-8 space-y-4 py-4">
+          <div className="lg:hidden bg-white backdrop-blur opacity-100">
+            <ul className="flex flex-col items-left pl-8 space-y-4 py-4 opacity-100">
               {navLinks.map((link) => (
-                <li key={link.to}>
+                <li key={link.to} className="opacity-100">
                   <NavLink
                     to={link.to}
                     className={({ isActive }) =>
-                      `text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#8FBC8F] dark:hover:text-[#8FBC8F] hover:font-bold transition-all duration-500 ${
-                        isActive ? "text-[#8FBC8F] dark:text-[#8FBC8F]" : ""
+                      `text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#6fa96f] dark:hover:text-[#6fa96f] hover:font-bold transition-all duration-500 opacity-100 ${
+                        isActive ? "text-[#6fa96f] dark:text-[#6fa96f]" : ""
                       }`
                     }
                     onClick={() => {
-                      scrollToTop();
                       setIsMobileMenuOpen(false);
                     }}
+                    exact
                   >
                     {link.label}
                   </NavLink>
@@ -111,7 +104,7 @@ export default function NavBar() {
             </ul>
           </div>
         )}
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
