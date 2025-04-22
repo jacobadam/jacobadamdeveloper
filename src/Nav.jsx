@@ -32,14 +32,14 @@ export default function NavBar() {
   return (
     <>
       <nav
-        className={`bg-black fixed top-0 z-10 overflow-hidden border-[1px] border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur px-4 transition-all duration-300 ${
+        className={`bg-black fixed top-0 z-10 overflow-hidden border-[1px] border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur px-4 transition-all duration-300 w-full md:w-auto ${
           isScrolled
             ? "left-0 right-0"
             : "mx-auto md:left-6 md:right-6 md:top-6 md:rounded-2xl"
         }`}
       >
         <div className="flex items-center justify-between">
-          <NavLink to="/" className="w-32 opacity-100" exact>
+          <NavLink to="/" className="w-24 opacity-100 p-2" exact>
             <img
               src="/greenhouse-logo.svg"
               alt="Greenhouse Web Designs Logo"
@@ -47,7 +47,7 @@ export default function NavBar() {
             />
           </NavLink>
 
-          <div className="hidden items-center gap-2 md:flex opacity-100">
+          <div className="hidden items-center gap-2 lg:flex opacity-100">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
