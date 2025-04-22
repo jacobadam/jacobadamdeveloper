@@ -32,13 +32,13 @@ const ToggleWrapper = () => {
         onClick={() => setMode(mode === "dark" ? "light" : "dark")}
         className={`p-1 w-16 rounded-full flex shadow-md relative bg-gradient-to-b ${
           mode === "light"
-            ? "justify-end from-blue-500 to-sky-300"
-            : "justify-start from-indigo-600 to-indigo-400"
+            ? " justify-start from-indigo-600 to-indigo-400"
+            : "justify-end from-blue-500 to-sky-300"
         }`}
       >
         <Thumb mode={mode} />
-        {mode === "light" && <Clouds />}
-        {mode === "dark" && <Stars />}
+        {mode === "light" && <Stars />}
+        {mode === "dark" && <Clouds />}
       </button>
     </div>
   );
@@ -57,12 +57,12 @@ const Thumb = ({ mode }) => {
       <div
         className={`absolute inset-0 ${
           mode === "dark"
-            ? "bg-slate-100"
-            : "animate-pulse bg-gradient-to-tr from-amber-300 to-yellow-500 rounded-full"
+            ? "animate-pulse bg-gradient-to-tr from-amber-300 to-yellow-500 rounded-full"
+            : "bg-slate-100"
         }`}
       />
-      {mode === "light" && <SunCenter />}
-      {mode === "dark" && <MoonSpots />}
+      {mode === "light" && <MoonSpots />}
+      {mode === "dark" && <SunCenter />}
     </motion.div>
   );
 };
