@@ -11,25 +11,28 @@ import Services from "./Services.jsx";
 import Portfolio from "./Portfolio.jsx";
 import WebDesign from "./WebDesign.jsx";
 import Contact from "./Contact.jsx";
-import { Background } from "./Background.jsx";
+import Background from "./Background.jsx";
+import { ThemeProvider } from "./ThemeContext.js";
 
 export default function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-        <Background />
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/webdesign" element={<WebDesign />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-      </div>
+      <ThemeProvider>
+        <div className="flex flex-col min-h-screen">
+          <Background />
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/webdesign" element={<WebDesign />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </div>
+      </ThemeProvider>
     </Router>
   );
 }
