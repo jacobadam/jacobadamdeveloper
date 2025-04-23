@@ -1,23 +1,30 @@
 import React from "react";
 import { motion } from "motion/react";
+import { useTheme } from "./ThemeContext";
 
-export const Background = () => {
+export default function Background() {
   return (
-    <div className="fixed top-0 left-0 w-full h-full overflow-hidden bg-slate-950 -z-10">
+    <div className="fixed top-0 left-0 w-full h-full overflow-hidden bg-slate-100 dark:bg-zinc-950 z-1">
       <BGGrid />
     </div>
   );
-};
+}
 
 const BGGrid = () => {
+  const { mode } = useTheme();
+  const isDarkMode = mode === "dark";
+
+  const lightModeGrid = `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='1' stroke='rgba(0, 0, 0, 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`;
+  const darkModeGrid = `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='rgb(30 27 75 / 0.5)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`;
+
   return (
     <div
       style={{
-        backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='rgb(30 27 75 / 0.5)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`,
+        backgroundImage: isDarkMode ? darkModeGrid : lightModeGrid,
       }}
       className="absolute bottom-0 left-0 right-0 top-0"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/0 to-slate-950/80" />
+      <div className="absolute inset-0 dark:bg-gradient-to-b dark:from-zinc-950/80 dark:via-zinc-950/0 dark:to-zinc-950/80" />
       <Beams />
     </div>
   );
