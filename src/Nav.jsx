@@ -58,12 +58,12 @@ export default function NavBar() {
                 className={({ isActive }) =>
                   `group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95 opacity-100 ${
                     isActive
-                      ? "text-[#6fa96f] dark:text-[#6fa96f] font-extrabold"
+                      ? "text-[#6fa96f] dark:text-[#6fa96f]"
                       : "text-white"
                   }`
                 }
               >
-                <span className="text-sm lg:text-base font-medium transition-all duration-500 opacity-100">
+                <span className="text-sm lg:text-base font-normal transition-all duration-500 opacity-100">
                   {link.label}
                 </span>
                 <span className="absolute inset-0 z-0 opacity-100 transition-opacity group-hover:opacity-100" />
