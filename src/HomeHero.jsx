@@ -44,14 +44,14 @@ export default function HomepageHero() {
             <a
               href="/services"
               aria-label="Go to services"
-              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#8FBC8F] bg-transparent dark:bg-transparent px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-500 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
+              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#6fa96f] bg-transparent dark:bg-transparent px-3 text-black dark:text-[#6fa96f] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] before:transition-all before:duration-500 hover:text-white hover:shadow-[#6fa96f] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
             >
               <span className="relative z-3">Services</span>
             </a>
             <a
               href="/contact"
               aria-label="Go to contact page"
-              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden hover:border hover:border-[#8FBC8F] bg-transparent dark:bg-transparent px-3 text-black dark:text-[#8FBC8F] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#8FBC8F] before:transition-all before:duration-300 hover:text-white hover:shadow-[#8FBC8F] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
+              className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden hover:border hover:border-[#6fa96f] bg-transparent dark:bg-transparent px-3 text-black dark:text-[#6fa96f] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] before:transition-all before:duration-300 hover:text-white hover:shadow-[#6fa96f] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
             >
               <span className="relative z-3">Get in touch</span>
             </a>
