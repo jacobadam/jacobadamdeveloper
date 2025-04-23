@@ -6,7 +6,7 @@ const services = [
     title: "Mobile First Design",
     description:
       "Optimized for every device, starting with mobile — ensuring fast load times, seamless navigation, and a user experience that drives engagement from the first tap",
-    svgPath: "/custom-website2.svg",
+    svgPath: "/custom-website.svg",
     alt: "Code icon",
   },
   {
@@ -34,7 +34,7 @@ const services = [
 
 export default function HomeServices() {
   return (
-    <section className="flex items-center justify-center bg-slate-100 dark:bg-black">
+    <section className="w-full h-full flex items-center justify-center bg-[#002366] dark:bg-zinc-950">
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
@@ -56,7 +56,10 @@ export default function HomeServices() {
 
           <div className="grid grid-cols-2 gap-4">
             {services.map((service, index) => (
-              <div className="group relative mx-auto w-full max-w-sm overflow-hidden rounded-lg bg-slate-800 p-0.5 transition-all duration-500 hover:scale-[1.00] hover:bg-slate-800">
+              <div
+                key={index}
+                className="group relative mx-auto w-full max-w-sm overflow-hidden rounded-lg bg-slate-800 p-0.5 transition-all duration-500 hover:scale-[1.00] hover:bg-slate-800"
+              >
                 <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-[7px] bg-slate-800 dark:bg-slate-900 p-8 transition-colors duration-500 group-hover:bg-slate-800">
                   <div className="inline-block rounded-lg p-2">
                     <img
