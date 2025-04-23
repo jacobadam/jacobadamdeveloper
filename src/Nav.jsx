@@ -20,6 +20,13 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const navLinks = [
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
@@ -76,18 +83,19 @@ export default function NavBar() {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-white backdrop-blur opacity-100">
+          <div className="lg:hidden bg-transparent backdrop-blur opacity-100">
             <ul className="flex flex-col items-left pl-8 space-y-4 py-4 opacity-100">
               {navLinks.map((link) => (
                 <li key={link.to} className="opacity-100">
                   <NavLink
                     to={link.to}
                     className={({ isActive }) =>
-                      `text-black dark:text-white text-sm lg:text-base font-medium hover:text-[#6fa96f] dark:hover:text-[#6fa96f] hover:font-bold transition-all duration-500 opacity-100 ${
+                      `text-white text-sm lg:text-base font-medium hover:text-[#6fa96f] dark:hover:text-[#6fa96f] hover:font-bold transition-all duration-500 opacity-100 ${
                         isActive ? "text-[#6fa96f] dark:text-[#6fa96f]" : ""
                       }`
                     }
                     onClick={() => {
+                      scrollToTop();
                       setIsMobileMenuOpen(false);
                     }}
                   >
