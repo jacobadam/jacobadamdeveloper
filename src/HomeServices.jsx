@@ -34,7 +34,7 @@ const services = [
 
 export default function HomeServices() {
   return (
-    <section className="w-full h-full flex items-center justify-center bg-[#002366] dark:bg-zinc-950">
+    <section className="w-full h-full py-24 md:py-0 flex items-center justify-center bg-[#002366] dark:bg-zinc-950">
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="lg:w-4/5 flex flex-col items-center justify-center mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
@@ -60,7 +60,7 @@ export default function HomeServices() {
                 key={index}
                 className="group relative mx-auto w-full max-w-sm overflow-hidden rounded-lg bg-slate-800 p-0.5 transition-all duration-500 hover:scale-[1.00] hover:bg-slate-800"
               >
-                <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-[7px] bg-slate-800 dark:bg-slate-900 p-8 transition-colors duration-500 group-hover:bg-slate-800">
+                <div className="h-full relative flex flex-col items-center justify-center overflow-hidden rounded-[7px] bg-slate-800 dark:bg-black p-8 transition-colors duration-500 group-hover:bg-slate-800">
                   <div className="inline-block rounded-lg p-2">
                     <img
                       className="w-11 h-11 object-contain bg-gray-50 p-1 rounded"
@@ -75,7 +75,7 @@ export default function HomeServices() {
                   <h2 className="relative mb-4 w-full text-xl font-bold text-white dark:text-gray-50 text-center">
                     {service.title}
                   </h2>
-                  <p className="relative text-gray-50 dark:text-gray-300 text-center">
+                  <p className="relative text-gray-50 dark:text-gray-300 text-center hidden md:flex">
                     {service.description}
                   </p>
                 </div>
@@ -89,7 +89,7 @@ export default function HomeServices() {
                     duration: 3.5,
                     ease: "linear",
                   }}
-                  className="absolute inset-0 z-0 bg-gradient-to-br from-indigo-200 via-indigo-200/0 to-indigo-200 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  className="absolute inset-0 z-0 bg-gradient-to-br from-indigo-700 via-indigo-700/0 to-indigo-700 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                 />
               </div>
             ))}
