@@ -2,13 +2,13 @@ import React from "react";
 
 export default function HomeBenefits() {
   return (
-    <section className="py-24 bg-gray-50 dark:bg-gray-800">
+    <section className="w-full py-24 bg-gray-50 dark:bg-transparent">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 text-center">
-          <h2 className="text-4xl text-center font-bold text-gray-900 dark:text-white leading-[3.25rem] mb-5 max-w-full lg:max-w-3xl lg:mx-auto">
+          <h1 className="text-2xl xl:text-3xl font-bold text-center text-gray-900 dark:text-white leading-[3.25rem] mb-5 max-w-full lg:max-w-3xl lg:mx-auto">
             Why choose us
-          </h2>
-          <p className="text-lg font-normal text-gray-500 dark:text-slate-400 leading-[1.8rem] lg:max-w-3xl lg:mx-auto ">
+          </h1>
+          <p className="text-gray-500 dark:text-gray-300 lg:max-w-3xl lg:mx-auto">
             At every step of our process, we prioritize the user, ensuring that
             our products and services are designed with their needs in mind.
           </p>
