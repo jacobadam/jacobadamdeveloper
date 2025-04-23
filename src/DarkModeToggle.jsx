@@ -1,26 +1,9 @@
-import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { BsFillCloudyFill, BsStarFill } from "react-icons/bs";
+import { useTheme } from "./ThemeContext";
 
-const ToggleWrapper = () => {
-  const initialTheme = localStorage.getItem("theme");
-  const [mode, setMode] = useState(initialTheme === "dark" ? "dark" : "light");
-
-  useEffect(() => {
-    const root = document.documentElement;
-    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
-    const themeColor = mode === "dark" ? "#000000" : "#f1f5f9";
-
-    if (mode === "dark") {
-      root.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-      metaThemeColor.content = themeColor;
-    } else {
-      root.removeAttribute("data-theme");
-      localStorage.setItem("theme", "light");
-      metaThemeColor.content = themeColor;
-    }
-  }, [mode]);
+const DarkModeToggle = () => {
+  const { mode, setMode } = useTheme();
 
   return (
     <div
@@ -195,4 +178,4 @@ const Clouds = () => {
   );
 };
 
-export default ToggleWrapper;
+export default DarkModeToggle;
