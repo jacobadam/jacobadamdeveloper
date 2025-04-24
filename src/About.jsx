@@ -12,10 +12,10 @@ export default function About() {
       <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         <div className="w-full flex-col justify-start items-start lg:gap-12 gap-10 inline-flex">
           <div className="w-full flex-col justify-start items-center gap-3 flex">
-            <h2 className="text-center text-gray-900 dark:text-zinc-300 text-4xl font-bold font-manrope leading-normal">
+            <h2 className="text-center text-gray-900 dark:text-zinc-100 text-4xl font-bold font-manrope leading-normal">
               About Us
             </h2>
-            <p className="max-w-xl text-center text-zinc-600 dark:text-zinc-300 text-base font-normal leading-relaxed">
+            <p className="max-w-xl text-center text-zinc-600 dark:text-zinc-200 text-base font-normal leading-relaxed">
               At Greenhouse Web Designs, we're passionate about building custom
               websites that help small businesses thrive online.
             </p>
