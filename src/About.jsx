@@ -2,60 +2,71 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="pt-4 xs:pt-8 pb-20 relative bg-transparent flex-grow">
+    <section
+      className="py-24 relative"
+      style={{
+        paddingTop: "clamp(8rem, 10vw, 8rem)",
+        minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
+      }}
+    >
       <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         <div className="w-full flex-col justify-start items-start lg:gap-12 gap-10 inline-flex">
-          {/* Header Section */}
           <div className="w-full flex-col justify-start items-center gap-3 flex">
-            <h2 className="text-gray-900 dark:text-white text-2xl lg:text-4xl font-semibold leading-normal lg:text-start text-center">
-              Hello,{" "}
-              <span className="text-indigo-600 font-bold">I’m Jacob.</span>
+            <h2 className="text-center text-gray-900 dark:text-zinc-300 text-4xl font-bold font-manrope leading-normal">
+              About Us
             </h2>
+            <p className="max-w-xl text-center text-zinc-600 dark:text-zinc-300 text-base font-normal leading-relaxed">
+              At Greenhouse Web Designs, we're passionate about building custom
+              websites that help small businesses thrive online.
+            </p>
           </div>
-
-          {/* Content Section */}
-          <div className="justify-start items-center lg:gap-8 grid lg:grid-cols-2 grid-cols-1">
-            {/* Image Section */}
+          <div className="justify-start items-center lg:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
             <img
-              className="mx-auto w-60 h-60 ms:w-96 ms:h-96 md:w-120 md:h-120 rounded-full object-cover aspect-square"
-              src="/jacobadam.webp"
+              className="lg:w-full mx-auto lg:h-full rounded-3xl object-cover"
+              src="jacobadam.webp"
               alt="Jacob Adam"
             />
-
-            {/* Text Content Section */}
-            <div className="flex-col justify-center lg:items-start items-center gap-6 inline-flex pt-8 lg:pt-0">
+            <div className="flex-col justify-center lg:items-start items-center gap-10 inline-flex">
               <div className="flex-col justify-center items-start gap-3 flex">
-                <p className="text-gray-900 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-4 lg:px-0">
-                  I started my career at SpareRoom, the UK’s largest property
-                  rental website, before moving on to Article, one of Canada’s
-                  leading eCommerce companies. I’m now a freelance web developer
-                  helping small businesses create sites that embody their brand
-                  and increase their loyal customer base.
+                <p className="text-zinc-600 dark:text-zinc-300 text-base font-normal leading-relaxed lg:text-start text-center">
+                  I'm Jacob, founder of Greenhouse Web Designs — a small studio
+                  with a big mission: helping small businesses grow online
+                  through thoughtful, custom-built websites.
                 </p>
-                <p className="text-gray-900 dark:text-white text-sm lg:text-base font-normal leading-relaxed lg:text-start text-center px-4 lg:px-0">
-                  I grew up in Liverpool, and have since lived in London, New
-                  York, Vancouver, and Sayulita. I currently live in Kimberley,
-                  BC and in my free time like to trail run, ski, play 90’s video
-                  games, and watch as much of the Criterion collection as
-                  possible.
+                <p className="text-zinc-600 dark:text-zinc-300 text-base font-normal leading-relaxed lg:text-start text-center">
+                  I began my career at SpareRoom, the UK’s largest property
+                  rental platform, before moving to Article, one of Canada’s top
+                  eCommerce brands. Along the way, I’ve built a strong
+                  foundation in scalable, user-focused web development — and now
+                  I bring that experience directly to small business owners who
+                  want more than a cookie-cutter solution.
+                </p>
+                <p className="text-zinc-600 dark:text-zinc-300 text-base font-normal leading-relaxed lg:text-start text-center">
+                  At Greenhouse, I focus on creating websites that truly reflect
+                  the personality and goals of your business. Whether you're
+                  just getting started or looking to refresh your online
+                  presence, I’ll work closely with you to build a site that
+                  feels like an extension of your brand — and helps convert
+                  visitors into loyal customers.
+                </p>
+                <p className="text-zinc-600 dark:text-zinc-300 text-base font-normal leading-relaxed lg:text-start text-center">
+                  Originally from Liverpool, I’ve lived and worked in cities
+                  around the world — London, New York, Vancouver, Sayulita — and
+                  now call Kimberley, BC home. When I’m not designing or coding,
+                  you’ll find me on a trail run, skiing local powder, deep into
+                  a 90s video game, or working through the Criterion Collection.
+                </p>
+                <p className="text-zinc-600 dark:text-zinc-300 text-base font-normal leading-relaxed lg:text-start text-center">
+                  If you’re ready to grow your digital presence with a website
+                  that works as hard as you do, I’d love to hear from you.
                 </p>
               </div>
-
-              {/* Button Section */}
               <a
                 href="/contact"
-                className="flex items-center justify-center gap-x-1 py-1 xxxs:py-2 px-4 text-white font-medium bg-indigo-600 duration-150 rounded-full"
-                aria-label="Visit services page"
+                aria-label="Go to contact page"
+                className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#6fa96f] dark:border-[#6fa96f] dark:hover:border-[#6fa96f] bg-transparent px-3 text-black dark:text-[#6fa96f] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f]  before:transition-all before:duration-300 hover:text-white hover:shadow-[#6fa96f] hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
               >
-                Contact me
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" />
-                </svg>
+                <span className="relative z-3">Let's Talk</span>
               </a>
             </div>
           </div>
