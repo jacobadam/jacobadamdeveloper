@@ -31,9 +31,9 @@ export default function HomeProjects() {
                   Content Design, Marketing
                 </p>
               </div>
-              <button className="border border-black bg-[#6fa96f] py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f]">
+              <button className="border border-[#6fa96f] py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f]">
                 <svg
-                  className="stroke-black transition-all duration-300 group-hover:stroke-white"
+                  className="stroke-[#6fa96f] transition-all duration-300 group-hover:stroke-white"
                   xmlns="http://www.w3.org/2000/svg"
                   width={17}
                   height={16}
@@ -71,9 +71,9 @@ export default function HomeProjects() {
                 </h4>
                 <p className="font-medium text-lg text-gray-400">Healthcare</p>
               </div>
-              <button className="border border-black bg-[#6fa96f] py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f]">
+              <button className="border border-[#6fa96f] py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f]">
                 <svg
-                  className="stroke-black transition-all duration-300 group-hover:stroke-white"
+                  className="stroke-[#6fa96f] transition-all duration-300 group-hover:stroke-white"
                   xmlns="http://www.w3.org/2000/svg"
                   width={17}
                   height={16}
