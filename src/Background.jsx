@@ -24,7 +24,7 @@ const BGGrid = () => {
       }}
       className="absolute bottom-0 left-0 right-0 top-0"
     >
-      <div className="absolute inset-0 dark:bg-gradient-to-b dark:from-zinc-950/80 dark:via-zinc-950/0 dark:to-zinc-950/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-zinc-200/80 via-zinc-200/0 to-zinc-200/80 dark:bg-gradient-to-b dark:from-zinc-950/80 dark:via-zinc-950/0 dark:to-zinc-950/80" />
       <Beams />
     </div>
   );
@@ -133,7 +133,7 @@ const Beams = () => {
           top,
           left,
         }}
-        className="absolute z-10 h-[64px] w-[1px] bg-gradient-to-b from-indigo-700/0 to-indigo-700"
+        className="absolute z-10 h-[64px] w-[1px] bg-gradient-to-b  from-[#6fa96f]/0 to-[#6fa96f] dark:from-indigo-700/0 dark:to-indigo-700"
       />
     );
   };
