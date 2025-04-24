@@ -56,7 +56,7 @@ export default function NavBar() {
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) =>
-                  `group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95 opacity-100 ${
+                  `group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95 opacity-100 hover:text-[#6fa96f] ${
                     isActive
                       ? "text-[#6fa96f] dark:text-[#6fa96f]"
                       : "text-white"
