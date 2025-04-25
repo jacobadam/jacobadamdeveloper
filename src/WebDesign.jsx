@@ -41,7 +41,7 @@ export default function WebDesign() {
 
 const Features = ({ benefits }) => {
   return (
-    <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-32 px-4 md:grid-cols-2">
+    <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 lg:gap-32 px-4 md:grid-cols-2">
       <Heading />
       <BenefitsCarousel benefits={benefits} />
     </div>
@@ -50,7 +50,13 @@ const Features = ({ benefits }) => {
 
 const Heading = () => {
   return (
-    <div className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 md:h-screen">
+    <div
+      className="flex h-fit w-full flex-col justify-center py-12 md:sticky md:top-0 md:h-screen"
+      style={{
+        paddingTop: "clamp(10rem, 10vw, 8rem)",
+        minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
+      }}
+    >
       <h1 className="mb-4 mt-2 text-4xl font-medium leading-tight text-black dark:text-white">
         What Is Web Design And What Are The Benefits?
       </h1>
@@ -59,6 +65,11 @@ const Heading = () => {
         strategically planning and building online experiences that are
         user-friendly, engaging, and achieve specific goals.
       </p>
+      <img
+        src="/webdesign.jpg"
+        alt="web design"
+        className="rounded-2xl mt-8"
+      ></img>
     </div>
   );
 };
