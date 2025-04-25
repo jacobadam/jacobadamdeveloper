@@ -22,11 +22,11 @@ export default function About() {
           </div>
           <div className="justify-start items-center lg:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
             <img
-              className="lg:w-full mx-auto lg:h-full rounded-3xl object-cover"
-              src="jacobadam.webp"
+              className="mx-auto w-72 h-72 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full object-cover aspect-square"
+              src="/jacobadam.webp"
               alt="Jacob Adam"
             />
-            <div className="flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+            <div className="flex-col justify-center lg:items-start items-center gap-10 lg:gap-0 inline-flex">
               <div className="flex-col justify-center items-start gap-3 flex">
                 <p className="text-zinc-600 dark:text-zinc-300 text-base font-normal leading-relaxed lg:text-start text-center">
                   I'm Jacob, founder of Greenhouse Web Designs — a small studio
