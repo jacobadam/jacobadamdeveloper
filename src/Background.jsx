@@ -4,7 +4,7 @@ import { useTheme } from "./ThemeContext";
 
 export default function Background() {
   return (
-    <div className="fixed top-0 left-0 w-full h-full overflow-hidden bg-slate-100 dark:bg-zinc-950 z-1">
+    <div className="fixed top-0 left-0 w-full h-full overflow-hidden bg-slate-100 dark:bg-zinc-950 z-0">
       <BGGrid />
     </div>
   );
@@ -133,7 +133,7 @@ const Beams = () => {
           top,
           left,
         }}
-        className="absolute z-10 h-[64px] w-[1px] bg-gradient-to-b  from-[#6fa96f]/0 to-[#6fa96f] dark:from-indigo-700/0 dark:to-indigo-700"
+        className="absolute h-[64px] w-[1px] bg-gradient-to-b from-[#6fa96f]/0 to-[#6fa96f] dark:from-indigo-700/0 dark:to-indigo-700"
       />
     );
   };
