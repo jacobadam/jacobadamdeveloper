@@ -27,8 +27,14 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-16 bg-transparent flex-grow">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section
+      className="py-16 bg-transparent flex-grow z-10"
+      style={{
+        paddingTop: "clamp(12rem, 10vw, 8rem)",
+        minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
+      }}
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-20">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:items-start items-center lg:justify-start justify-center">
           <div className="flex flex-col items-center text-center px-4 sm:px-6">
             <h2 className="text-gray-900 dark:text-white text-2xl lg:text-3xl font-semibold leading-snug pb-5">
@@ -37,7 +43,7 @@ export default function Contact() {
             <p className="text-gray-900 dark:text-white text-md font-normal pb-6">
               Get in touch and let's discuss how I can serve your business.
             </p>
-            <div className="py-6 border-t border-stone-300 text-center">
+            <div className="py-6 border-t border-gray-400  dark:border-zinc-200 text-center">
               <div className="flex flex-col items-center">
                 <div className="rounded-lg p-3">
                   <img
@@ -65,22 +71,6 @@ export default function Contact() {
                 </p>
               </div>
             </div>
-
-            {/* 
-            <div className="flex justify-center items-center mb-10 mt-6">
-              <a
-                href="https://www.linkedin.com/in/jacobnevitt/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-gray-900 transition-all duration-50"
-              >
-                <img
-                  src="/linkedin.svg"
-                  alt="LinkedIn Logo"
-                  className="w-8 h-8"
-                />
-              </a>
-            </div> */}
           </div>
 
           <div className="p-4 rounded-lg">
@@ -187,9 +177,10 @@ export default function Contact() {
               <button
                 type="submit"
                 value="Send"
-                className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-md"
+                title="Submit your message"
+                className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#6fa96f] bg-[#6fa96f] dark:bg-transparent px-3 text-zinc-100 dark:text-[#6fa96f] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] before:transition-all before:duration-500 hover:text-white hover:shadow-[#6fa96f] hover:before:left-0 hover:before:w-full rounded-full font-semibold my-4"
               >
-                Submit
+                <span className="relative z-3">Submit</span>
               </button>
             </form>
           </div>
