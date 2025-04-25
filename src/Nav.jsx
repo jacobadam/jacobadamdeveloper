@@ -62,6 +62,9 @@ export default function NavBar() {
                       : "text-white"
                   }`
                 }
+                onClick={() => {
+                  scrollToTop();
+                }}
               >
                 <span className="text-sm lg:text-base font-normal transition-all duration-500 opacity-100">
                   {link.label}
