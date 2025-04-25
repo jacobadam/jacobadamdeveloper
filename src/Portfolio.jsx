@@ -2,7 +2,13 @@ import React from "react";
 
 export default function Portfolio() {
   return (
-    <section className="pt-4 xs:pt-8 pb-20 relative bg-transparent flex-grow">
+    <section
+      className="pt-4 sm:pt-8 pb-20 relative bg-transparent flex-grow"
+      style={{
+        paddingTop: "clamp(10rem, 10vw, 8rem)",
+        minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
+      }}
+    >
       <div className="w-full max-w-7xl px-6 lg:px-8 mx-auto">
         <div className="mb-8 text-center">
           <div className="flex items-center justify-between gap-5 flex-col mb-14">
