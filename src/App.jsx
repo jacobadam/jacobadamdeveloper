@@ -1,4 +1,3 @@
-import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -18,7 +17,7 @@ export default function App() {
   return (
     <Router>
       <ThemeProvider>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen text-center">
           <Background />
           <Nav />
           <Routes>
