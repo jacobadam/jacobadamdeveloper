@@ -59,8 +59,8 @@ export default function Services() {
                       className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-0 px-6 rounded-2xl text-base font-medium transition-all duration-500 w-full min-h-[80px] sm:min-h-[110px] 
                         ${
                           activeTab === tab.id
-                            ? "bg-gradient-to-tr from-[#6fa96f] to-[#71b468] dark:from-indigo-700 dark:to-violet-600 text-white"
-                            : "text-gray-900 dark:text-white hover:bg-gradient-to-tr hover:from-[#6fa96f] hover:to-[#71b468] dark:hover:bg-gradient-to-tr dark:hover:from-indigo-700 dark:hover:to-violet-600 hover:text-white"
+                            ? "bg-gradient-to-tr from-[#6fa96f] to-[#71b468] dark:from-indigo-500 dark:to-violet-600 text-white"
+                            : "text-gray-900 dark:text-white hover:bg-gradient-to-tr hover:from-[#6fa96f] hover:to-[#71b468] dark:hover:bg-gradient-to-tr dark:hover:from-indigo-500 dark:hover:to-violet-600 hover:text-white"
                         }`}
                       role="tab"
                     >

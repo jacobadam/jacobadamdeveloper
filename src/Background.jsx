@@ -133,7 +133,7 @@ const Beams = () => {
           top,
           left,
         }}
-        className="absolute h-[64px] w-[1px] bg-gradient-to-b from-[#6fa96f]/0 to-[#6fa96f] dark:from-indigo-700/0 dark:to-indigo-700"
+        className="absolute h-[64px] w-[1px] bg-gradient-to-b from-[#6fa96f]/0 to-[#6fa96f] dark:from-indigo-500/0 dark:to-indigo-500"
       />
     );
   };

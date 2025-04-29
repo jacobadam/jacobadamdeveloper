@@ -31,9 +31,9 @@ export default function HomeProjects() {
                   Content Design, Marketing
                 </p>
               </div>
-              <button className="border border-[#6fa96f] dark:border-indigo-700 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-700">
+              <button className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500">
                 <svg
-                  className="stroke-[#6fa96f] dark:stroke-indigo-700 transition-all duration-300 group-hover:stroke-white"
+                  className="stroke-[#6fa96f] dark:stroke-indigo-500 transition-all duration-300 group-hover:stroke-white"
                   xmlns="http://www.w3.org/2000/svg"
                   width={17}
                   height={16}
@@ -71,9 +71,9 @@ export default function HomeProjects() {
                 </h4>
                 <p className="font-medium text-lg text-gray-400">Healthcare</p>
               </div>
-              <button className="border border-[#6fa96f] dark:border-indigo-700 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-700">
+              <button className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500">
                 <svg
-                  className="stroke-[#6fa96f] dark:stroke-indigo-700 transition-all duration-300 group-hover:stroke-white"
+                  className="stroke-[#6fa96f] dark:stroke-indigo-500 transition-all duration-300 group-hover:stroke-white"
                   xmlns="http://www.w3.org/2000/svg"
                   width={17}
                   height={16}
