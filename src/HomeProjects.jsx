@@ -2,27 +2,27 @@ import React from "react";
 
 export default function HomeProjects() {
   return (
-    <section className="w-full h-full py-40 lg:py-60 relative bg-zinc-950">
-      <div className="w-full max-w-2xl lg:max-w-7xl px-6 lg:px-8 mx-auto">
+    <section className="w-full h-full py-40 md:py-60 relative bg-zinc-950">
+      <div className="w-full max-w-2xl md:max-w-7xl px-6 lg:px-8 mx-auto">
         <h1 className="text-2xl xl:text-3xl font-bold text-white dark:text-gray-50 mb-16 max-md:text-center">
           Professional Project Achievements
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <a
             href="https://www.katieshevlin.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center flex-col gap-8 w-full cursor-pointer"
           >
-            <div className="w-full h-60">
+            <div className="w-full h-full">
               <img
-                className="w-full h-full rounded-3xl object-cover transform transition-transform duration-300 group-hover:scale-105"
-                src="https://www.katieshevlin.com/hero-image.webp"
+                className="w-full h-full rounded object-contain transform transition-transform duration-300 group-hover:scale-105"
+                src="/katieshevlin-homepage.webp"
                 alt="Content services website"
               />
             </div>
-            <div className="flex items-center justify-between max-w-[406px] lg:max-w-full w-full lg:px-0">
+            <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
               <div className="block">
                 <h4 className="text-2xl font-semibold text-white dark:text-gray-50 mb-1">
                   Content Services Website
@@ -57,14 +57,14 @@ export default function HomeProjects() {
             rel="noopener noreferrer"
             className="group flex items-center flex-col gap-8 w-full cursor-pointer"
           >
-            <div className="w-full h-60">
+            <div className="w-full h-full">
               <img
-                className="w-full h-full rounded-3xl object-cover transform transition-transform duration-300 group-hover:scale-105"
-                src="https://www.neilnevitt.com/homepage-image.webp"
+                className="w-full h-full rounded object-contain transform transition-transform duration-300 group-hover:scale-105"
+                src="/neilnevitt-homepage.webp"
                 alt="Healthcare Website"
               />
             </div>
-            <div className="flex items-center justify-between max-w-[406px] lg:max-w-full w-full lg:px-0">
+            <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
               <div className="block">
                 <h4 className="text-2xl font-semibold text-white dark:text-gray-50 mb-1">
                   Healthcare Website
