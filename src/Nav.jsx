@@ -56,9 +56,9 @@ export default function NavBar() {
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) =>
-                  `group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95 opacity-100 hover:text-[#6fa96f] ${
+                  `group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95 opacity-100 hover:text-[#6fa96f] dark:hover:text-indigo-500 ${
                     isActive
-                      ? "text-[#6fa96f] dark:text-[#6fa96f]"
+                      ? "text-[#6fa96f] dark:text-indigo-500"
                       : "text-white"
                   }`
                 }
@@ -93,8 +93,10 @@ export default function NavBar() {
                   <NavLink
                     to={link.to}
                     className={({ isActive }) =>
-                      `text-white text-sm lg:text-base font-medium hover:text-[#6fa96f] dark:hover:text-[#6fa96f] hover:font-bold transition-all duration-500 opacity-100 ${
-                        isActive ? "text-[#6fa96f] dark:text-[#6fa96f]" : ""
+                      `text-sm lg:text-base font-medium hover:font-bold transition-all duration-500 opacity-100 ${
+                        isActive
+                          ? "text-[#6fa96f] dark:text-indigo-500"
+                          : "text-white"
                       }`
                     }
                     onClick={() => {
