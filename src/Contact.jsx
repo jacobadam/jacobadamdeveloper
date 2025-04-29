@@ -54,7 +54,7 @@ export default function Contact() {
                 </div>
 
                 <p className="text-gray-700 dark:text-white text-xs font-normal">
-                  jacob@greenhousewebdesigns.com
+                  greenhousewebdesigns@gmail.com
                 </p>
               </div>
               <div className="flex flex-col items-center mt-8">
