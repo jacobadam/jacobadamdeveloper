@@ -29,6 +29,11 @@ export default function HomepageHero() {
                       duration: 0.3,
                       delay: (wordIndex * 5 + letterIndex) / 20,
                     }}
+                    className={`${
+                      word === "Grow"
+                        ? "text-[#6fa96f] dark:text-indigo-500"
+                        : "text-black dark:text-white"
+                    }`}
                   >
                     {letter}
                   </motion.span>
