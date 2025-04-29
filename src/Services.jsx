@@ -59,8 +59,8 @@ export default function Services() {
                       className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-0 px-6 rounded-2xl text-base font-medium transition-all duration-500 w-full min-h-[80px]  sm:min-h-[110px] 
                         ${
                           activeTab === tab.id
-                            ? "bg-gradient-to-tr from-indigo-600 to-violet-600 text-white"
-                            : "text-gray-900 dark:text-white hover:bg-gradient-to-tr hover:from-indigo-600 hover:to-violet-600 dark:hover:bg-gradient-to-tr dark:hover:from-indigo-600 dark:hover:to-violet-600 hover:text-white"
+                            ? "bg-gradient-to-tr from-[#6fa96f] to-[#71b468] dark:from-indigo-700 dark:to-violet-600 text-white"
+                            : "text-gray-900 dark:text-white hover:bg-gradient-to-tr hover:from-[#6fa96f] hover:to-[#71b468] dark:hover:bg-gradient-to-tr dark:hover:from-indigo-700 dark:hover:to-violet-600 hover:text-white"
                         }`}
                       role="tab"
                     >
@@ -93,12 +93,6 @@ export default function Services() {
                           have the opportunity to review all changes to ensure
                           everything meets your expectations.
                         </p>
-                        {/* <p className="mb-4 font-medium">
-                          Deliver great service experiences fast - without the
-                          complexity of traditional ITSM solutions. Accelerate
-                          critical development work, eliminate toil, and deploy
-                          changes with ease.
-                        </p> */}
                       </div>
                     </div>
                   </section>
@@ -124,12 +118,6 @@ export default function Services() {
                           website with up to five pages. This package includes
                           two reviews for refinements.
                         </p>
-                        {/* <p className="mb-4 font-medium">
-                          Deliver great service experiences fast - without the
-                          complexity of traditional ITSM solutions. Accelerate
-                          critical development work, eliminate toil, and deploy
-                          changes with ease.
-                        </p> */}
                       </div>
                     </div>
                   </section>
@@ -156,44 +144,6 @@ export default function Services() {
                           audience. An in-depth SEO analysis will ensure that
                           all content contributes to your site’s visibility and
                           business growth.
-                        </p>
-                        {/* <p className="mb-4 font-medium">
-                          Deliver great service experiences fast - without the
-                          complexity of traditional ITSM solutions. Accelerate
-                          critical development work, eliminate toil, and deploy
-                          changes with ease.
-                        </p> */}
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              )}
-              {activeTab === "tabs-with-pill-4" && (
-                <div
-                  id="tabs-with-pill-4"
-                  role="tabpanel"
-                  className="tabcontent"
-                  style={{ display: "block" }}
-                >
-                  <section className="">
-                    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-6 flex justify-center">
-                      <div className="max-w-screen-lg text-black sm:text-lg">
-                        <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900">
-                          Search Engine Optimization
-                        </h2>
-                        <p className="mb-4 font-light">
-                          Track work across the enterprise through an open,
-                          collaborative platform. Link issues across Jira and
-                          ingest data from other software development tools, so
-                          your IT support and operations teams have richer
-                          contextual information to rapidly respond to requests,
-                          incidents, and changes.
-                        </p>
-                        <p className="mb-4 font-medium">
-                          Deliver great service experiences fast - without the
-                          complexity of traditional ITSM solutions. Accelerate
-                          critical development work, eliminate toil, and deploy
-                          changes with ease.
                         </p>
                       </div>
                     </div>
