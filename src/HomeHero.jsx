@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 
 export default function HomepageHero() {
-  const text = "Web Design That Grows With Your Business";
+  const text = "Web Designs That Grow With Your Business";
   const words = text.split(" ");
   return (
     <section
