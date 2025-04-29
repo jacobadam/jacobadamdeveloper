@@ -66,7 +66,7 @@ const Heading = () => {
         user-friendly, engaging, and achieve specific goals.
       </p>
       <img
-        src="/webdesign.jpg"
+        src="/webdesign.webp"
         alt="web design"
         className="rounded-2xl mt-8"
       ></img>
@@ -123,10 +123,10 @@ const BenefitItem = ({
         opacity,
         scale,
       }}
-      className="grid aspect-video w-full shrink-0 place-content-center rounded-2xl border border-black dark:border-white p-6"
+      className="grid aspect-video w-full shrink-0 place-content-center rounded-2xl border border-black dark:border-white p-6 bg-zinc-100/50 dark:bg-zinc-950/30"
     >
       <div className="flex flex-col items-center justify-center text-center">
-        <span className="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
+        <span className="text-xl font-semibold text-[#71b468] dark:text-indigo-700 mb-2">
           {reason}
         </span>
         <p className="text-lg text-zinc-800 dark:text-neutral-400">
