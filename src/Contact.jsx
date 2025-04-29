@@ -54,7 +54,7 @@ export default function Contact() {
                 </div>
 
                 <p className="text-gray-700 dark:text-white text-xs font-normal">
-                  jacobadamdeveloper@gmail.com
+                  jacob@greenhousewebdesigns.com
                 </p>
               </div>
               <div className="flex flex-col items-center mt-8">
@@ -76,7 +76,7 @@ export default function Contact() {
           <div className="p-4 rounded-lg">
             {messageSent && (
               <p
-                className="text-center text-indigo-600 text-xl font-bold"
+                className="text-center text-[#6fa96f] dark:text-indigo-600 text-xl font-bold"
                 aria-live="polite"
               >
                 Message sent!
@@ -178,7 +178,7 @@ export default function Contact() {
                 type="submit"
                 value="Send"
                 title="Submit your message"
-                className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#6fa96f] bg-[#6fa96f] dark:bg-transparent px-3 text-zinc-100 dark:text-[#6fa96f] dark:hover:text-black hover:shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] before:transition-all before:duration-500 hover:text-white hover:shadow-[#6fa96f] hover:before:left-0 hover:before:w-full rounded-full font-semibold my-4"
+                className="flex justify-center items-center relative h-[50px] w-40 overflow-hidden border border-[#6fa96f] dark:border-indigo-500 bg-[#6fa96f] dark:bg-transparent px-3 text-zinc-100 dark:text-indigo-500 dark:hover:text-black hover:shadow-2xl before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#6fa96f] dark:before:bg-indigo-500 before:transition-all before:duration-500 hover:text-white hover:shadow-[#6fa96f] dark:hover:shadow-indigo-500 hover:before:left-0 hover:before:w-full rounded-full font-semibold mt-4"
               >
                 <span className="relative z-3">Submit</span>
               </button>
