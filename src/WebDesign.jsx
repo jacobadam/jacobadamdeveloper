@@ -41,7 +41,7 @@ export default function WebDesign() {
 
 const Features = ({ benefits }) => {
   return (
-    <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 lg:gap-32 px-4 md:grid-cols-2">
+    <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 gap-12 lg:gap-32 px-4 md:grid-cols-2 md:mb-8">
       <Heading />
       <BenefitsCarousel benefits={benefits} />
     </div>
@@ -57,7 +57,7 @@ const Heading = () => {
         minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
       }}
     >
-      <h1 className="mb-4 mt-2 text-4xl font-medium leading-tight text-black dark:text-white">
+      <h1 className="mb-4 xl:mt-8 text-4xl font-medium leading-tight text-black dark:text-white">
         What Is Web Design And What Are The Benefits?
       </h1>
       <p className="text-lg text-gray-800 dark:text-zinc-100">
@@ -141,4 +141,4 @@ const Gradient = () => (
   <div className="sticky top-0 z-2 hidden h-36 w-full bg-transparent md:block" />
 );
 
-const Buffer = () => <div className="h-24 w-full md:h-48" />;
+const Buffer = () => <div className="h-4 w-full md:h-48" />;
