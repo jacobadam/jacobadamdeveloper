@@ -56,7 +56,7 @@ export default function Services() {
                   <li key={tab.id} className="w-full">
                     <button
                       onClick={() => handleTabClick(tab.id)}
-                      className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-0 px-6 rounded-2xl text-base font-medium transition-all duration-500 w-full min-h-[80px]  sm:min-h-[110px] 
+                      className={`group flex items-center justify-center text-center gap-4 py-5 lg:py-0 px-6 rounded-2xl text-base font-medium transition-all duration-500 w-full min-h-[80px] sm:min-h-[110px] 
                         ${
                           activeTab === tab.id
                             ? "bg-gradient-to-tr from-[#6fa96f] to-[#71b468] dark:from-indigo-700 dark:to-violet-600 text-white"
