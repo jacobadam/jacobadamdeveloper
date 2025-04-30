@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <section
-      className="py-24 relative"
+      className="py-16 relative"
       style={{
         paddingTop: "clamp(8rem, 10vw, 8rem)",
         minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",

@@ -5,7 +5,7 @@ export default function Portfolio() {
     <section
       className="pt-4 sm:pt-8 pb-20 relative bg-transparent flex-grow"
       style={{
-        paddingTop: "clamp(10rem, 10vw, 8rem)",
+        paddingTop: "clamp(8rem, 10vw, 8rem)",
         minHeight: "calc(100vh - clamp(4rem, 10vw, 8rem))",
       }}
     >
