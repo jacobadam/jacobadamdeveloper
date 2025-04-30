@@ -4,7 +4,7 @@ import { useTheme } from "./ThemeContext";
 
 export default function Background() {
   return (
-    <div className="fixed top-0 left-0 w-full h-full overflow-hidden bg-slate-100 dark:bg-zinc-950 z-0">
+    <div className="fixed top-0 left-0 w-full h-full overflow-hidden bg-zinc-100 dark:bg-zinc-950 z-0">
       <BGGrid />
     </div>
   );
