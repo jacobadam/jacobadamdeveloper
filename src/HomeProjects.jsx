@@ -2,9 +2,9 @@ import React from "react";
 
 export default function HomeProjects() {
   return (
-    <section className="w-full h-full py-40 md:py-60 relative bg-zinc-950">
+    <section className="w-full h-full py-40 md:py-60 relative bg-zinc-200 dark:bg-zinc-950">
       <div className="w-full max-w-2xl md:max-w-7xl px-6 lg:px-8 mx-auto">
-        <h1 className="text-2xl xl:text-3xl font-bold text-white dark:text-gray-50 mb-16 max-md:text-center">
+        <h1 className="text-2xl xl:text-3xl font-bold text-black dark:text-gray-50 mb-16 max-md:text-center">
           Professional Project Achievements
         </h1>
 
@@ -24,10 +24,10 @@ export default function HomeProjects() {
             </div>
             <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
               <div className="block">
-                <h4 className="text-2xl font-semibold text-white dark:text-gray-50 mb-1">
-                  Content Services Website
+                <h4 className="text-2xl font-semibold text-black dark:text-gray-50 mb-1">
+                  Content Services Portfolio
                 </h4>
-                <p className="font-medium text-lg text-gray-400">
+                <p className="font-medium text-lg text-gray-600">
                   Content Design, Marketing
                 </p>
               </div>
@@ -66,10 +66,10 @@ export default function HomeProjects() {
             </div>
             <div className="flex items-center justify-between max-w-[406px] md:max-w-full w-full lg:px-0">
               <div className="block">
-                <h4 className="text-2xl font-semibold text-white dark:text-gray-50 mb-1">
-                  Healthcare Website
+                <h4 className="text-2xl font-semibold text-black dark:text-gray-50 mb-1">
+                  Podiatry Business
                 </h4>
-                <p className="font-medium text-lg text-gray-400">Healthcare</p>
+                <p className="font-medium text-lg text-gray-600">Healthcare</p>
               </div>
               <button className="border border-[#6fa96f] dark:border-indigo-500 py-2 px-4 rounded-full transition-all duration-300 group-hover:bg-[#6fa96f] dark:group-hover:bg-indigo-500">
                 <svg
