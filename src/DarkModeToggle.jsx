@@ -143,7 +143,7 @@ const Clouds = () => {
         <BsFillCloudyFill />
       </motion.span>
       <motion.span
-        animate={{ x: [-5, 0, 5, 10, 15], opacity: [0, 1, 0.75, 1, 0] }}
+        animate={{ x: [-5, 0, 5, 10, 5, 0], opacity: [0, 1, 0.75, 1, 0.5, 0] }}
         transition={{
           duration: 20,
           repeat: Infinity,
@@ -153,20 +153,10 @@ const Clouds = () => {
       >
         <BsFillCloudyFill />
       </motion.span>
-      {/* <motion.span
-        animate={{ x: [-3.5, 0, 3.5, 7, 10.5], opacity: [0, 1, 0.75, 1, 0] }}
-        transition={{
-          duration: 12.5,
-          repeat: Infinity,
-        }}
-        className="text-white absolute left-4.5 top-4"
-      >
-        <BsFillCloudyFill />
-      </motion.span> */}
       <motion.span
-        animate={{ x: [-7.5, 0, 7.5, 15, 22.5], opacity: [0, 1, 0.75, 1, 0] }}
+        animate={{ x: [-2.5, 0, 2.5, 5, 2.5], opacity: [0, 1, 0.75, 1, 0] }}
         transition={{
-          duration: 25,
+          duration: 12,
           repeat: Infinity,
           delay: 0.75,
         }}
